@@ -105,10 +105,25 @@
 
 <div class="container">
   <h1 id="install-git">Install Git</h1>
+<p>The install process for git is different based on the type of computer you are using.  Install information is provided here for Windows &amp; Mac OS.  If you are using Linux, it is likely that you already have git and if not can use the package manager to easily install it.</p>
 
 <h2 id="windows-users">Windows Users</h2>
+<p>If you are a Windows user, typically you will use PowerShell as your command shell.  However, Windows PowerShell does not include git by default.  The easiest way to get access to git on Windows is to use GitShell which is part of <a href="https://desktop.github.com/">GitHub Desktop</a>.</p>
+
+<p>GitShell is PowerShell plus git commands, and since we will mainly be using the shell for git commands, you will want to use GitShell for your work in this course.  Because GitShell is built on top of PowerShell all other commands that you would use in PowerShell should also work in GitShell.</p>
 
 <h2 id="mac-users">Mac Users</h2>
+<p>If you are using a Mac, open up a <a href="http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line">Terminal</a> window and type git.  You may find that it is already installed, or if not that it will prompt you to install the XCode Command Line Developer Tools.  If it does not, you likely have an older version of the Mac OS and should download and install the tools from the <a href="https://developer.apple.com/downloads/index.action">Apple Developer Site</a>.  You can also install the full XCode suite from the Apple App Store, but this will take additional space.</p>
+
+<p>GitHub Desktop is not required, we only need the underlying git command, and actually I encourage you not to use the application itself, but there is also now a <a href="https://desktop.github.com/">GitHub Desktop for Mac</a></p>
+
+<h2 id="configure-git">Configure Git</h2>
+<p>Before you dive in, you’ll want to configure git with your user information. In the commands below, fill in your name and the email you used with your GitHub account.  This email is what will tie your activity to your account.  <strong>Make sure that you are using the same email and check for typos.</strong></p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>git config --global user.name <span class="s2">"User Name"</span>
+<span class="gp">$ </span>git config --global user.email <span class="s2">"user@email"</span></code></pre></figure>
+
+<p>I also recommend saving your git config as a Gist on GitHub so that it is easily available for you to use on any computer.</p>
 
 </div>
 
@@ -125,7 +140,7 @@
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-08-22 05:51:40 -0500</span></p>
+        Last update on: <span>2016-08-22 08:17:01 -0500</span></p>
     </div>
   </footer>
 </div>
