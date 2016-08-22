@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Assessments | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li class="active">Assessments</li>
+    </ol>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Assessments <small>in module order</small></h1>
+</div>
+
+<div class="container">
+  <p>This page collects together all of the “assessments” associated with individual modules.</p>
+
+<p>In this site, assessments represent the <em>results</em> of performing assessment activities, not the assessments themselves.  (Usually, you don’t want to publish the actual assessment instruments (i.e. the tests) on the course website!)</p>
+
+<p>Publishing assessment results enable students to see how well they did compared to others.  It also allows the instructor to provide feedback about the assessment activity.</p>
+
+</div>
+
+<div class="section-background-1">
+  <div class="container">
+    <h2><small>Module:</small> <a href="/fall-2016/modules/intro/">Introduction to Web Development</a></h2>
+
+    
+      
+      <a style="padding-top: 50px; margin-top: -50px; display: table-caption;" name="asm-standards"></a><h3>Internet technologies, standards, organizations, and architecture</h3>
+      <p>
+        
+      </p>
+      
+        <p>
+        <em>Outcomes assessed:</em>
+          
+            <a href="/fall-2016/outcomes/#out-standards">Internet Technologies &amp; Standards</a>, 
+          
+            <a href="/fall-2016/outcomes/#out-web-arch">Internet Client/Server Architecture</a>
+          
+        </p>
+      
+      <p>Quiz 1: Assessed knowledge of Internet technologies, standards, organizations, and architecture.</p>
+
+<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+<div class="well">
+  <div id="asm-standards" style="height: 250px;"></div>
+</div>
+
+<script>
+Morris.Bar({
+  element: 'asm-standards',
+  hideHover: false,
+  data: [
+        { y: 'Very satisfactory (%)', num: 0 },
+        { y: 'Satisfactory (%)', num: 0 },
+        { y: 'Unsatisfactory (%)', num: 0 },
+        { y: 'Absent (%)', num: 0 },
+        ],
+  xkey: 'y',
+  ykeys: ['num'],
+  resize: true,
+  labels: ['Students']
+});
+</script>
+
+
+    
+      
+      <a style="padding-top: 50px; margin-top: -50px; display: table-caption;" name="asm-github-basics"></a><h3>Shell, Git and GitHub Skills</h3>
+      <p>
+        
+      </p>
+      
+        <p>
+        <em>Outcomes assessed:</em>
+          
+            <a href="/fall-2016/outcomes/#out-shell-basics">File System Shell Commands</a>, 
+          
+            <a href="/fall-2016/outcomes/#out-github-basics">Basic Git Functions</a>
+          
+        </p>
+      
+      <p>Student Directory: Assessed knowledge of basic shell, git and GitHub skills.</p>
+
+<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+<div class="well">
+  <div id="asm-github-basics" style="height: 250px;"></div>
+</div>
+
+<script>
+Morris.Bar({
+  element: 'asm-github-basics',
+  hideHover: false,
+  data: [
+        { y: 'Very satisfactory (%)', num: 0 },
+        { y: 'Satisfactory (%)', num: 0 },
+        { y: 'Unsatisfactory (%)', num: 0 },
+        { y: 'Absent (%)', num: 0 },
+        ],
+  xkey: 'y',
+  ykeys: ['num'],
+  resize: true,
+  labels: ['Students']
+});
+</script>
+
+
+    
+      
+      <a style="padding-top: 50px; margin-top: -50px; display: table-caption;" name="asm-html-min"></a><h3>Foundational HTML Skills</h3>
+      <p>
+        
+      </p>
+      
+        <p>
+        <em>Outcomes assessed:</em>
+          
+            <a href="/fall-2016/outcomes/#out-html-min">Write Minimal HTML</a>
+          
+        </p>
+      
+      <p>Student Directory: Assessed knowledge of basic shell, git and GitHub skills.</p>
+
+<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+<div class="well">
+  <div id="asm-html-min" style="height: 250px;"></div>
+</div>
+
+<script>
+Morris.Bar({
+  element: 'asm-html-min',
+  hideHover: false,
+  data: [
+        { y: 'Very satisfactory (%)', num: 0 },
+        { y: 'Satisfactory (%)', num: 0 },
+        { y: 'Unsatisfactory (%)', num: 0 },
+        { y: 'Absent (%)', num: 0 },
+        ],
+  xkey: 'y',
+  ykeys: ['num'],
+  resize: true,
+  labels: ['Students']
+});
+</script>
+
+
+    
+  </div>
+</div>
+
+
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-08-22 05:51:40 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

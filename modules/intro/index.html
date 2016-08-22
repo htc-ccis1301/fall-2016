@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Introduction to Web Development | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li class="active">Introduction to Web Development</li>
+    </ol>
+  </div>
+</div>
+
+<div class="container">
+  <h1><small>Module: </small> Introduction to Web Development </h1>
+  <p><p>This module provides an overview of web standards and architecture and an introduction to web development.</p>
+</p>
+</div>
+
+
+
+
+
+<div class="section-background-1">
+  <div class="container">
+    <h2>Learning Outcomes</h2>
+
+    
+      
+      <h3>Internet Technologies & Standards</h3>
+      <p>
+        
+      </p>
+      <p>Identify key internet technologies, standards and organizations.</p>
+
+<ul>
+  <li>Explain the role of the W3C.</li>
+  <li>Define the acronyms WAI and WCAG and explain their importance.</li>
+  <li>Define universal design and explain its relevance beyond disabilities.</li>
+  <li>Identify key network protocols used by web communications.</li>
+  <li>Explain the relationship between IP addressing and domain names and URIs.</li>
+</ul>
+
+    
+      
+      <h3>Internet Client/Server Architecture</h3>
+      <p>
+        
+      </p>
+      <p>Describe the client/server architecture of the internet, explaining the request-response life-cycle.</p>
+
+<ul>
+  <li>Describe a general client/server architecture.</li>
+  <li>Explain how the internet is an example of a client/server architecture.</li>
+  <li>Explain the process that takes place in order for a web browser to display a web page.</li>
+</ul>
+
+    
+      
+      <h3>File System Shell Commands</h3>
+      <p>
+        
+      </p>
+      <p>Use the shell to perform basic file system commands:</p>
+
+<ul>
+  <li>identify the current working directory</li>
+  <li>view files in the current working directory</li>
+  <li>change the current working directory</li>
+</ul>
+
+    
+      
+      <h3>Basic Git Functions</h3>
+      <p>
+        
+      </p>
+      <p>The student will be able to use git to:</p>
+
+<ul>
+  <li>obtain a local copy of a repository and its files from GitHub</li>
+  <li>stage modified files to be versioned and updated</li>
+  <li>version the changes to the repository files</li>
+  <li>update GitHub with the revised version of the repository files</li>
+</ul>
+
+    
+      
+      <h3>Write Minimal HTML</h3>
+      <p>
+        
+      </p>
+      <p>The student will be able to use a text editor to:</p>
+
+<ul>
+  <li>create a new HTML file</li>
+  <li>identify and add the minimal required HTML elements</li>
+  <li>open an existing HTML file</li>
+  <li>edit and save changes to an HTML file</li>
+  <li>preview the web page in a web browser</li>
+</ul>
+
+    
+
+  </div>
+</div>
+
+
+
+
+
+<div class="section-background-2">
+  <div class="container">
+  <h2>Readings</h2>
+
+    <div class="row">
+      
+        
+        <div class="col-sm-3">
+          <a href="/fall-2016/morea/intro/r1-getting-started.html" class="thumbnail">
+            <h4>Getting Started</h4>
+            <p>Information on the tools we will be using in this course.</p>
+
+            <p>
+              
+              <span class="badge">intro</span>
+              
+              <span class="badge">tools</span>
+              
+            </p>
+          </a>
+        </div>
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <a href="/fall-2016/morea/intro/r2-web-basics.html" class="thumbnail">
+            <h4>Internet & Web Basics</h4>
+            <p>An introduction to web standards, architecture, and an overview of HTML.</p>
+
+            <p>
+              
+              <span class="badge">intro</span>
+              
+            </p>
+          </a>
+        </div>
+      
+      
+      
+      
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="section-background-1">
+  <div class="container">
+  <h2>Experiential Learning</h2>
+
+    <div class="row">
+      
+        
+        <div class="col-sm-3">
+          <a href="/fall-2016/morea/intro/e1-install-brackets.html" class="thumbnail">
+            <h4>Install, Configure, and Use Brackets</h4>
+            <p>Information on installing, configuring and using Brackets.</p>
+
+            <p>
+              
+            </p>
+          </a>
+        </div>
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <a href="/fall-2016/morea/intro/e2-install-git.html" class="thumbnail">
+            <h4>Install Git</h4>
+            <p>How to install git on Windows through GitHub Desktop, and check for and install git (if needed) on a Mac.</p>
+
+            <p>
+              
+            </p>
+          </a>
+        </div>
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <a href="/fall-2016/morea/intro/e3-using-shell.html" class="thumbnail">
+            <h4>Practice Using the Shell</h4>
+            <p>Practice using the shell to perform basic commands.</p>
+
+            <p>
+              
+            </p>
+          </a>
+        </div>
+      
+      
+      
+      
+      
+        
+        <div class="col-sm-3">
+          <a href="/fall-2016/morea/intro/e4-using-github.html" class="thumbnail">
+            <h4>Practice Using Git & GitHub</h4>
+            <p>Practice using the shell, git and GitHub to get, create, update and manage files.</p>
+
+            <p>
+              
+            </p>
+          </a>
+        </div>
+      
+      </div><div class="row">
+      
+      
+      
+      
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="section-background-2">
+  <div class="container">
+    <h2>Assessments</h2>
+
+    
+      
+      <h3>Internet technologies, standards, organizations, and architecture</h3>
+      <p>
+        
+      </p>
+    
+    <p>
+      <em>Outcomes assessed:</em>
+      
+      <a href="/outcomes/#out-standards">Internet Technologies & Standards</a>, 
+      
+      <a href="/outcomes/#out-web-arch">Internet Client/Server Architecture</a>
+      
+    </p>
+    
+      <p>Quiz 1: Assessed knowledge of Internet technologies, standards, organizations, and architecture.</p>
+
+<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+<div class="well">
+  <div id="asm-standards" style="height: 250px;"></div>
+</div>
+
+<script>
+Morris.Bar({
+  element: 'asm-standards',
+  hideHover: false,
+  data: [
+        { y: 'Very satisfactory (%)', num: 0 },
+        { y: 'Satisfactory (%)', num: 0 },
+        { y: 'Unsatisfactory (%)', num: 0 },
+        { y: 'Absent (%)', num: 0 },
+        ],
+  xkey: 'y',
+  ykeys: ['num'],
+  resize: true,
+  labels: ['Students']
+});
+</script>
+
+
+    
+      
+      <h3>Shell, Git and GitHub Skills</h3>
+      <p>
+        
+      </p>
+    
+    <p>
+      <em>Outcomes assessed:</em>
+      
+      <a href="/outcomes/#out-shell-basics">File System Shell Commands</a>, 
+      
+      <a href="/outcomes/#out-github-basics">Basic Git Functions</a>
+      
+    </p>
+    
+      <p>Student Directory: Assessed knowledge of basic shell, git and GitHub skills.</p>
+
+<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+<div class="well">
+  <div id="asm-github-basics" style="height: 250px;"></div>
+</div>
+
+<script>
+Morris.Bar({
+  element: 'asm-github-basics',
+  hideHover: false,
+  data: [
+        { y: 'Very satisfactory (%)', num: 0 },
+        { y: 'Satisfactory (%)', num: 0 },
+        { y: 'Unsatisfactory (%)', num: 0 },
+        { y: 'Absent (%)', num: 0 },
+        ],
+  xkey: 'y',
+  ykeys: ['num'],
+  resize: true,
+  labels: ['Students']
+});
+</script>
+
+
+    
+      
+      <h3>Foundational HTML Skills</h3>
+      <p>
+        
+      </p>
+    
+    <p>
+      <em>Outcomes assessed:</em>
+      
+      <a href="/outcomes/#out-html-min">Write Minimal HTML</a>
+      
+    </p>
+    
+      <p>Student Directory: Assessed knowledge of basic shell, git and GitHub skills.</p>
+
+<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css" />
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+
+<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+<div class="well">
+  <div id="asm-html-min" style="height: 250px;"></div>
+</div>
+
+<script>
+Morris.Bar({
+  element: 'asm-html-min',
+  hideHover: false,
+  data: [
+        { y: 'Very satisfactory (%)', num: 0 },
+        { y: 'Satisfactory (%)', num: 0 },
+        { y: 'Unsatisfactory (%)', num: 0 },
+        { y: 'Absent (%)', num: 0 },
+        ],
+  xkey: 'y',
+  ykeys: ['num'],
+  resize: true,
+  labels: ['Students']
+});
+</script>
+
+
+    
+
+  </div>
+</div>
+
+
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-08-22 05:51:40 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

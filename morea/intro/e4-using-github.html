@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Practice Using Git & GitHub | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/intro">Introduction to Web Development</a></li>
+      <li class="active">Practice Using Git & GitHub</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="practice-using-git-and-github">Practice using Git and GitHub</h1>
+<p>If you do not already have a <a href="https://github.com/">GitHub</a> account, please visit the website to register for a free public account now.  If you use your student email, you can later request a free Personal account upgrade through the GitHub <a href="https://education.github.com/pack">Student Developer Pack</a>.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The following topics were covered earlier:</p>
+
+<ul>
+  <li><a href="/fall-2016/morea/intro/e2-install-git.html}}">Install Git</a>: To complete this exercise, you need to have git installed.</li>
+  <li><a href="/fall-2016/morea/intro/e3-using-shell.html}}">Using the Shell</a>: I will assume that you know how to access the appropriate shell for your OS that is able to execute git commands.</li>
+</ul>
+
+<h2 id="github-assignment-workflow">GitHub Assignment Workflow</h2>
+
+<ol>
+  <li>Most assignments will begin with a starter repository that you will <em>_fork_</em>.  This gives you a general layout for the project and any starter code that you should have to begin.</li>
+  <li>You’ll then <em>_clone_</em> the repository to your computer, this gets you the files to edit.</li>
+  <li>Add or edit files to make changes and then <em>_add_</em> to the staged version.</li>
+  <li>Then you <em>_commit_</em> the version to your local repository.  It’s a good habit to commit code locally (on your computer) often.  This allows you to make specific notes on what you’ve done in the commit messages, and gives you a point to go back to if you want to undo something.</li>
+  <li>When you’re done with a chunk of work, or just need to save it <em>in the cloud</em> to go home for the night, you <em>_push_</em> your changes up to GitHub.</li>
+  <li>(Optional) To get those changes on another computer where the files have already been cloned, you <em>fetch</em> or <em>pull</em> them.</li>
+  <li>When you are done with the assignment and are ready to submit it for grading, you make a <em>_pull request_</em>.  This allows me to give you in-code feedback as I  grade.</li>
+</ol>
+
+<p>Let’s walk through this workflow on the student directory project.</p>
+
+<h3 id="fork">Fork</h3>
+<p>First you’ll get your own copy of the repository, this called “forking”. A fork is your own personal copy of code.  You can modify it in any way you like, and it does not affect the person you copied it from.  However it does maintain a link, which we’ll discuss later.</p>
+
+<ol>
+  <li>
+    <p>Go to our <a href="https://github.com/htc-ccis1301">GitHub CCIS1301 Org page</a>.  You’ll notice there is a repository there called <a href="https://github.com/htc-ccis1301/students">students</a>.<br />
+  <img src="../assets/images/s1/github_org_students.jpg" alt="GitHub page snippet showing the organization page." /></p>
+  </li>
+  <li>
+    <p>Click the link to go to the repository page, then click the icon in the upper right to <em>fork</em> the repository to your account.<br />
+  <img src="../assets/images/s1/github_fork.jpg" alt="GitHub page snippet showing the location of the fork button." /></p>
+  </li>
+  <li>
+    <p>Now go to your GitHub page and you should see students under your repositories.  This is a copy of the repository from our class organization.  You can see the note that says it is forked.  That let’s you know that it is a copy.
+  <img src="../assets/images/s1/github_forked_students.jpg" alt="GitHub page snippet showing forked repository on personal account." /></p>
+  </li>
+  <li>
+    <p>This is <em>your</em> copy.  The changes you make here are not made to the original repository in our organization.</p>
+  </li>
+</ol>
+
+<h3 id="clone">Clone</h3>
+<p>Now you need to get the repository onto your computer so that you can work with it.  This is called “cloning”.</p>
+
+<div class="alert alert-danger" role="alert">
+When you clone a repository for class, it is important that you do it from your fork of that repository. Look for your user id before the repository name and in the clone URL. If you clone the class repository you will not be able to push up your changes.
+</div>
+
+<ol>
+  <li>
+    <p>Click on the students link to go to the repository page.</p>
+  </li>
+  <li>
+    <p>Copy the URL from the repository page.<br />
+  <img src="../assets/images/s1/github_clone_url_updated.png" alt="GitHub page snippet showing the location of the clone url." /></p>
+  </li>
+  <li>
+    <p>Next we leave the browser and go to the command prompt.  On Windows, you’ll want to use  GitShell which is part of GitHub for Windows.  On Mac, you can just use Terminal, but you may need to install git.  I will refer to this generically as the shell.  (See the install info at the bottom to set this up on your own computer.)</p>
+  </li>
+  <li>
+    <p>In the shell, go to the location where you want the repository to be pulled down.  Then use the <code>git clone</code> command to get a local copy.
+<br /><code class="highlighter-rouge">$ git clone &lt;your-clone-url-here&gt;</code></p>
+  </li>
+  <li>
+    <p>Now if you list your files/directories, you will see a students directory in that location.</p>
+  </li>
+  <li>
+    <p>When working with the repository, you need to be inside the git repository directory.  To go into a directory use the change directory command <code class="highlighter-rouge">cd</code>.  When you enter the command, you need to add the directory name after the cd.  So enter <code class="highlighter-rouge">cd students</code> to go into the students directory.</p>
+  </li>
+</ol>
+
+<h3 id="make-changes">Make Changes</h3>
+<p>Now that you’ve got a copy, you can make changes to the original files.  You edit the files as you would any other code, using whatever editor you prefer.  (In the classroom, we have <a href="http://brackets.io/">Brackets</a> installed for you.)  When you’re ready to save a change, you’ll make a commit.</p>
+
+<ol>
+  <li>
+    <p>Let’s add your information to the directory.  Go into the students directory.  You should see an _data directory with a subdirectory for the current semester.</p>
+  </li>
+  <li>
+    <p>Make a copy of my <em>mbmosman.yml</em> file and edit the name so that it is <strong><em>your GitHub</em></strong> user name.</p>
+  </li>
+  <li>
+    <p>Open the file in an editor and update the contents to include information about you.  Here’s a list of the <a href="http://www.emoji-cheat-sheet.com/">emoji</a> you can use.  Be careful with the formatting.  It’s key / value pairs, with the key followed by a colon (:) and then the value.  Each should be on its own line.  This is <a href="http://www.yaml.org/start.html">YAML</a> data.</p>
+  </li>
+  <li>
+    <p>In most cases, you’d now test to make sure things look OK.  While you could test this locally, there’s some extra set up needed for this type of Jekyll GitHub Pages site.  (Look it up later if you are curious.  This is how the course web site is built too.)  We’ll skip the testing and just commit our change, but you might need to come back later and fix it if you weren’t careful.</p>
+  </li>
+  <li>
+    <p>When you’re done, it’s back to the command line.  Use the <code>git status</code> command to see what changes you have made.<br /><code>$ git status</code></p>
+  </li>
+  <li>
+    <p>You should see that you’ve got an untracked file.  Use the <code>git add</code> command to add your file.  You can append the file name to the command to add a single file, or you can add a . to add all the new files at once.<br /><code>$ git add &lt;your-file-name-here&gt;</code><br />OR<br /><br /><code>$ git add .</code></p>
+  </li>
+  <li>
+    <p>Use git status to verify that you’re file has been added.</p>
+  </li>
+  <li>
+    <p>Now it’s time to commit the change.  This will version your change in your local git repository.  Use the <code>git commit</code> command.<br /><code>$ git commit -m "Your message about the change here."</code></p>
+  </li>
+  <li>
+    <p>It’s good to commit small groups of changes with specific messages.</p>
+  </li>
+</ol>
+
+<h3 id="push-changes">Push Changes</h3>
+<p>To get your changes from your local repository to the GitHub repository you do a push.</p>
+
+<ol>
+  <li>
+    <p>Before you push your changes, you should check that the branch you are on matches the remote branch you want to push to. It will often be master in the real world, but for many of our class assignments, which are web pages we want GitHub to host for us, it will be gh-pages.  You can see which branch you are working on by using the <code>git branch</code> command.</p>
+  </li>
+  <li>
+    <p>If your local and remote branches match, then you can just say <code class="highlighter-rouge">git push</code> and everything should go up to GitHub.</p>
+  </li>
+  <li>
+    <p>If your local and remote branches are different, then you need to say which remote branch you want to push to:<br /><code class="highlighter-rouge">$ git push origin &lt;remote-branch-here&gt;</code></p>
+  </li>
+  <li>
+    <p>Check the GitHub repository page in the browser to make sure you got the changes up successfully.<br />
+  <img src="../assets/images/s1/github_pushed_changes.jpg" alt="GitHub page snippet showing the time of the last update." /></p>
+  </li>
+</ol>
+
+<h3 id="test">Test!</h3>
+<p>Before asking to merger your changes back into the class repository you should make sure you didn’t break anything.  In GitHub, if you click on the Settings tab for your students repository, you should see that there is a URL where you page is published.
+<img src="../assets/images/s1/github_test_changes.png" alt="GitHub Settings page snippet showing the location of the publish URL." /></p>
+
+<p>When you click the URL, you should see the Student Directory page with both my profile and yours.<br />
+<img src="../assets/images/s1/github_test_page.png" alt="Student Directory page snippet." /></p>
+
+<p>If the page is not coming up, double check the syntax and naming of your .yml file.  If you are not seeing your picture or icon, then your file name is not the same as your GitHub user id.</p>
+
+<h3 id="pull-request">Pull Request</h3>
+<p>The changes are still on your copy of the students repository.  To get them back to the course organization repository you will create a pull request.  This is the last step - the part that turns in your assignment.</p>
+
+<ol>
+  <li>
+    <p>From your repository page, click the Pull Requests tab.<br />
+  <img src="../assets/images/s1/github_pullreq_tab.jpg" alt="GitHub page snippet showing the pull request tab." /></p>
+  </li>
+  <li>
+    <p>Click the green button to create a new pull request.
+  <img src="../assets/images/s1/github_new_pullreq.jpg" alt="GitHub page snippet showing the create pull request button." /></p>
+  </li>
+  <li>
+    <p>The next screen will show you all the changes between your copy of the repository and the original.  Review the changes, then click the green button to create the request.</p>
+  </li>
+  <li>
+    <p>The next page allows you to enter a commit message and (optionally) comments for the reviewer.</p>
+  </li>
+</ol>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-08-22 05:51:40 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
