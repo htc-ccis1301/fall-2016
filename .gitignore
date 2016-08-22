@@ -1,5 +1,19 @@
-# Keep IntelliJ files out of github to reduce potential conflicts when others import.
-
+# IntelliJ files
+#################
 .idea
 core.iml
+
+# Jekyll
+##############
 src/_site
+
+
+# OS Files
+##############
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

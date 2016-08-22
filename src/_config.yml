@@ -1,11 +1,11 @@
-name: Morea CORE (Change me)
+name: CCIS1301 Fall 2016
 markdown: kramdown
 kramdown:
   hard_wrap: false
   input: GFM
   syntax_highlighter: rouge
 mathjax: true
-baseurl: /core
+baseurl: /fall-2016
 exclude: [morea]
 morea_theme: spacelab
 morea_navbar_items:
@@ -15,14 +15,17 @@ morea_navbar_items:
   - Readings
   - Experiences
   - Assessments
-  #- Schedule
+  - Schedule
+
+gems:
+  - jekyll-gist
 
 # The following properties are optional.
 # See the User Guide (http://morea-framework.github.io/userguide.html) for more info.
 
-# morea_course: ics311
-# morea_domain: http://morea-framework.github.io/
-# morea_google_analytics_tracking_id: "<your tracking id here>"
+morea_course: CCIS 1301
+morea_domain: http://htc-ccis1301.github.io/
+morea_google_analytics_tracking_id: "UA-63189236-5"
 
 #morea_head_breadcrumb_link: "http://cnn.com"
 #morea_head_breadcrumb_label: "CNN Site"

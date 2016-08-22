@@ -104,27 +104,8 @@
       {% else %}
       No footer page content supplied.
       {% endif %}
-      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a> (Theme: {{ site.morea_theme }})<br>
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
         Last update on: <span>{{ site.time }}</span></p>
-
-      <p style="margin: 0">
-        {% if site.morea_navbar_items contains 'Prerequisites' %}
-        {{ site.morea_prerequisite_pages.size }} prerequisites |
-        {% endif %}
-        {{ site.morea_module_pages.size }} modules
-        {% if site.morea_navbar_items contains 'Outcomes' %}
-        | {{ site.morea_outcome_pages.size }} outcomes
-        {% endif %}
-        {% if site.morea_navbar_items contains 'Readings' %}
-        | {{ site.morea_reading_pages.size }} readings
-        {% endif %}
-        {% if site.morea_navbar_items contains 'Experiences' %}
-        | {{ site.morea_experience_pages.size }} experiences
-        {% endif %}
-        {% if site.morea_navbar_items contains 'Assessments' %}
-        | {{ site.morea_assessment_pages.size }} assessments
-        {% endif %}
-      </p>
     </div>
   </footer>
 </div>
