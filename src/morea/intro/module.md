@@ -11,6 +11,8 @@ morea_outcomes:
 morea_readings:
  - getting-started
  - web-basics
+ - shell-basics
+ - github-basics
 morea_experiences:
  - install-brackets
  - install-git

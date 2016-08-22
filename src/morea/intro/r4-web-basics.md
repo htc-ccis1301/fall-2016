@@ -4,12 +4,13 @@ published: true
 morea_id: web-basics
 morea_summary: "An introduction to web standards, architecture, and an overview of HTML."
 morea_type: reading
-morea_sort_order: 2
+morea_sort_order: 4
 morea_labels:
- - intro
+ - textbook
+ 
 ---
 
-Chapter 1 of your textbook (Basics of Web Design: HTML5 & CSS3)[http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/] covers an introduction to web standards and architecture followed by an overview of HTML.
+Read Chapter 1 of your textbook (Basics of Web Design: HTML5 & CSS3)[http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/] which covers an introduction to web standards and architecture followed by an overview of HTML.
 
 ## Part 1 - Standards and Architecture
 As you read through the first part of the chapter (pages 1-14), pay attention to the various standards and technologies that allow the internet to function.  You will need to be able to identify them and explain how they are used.  It is also important that you understand at a high-level the client/server architecture of the internet and how a web browser displays a web page.

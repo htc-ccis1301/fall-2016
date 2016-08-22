@@ -11,9 +11,9 @@ morea_outcomes_assessed:
 
 Quiz 1: Assessed knowledge of Internet technologies, standards, organizations, and architecture.
 
-<link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+<link rel="stylesheet" href="https://cdn.oesmith.co.uk/morris-0.4.3.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+<script src="https://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
 
 <div class="well">
   <div id="asm-standards" style="height: 250px;"></div>

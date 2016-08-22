@@ -9,8 +9,5 @@ morea_sort_order: 3
 
 # Practice using the shell
 
-## Launching GitShell on Windows
-If you are a Windows user, typically you will use PowerShell as your command shell.  However, when working with git commands, you'll want to make sure that you launch GitShell which you should now have installed as part of GitHub Desktop. (If you did not install this yet, go back and work through the steps outlined in [Getting Started]() ) GitShell is PowerShell plus git commands, and since we will mainly be using the shell for git commands, you will want to use GitShell for your work in this course.
-
-
-## Using Terminal on Mac
+## Launching the shell
+It is important that you can recognize and launch the appropriate shell for your system. From this point on, I will refer to the shell generically.  If you are a Windows user, launch GitShell.  If you are working on a Mac, launch Terminal.
