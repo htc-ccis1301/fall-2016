@@ -16,8 +16,8 @@ morea_readings:
 morea_experiences:
  - install-brackets
  - install-git
- - using-shell
  - using-github
+ - first-page
 morea_assessments:
  - asm-standards
  - asm-github-basics
