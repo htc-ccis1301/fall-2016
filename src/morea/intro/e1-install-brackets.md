@@ -8,6 +8,14 @@ morea_sort_order: 1
 ---
 
 # Install Configure, and Use Brackets
+Let's walk through how to install, configure and use Brackets.  
+<div style="padding:10px 20px">
+<div class="row">
+<div class="col-xs-12 col-md-8">
+  {%  include youtube.html  id="_MXzMRgPnvs" %}
+</div>
+</div>
+</div>
 
 ## Install
 If you have not already done so, download Brackets from the [Brackets.io](http://brackets.io/) website.  Once you have completed the download, run the installer.  
@@ -20,7 +28,7 @@ After the install has completed, run Brackets and use the extension manager to i
 - Beautify (by Drew Hamlett)
 - HTMLHint (by Raymond Camden)
 - CSSLint (by Raymond Camden)
-- Pop-up Menu Brackets (by Denisov21) *_optional_*
+- Pop-up Menu Brackets (by Denisov21) *__optional__*
 
 ## Tips for Use
 
