@@ -13,20 +13,20 @@ If you do not already have a [GitHub](https://github.com/) account, please visit
 ## Prerequisites
 The following topics were covered earlier:
 
-- [Install Git]( {{ site.baseurl }}/morea/intro/e2-install-git.html ): To complete this exercise, you need to have git installed.  
+- [Install Git]( {{ site.baseurl }}/morea/intro/ex-install-git.html ): To complete this exercise, you need to have git installed.  
 - [Install, Configure, and Use Brackets]( {{ site.baseurl }}/morea/intro/e1-install-brackets.html ): You should use Brackets to edit the files.  
 - [Shell Basics]( {{ site.baseurl }}/morea/intro/r2-shell-basics.html ): I will assume that you know how to access the appropriate shell for your OS that is able to execute git commands.
 
 
 ## GitHub Assignment Workflow
 
-1. Most assignments will begin with a starter repository that you will *_fork_*.  This gives you a general layout for the project and any starter code that you should have to begin.  
-2. You'll then *_clone_* the repository to your computer, this gets you the files to edit.
-3. Add or edit files to make changes and then *_add_* to the staged version.
-4. Then you *_commit_* the version to your local repository.  It's a good habit to commit code locally (on your computer) often.  This allows you to make specific notes on what you've done in the commit messages, and gives you a point to go back to if you want to undo something.  
-4. When you're done with a chunk of work, or just need to save it *in the cloud* to go home for the night, you *_push_* your changes up to GitHub.  
-5. (Optional) To get those changes on another computer where the files have already been cloned, you *fetch* or *pull* them.  
-6. When you are done with the assignment and are ready to submit it for grading, you make a *_pull request_*.  This allows me to give you in-code feedback as I  grade.  
+1. Most assignments will begin with a starter repository that you will *__fork__*.  This gives you a general layout for the project and any starter code that you should have to begin.  
+2. You'll then *__clone__* the repository to your computer, this gets you the files to edit.
+3. Add or edit files to make changes and then *__add__* to the staged version.
+4. Then you *__commit__* the version to your local repository.  It's a good habit to commit code locally (on your computer) often.  This allows you to make specific notes on what you've done in the commit messages, and gives you a point to go back to if you want to undo something.  
+4. When you're done with a chunk of work, or just need to save it *in the cloud* to go home for the night, you *__push__* your changes up to GitHub.  
+5. (Optional) To get those changes on another computer where the files have already been cloned, you *__pull__* them.  
+6. When you are done with the assignment and are ready to submit it for grading, you make a *__pull request__*.  This allows me to give you in-code feedback as I  grade.   
 
 Let's walk through this workflow on the student directory project.  
 <div style="padding:10px 20px">
