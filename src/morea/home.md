@@ -73,7 +73,7 @@ Want to know more about me and how I got interested in computing and managed to 
 <div style="padding:20px">
 <div class="row">
 <div class="col-xs-12 col-md-8 col-md-push-2">
-  {%  include youtube.html  id="\_UAR5GGaB40" %}
+  {%  include youtube.html  id="_UAR5GGaB40" %}
 </div>
 </div>
 </div>

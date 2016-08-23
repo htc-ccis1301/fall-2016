@@ -18,49 +18,85 @@ Having the $ there to indicate the prompt is important as it allows us to differ
 
 For example, the `pwd` command tells you your current working directory. Basically, this tells you where you are located within your computer's file system tree.
 
-{% highlight bash %}
-$ pwd
-/Users/marymosman/Development/html/students
-{% endhighlight %}
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  {% highlight bash %}
+  $ pwd
+  /Users/marymosman/Development/html/students
+  {% endhighlight %}
+</div>
+</div>
+</div>
+
 
 When you try out this command, only type `pwd` into your shell window, do not type the $, then hit enter. It will output your current working directory on the next line, which will be different from the example shown.  It will then give you a prompt again.   
 
 This is what it actually looks like on my computer.  I'm running on a Mac, so this is the Terminal.
-<img src="{{ "/morea/intro/shell-github-cmds/terminal-pwd-cmd.png" | prepend:site.baseurl }}" alt="Terminal showing pwd command">
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+   <img class="img-responsive" src="{{ "/morea/intro/shell-github-cmds/terminal-pwd-cmd.png" | prepend:site.baseurl }}" alt="Terminal showing pwd command">
+</div>
+</div>
+</div>
 
 There are really only two other basic shell commands that you need to know to get through this course - `ls` and `cd`.
 
 The `ls`, or list, command will list all of the files and directories inside the current working directory.
 
-{% highlight bash %}
-$ ls
-Gemfile        _data          _sass           javascripts
-README.md      _includes      assets          stylesheets
-_config.yml    _layouts       index.html
-{% endhighlight %}
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+   {% highlight bash %}
+   $ ls
+   Gemfile        _data          _sass           javascripts
+   README.md      _includes      assets          stylesheets
+   _config.yml    _layouts       index.html
+   {% endhighlight %}
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="{{ "/morea/intro/shell-github-cmds/terminal-ls-cmd.png" | prepend:site.baseurl }}" alt="Terminal showing ls command">
+</div>
+</div>
+</div>
 
-<img src="{{ "/morea/intro/shell-github-cmds/terminal-ls-cmd.png" | prepend:site.baseurl }}" alt="Terminal showing ls command">
 
 The `cd`, or change directory, command will change your working directory. When you enter the command, you type the directory to change to after the `cd`.  So if we want to go into the _data directory, we would enter:
 
-{% highlight bash %}
-$ cd _data
-{% endhighlight %}
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  {% highlight bash %}
+  $ cd _data
+  {% endhighlight %}
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="{{ "/morea/intro/shell-github-cmds/terminal-cd-cmd.png" | prepend:site.baseurl }}" alt="Terminal showing cd command">
+</div>
+</div>
+</div>
 
-Notice there is no output this time.  
-
-<img src="{{ "/morea/intro/shell-github-cmds/terminal-cd-cmd.png" | prepend:site.baseurl }}" alt="Terminal showing cd command">
-
+Notice there is no output this time.
 The cd command will not give output unless there is an error.  Make sure to watch for those.  
 
-To go up a directory you enter `cd ..`
+To go up a directory you use two dots/periods.  
 
-{% highlight bash %}
-$ cd ..
-{% endhighlight %}
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  {% highlight bash %}
+  $ cd ..
+  {% endhighlight %}
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="{{ "/morea/intro/shell-github-cmds/terminal-cd2-cmd.png" | prepend:site.baseurl }}" alt="Terminal showing cd .. command">
+</div>
+</div>
+</div>
 
-Again there is no output, but you can use the `pwd` command to see that the working directory has changed:
-<img src="{{ "/morea/intro/shell-github-cmds/terminal-cd2-cmd.png" | prepend:site.baseurl }}" alt="Terminal showing cd .. command">
+Again there is no output, but you can use the `pwd` command to see that the working directory has changed.
+
 
 
 ## Git Commands

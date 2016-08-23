@@ -10,9 +10,9 @@ morea_outcomes:
  - out-html-min
 morea_readings:
  - getting-started
- - web-basics
  - shell-basics
  - github-basics
+ - web-basics
 morea_experiences:
  - install-brackets
  - install-git
