@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Practice Using Git & GitHub | CCIS1301 Fall 2016 </title>
+  <title> Git & GitHub: Update the Student Directory | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -97,7 +97,7 @@
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
       <li><a href="/fall-2016/modules/intro">Introduction to Web Development</a></li>
-      <li class="active">Practice Using Git & GitHub</li>
+      <li class="active">Git & GitHub: Update the Student Directory</li>
     </ol>
   </div>
 </div>
@@ -111,8 +111,9 @@
 <p>The following topics were covered earlier:</p>
 
 <ul>
-  <li><a href="/fall-2016/morea/intro/e2-install-git.html}}">Install Git</a>: To complete this exercise, you need to have git installed.</li>
-  <li><a href="/fall-2016/morea/intro/e3-using-shell.html}}">Using the Shell</a>: I will assume that you know how to access the appropriate shell for your OS that is able to execute git commands.</li>
+  <li><a href="/fall-2016/morea/intro/e2-install-git.html">Install Git</a>: To complete this exercise, you need to have git installed.</li>
+  <li><a href="/fall-2016/morea/intro/e1-install-brackets.html">Install, Configure, and Use Brackets</a>: You should use Brackets to edit the files.</li>
+  <li><a href="/fall-2016/morea/intro/r2-shell-basics.html">Shell Basics</a>: I will assume that you know how to access the appropriate shell for your OS that is able to execute git commands.</li>
 </ul>
 
 <h2 id="github-assignment-workflow">GitHub Assignment Workflow</h2>
@@ -128,25 +129,34 @@
 </ol>
 
 <p>Let’s walk through this workflow on the student directory project.</p>
+<div style="padding:10px 20px">
+<div class="row">
+<div class="col-xs-12 col-md-8">
+  <div class="video-container">
+  <iframe src="http://www.youtube.com/embed/ESzwfyVeqsg" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+</div>
+</div>
+</div>
 
 <h3 id="fork">Fork</h3>
 <p>First you’ll get your own copy of the repository, this called “forking”. A fork is your own personal copy of code.  You can modify it in any way you like, and it does not affect the person you copied it from.  However it does maintain a link, which we’ll discuss later.</p>
 
 <ol>
   <li>
-    <p>Go to our <a href="https://github.com/htc-ccis1301">GitHub CCIS1301 Org page</a>.  You’ll notice there is a repository there called <a href="https://github.com/htc-ccis1301/students">students</a>.<br />
-  <img src="../assets/images/s1/github_org_students.jpg" alt="GitHub page snippet showing the organization page." /></p>
+    <p>Go to our <a href="https://github.com/htc-ccis1301">GitHub CCIS1301 Org page</a>.  You’ll notice there is a repository there called <a href="https://github.com/htc-ccis1301/html-students">html-students</a>.</p>
   </li>
   <li>
-    <p>Click the link to go to the repository page, then click the icon in the upper right to <em>fork</em> the repository to your account.<br />
-  <img src="../assets/images/s1/github_fork.jpg" alt="GitHub page snippet showing the location of the fork button." /></p>
+    <p>Click the link to go to the repository page, then click the icon in the upper right corner to <em>fork</em> the repository to your account.<br />
+  <img class="img-responsive" src="/fall-2016/morea/intro/github-demo/github_fork.png" alt="GitHub page snippet showing the location of the fork button." /></p>
   </li>
   <li>
     <p>Now go to your GitHub page and you should see students under your repositories.  This is a copy of the repository from our class organization.  You can see the note that says it is forked.  That let’s you know that it is a copy.
-  <img src="../assets/images/s1/github_forked_students.jpg" alt="GitHub page snippet showing forked repository on personal account." /></p>
+  <img class="img-responsive" src="/fall-2016/morea/intro/github-demo/github_forked_students.png" alt="GitHub page snippet showing forked repository on personal account." /></p>
   </li>
   <li>
-    <p>This is <em>your</em> copy.  The changes you make here are not made to the original repository in our organization.</p>
+    <p>This is <em>your</em> copy.  The changes you make here are only visible to you.  They are not made in the original class repository.</p>
   </li>
 </ol>
 
@@ -154,53 +164,55 @@
 <p>Now you need to get the repository onto your computer so that you can work with it.  This is called “cloning”.</p>
 
 <div class="alert alert-danger" role="alert">
-When you clone a repository for class, it is important that you do it from your fork of that repository. Look for your user id before the repository name and in the clone URL. If you clone the class repository you will not be able to push up your changes.
+When you clone a repository for class, it is important that you do it from your fork of that repository. Look for your user id before the repository name in the clone URL. If you clone the class repository you will not be able to push up your changes.
 </div>
 
 <ol>
   <li>
-    <p>Click on the students link to go to the repository page.</p>
+    <p>Click on the html-students link to go to the repository page.</p>
   </li>
   <li>
     <p>Copy the URL from the repository page.<br />
-  <img src="../assets/images/s1/github_clone_url_updated.png" alt="GitHub page snippet showing the location of the clone url." /></p>
+  <img class="img-responsive" src="/fall-2016/morea/intro/github-demo/github_clone_url.png" alt="GitHub page snippet showing the location of the clone url." /></p>
   </li>
   <li>
-    <p>Next we leave the browser and go to the command prompt.  On Windows, you’ll want to use  GitShell which is part of GitHub for Windows.  On Mac, you can just use Terminal, but you may need to install git.  I will refer to this generically as the shell.  (See the install info at the bottom to set this up on your own computer.)</p>
+    <p>Next we leave the browser and go to the shell and go to the location where you want the repository to be pulled down. (Use the <code class="highlighter-rouge">cd</code> command to change your directory.)</p>
   </li>
   <li>
-    <p>In the shell, go to the location where you want the repository to be pulled down.  Then use the <code>git clone</code> command to get a local copy.
-<br /><code class="highlighter-rouge">$ git clone &lt;your-clone-url-here&gt;</code></p>
+    <p>Use the <code class="highlighter-rouge">git clone</code> command to get a local copy. <br /><code class="highlighter-rouge">$ git clone &lt;paste-clone-url-here&gt;</code></p>
   </li>
   <li>
-    <p>Now if you list your files/directories, you will see a students directory in that location.</p>
+    <p>Use the <code class="highlighter-rouge">ls</code> command to list the files/directories, and should now see a new html-students directory in that location.</p>
   </li>
   <li>
-    <p>When working with the repository, you need to be inside the git repository directory.  To go into a directory use the change directory command <code class="highlighter-rouge">cd</code>.  When you enter the command, you need to add the directory name after the cd.  So enter <code class="highlighter-rouge">cd students</code> to go into the students directory.</p>
+    <p>When working with a git repository, you need to be inside the repository directory.  Use the <code class="highlighter-rouge">cd</code> (change directory) command to go into the html-students directory.</p>
   </li>
 </ol>
 
 <h3 id="make-changes">Make Changes</h3>
-<p>Now that you’ve got a copy, you can make changes to the original files.  You edit the files as you would any other code, using whatever editor you prefer.  (In the classroom, we have <a href="http://brackets.io/">Brackets</a> installed for you.)  When you’re ready to save a change, you’ll make a commit.</p>
+<p>Now that you have a personal copy of the student directory, you can make changes to the project files.  Use <a href="http://brackets.io/">Brackets</a> to add a new file as indicated below.</p>
 
 <ol>
   <li>
-    <p>Let’s add your information to the directory.  Go into the students directory.  You should see an _data directory with a subdirectory for the current semester.</p>
+    <p>In the html-students directory.  You should see an _data directory with a subdirectory for the current semester.</p>
   </li>
   <li>
-    <p>Make a copy of my <em>mbmosman.yml</em> file and edit the name so that it is <strong><em>your GitHub</em></strong> user name.</p>
+    <p>Locate my <em>mbmosman.yml</em> file.  This is a<a href="http://www.yaml.org/start.html">YAML</a> file, a format based on key/value pairs separated by a colon (:).</p>
   </li>
   <li>
-    <p>Open the file in an editor and update the contents to include information about you.  Here’s a list of the <a href="http://www.emoji-cheat-sheet.com/">emoji</a> you can use.  Be careful with the formatting.  It’s key / value pairs, with the key followed by a colon (:) and then the value.  Each should be on its own line.  This is <a href="http://www.yaml.org/start.html">YAML</a> data.</p>
+    <p>Make a copy of the file and rename to <em>your</em> GitHub user name with the .yml extension.</p>
   </li>
   <li>
-    <p>In most cases, you’d now test to make sure things look OK.  While you could test this locally, there’s some extra set up needed for this type of Jekyll GitHub Pages site.  (Look it up later if you are curious.  This is how the course web site is built too.)  We’ll skip the testing and just commit our change, but you might need to come back later and fix it if you weren’t careful.</p>
+    <p>Open the file in Brackets and update the contents to have your name, a custom emoji, and a short introduction.  Here’s a list of the <a href="http://www.emoji-cheat-sheet.com/">emoji</a> you can use.  Be careful with the formatting. Do not put colons around the emoji name.</p>
   </li>
   <li>
-    <p>When you’re done, it’s back to the command line.  Use the <code>git status</code> command to see what changes you have made.<br /><code>$ git status</code></p>
+    <p>In most cases, you’d now test to make sure things look OK.  While you could test this locally, there’s some extra set up needed for this type of Jekyll GitHub Pages site.  (Look it up later if you are curious.  This is how the course web site is built too.)  We’ll skip the testing locally and just commit our change, but you might need to come back later and fix it if you weren’t careful.</p>
   </li>
   <li>
-    <p>You should see that you’ve got an untracked file.  Use the <code>git add</code> command to add your file.  You can append the file name to the command to add a single file, or you can add a . to add all the new files at once.<br /><code>$ git add &lt;your-file-name-here&gt;</code><br />OR<br /><br /><code>$ git add .</code></p>
+    <p>Go back to the shell and use the <code>git status</code> command to see what changes you have made.<br /><code>$ git status</code></p>
+  </li>
+  <li>
+    <p>You should see that you’ve got an untracked file.  Use the <code>git add</code> command to add your file.  You can append the file name to the command to add a single file, or you can add a . to add all the new files at once.<br /><code>$ git add &lt;your-file-name-here&gt;</code><br />OR<br /><code>$ git add .</code></p>
   </li>
   <li>
     <p>Use git status to verify that you’re file has been added.</p>
@@ -218,7 +230,7 @@ When you clone a repository for class, it is important that you do it from your 
 
 <ol>
   <li>
-    <p>Before you push your changes, you should check that the branch you are on matches the remote branch you want to push to. It will often be master in the real world, but for many of our class assignments, which are web pages we want GitHub to host for us, it will be gh-pages.  You can see which branch you are working on by using the <code>git branch</code> command.</p>
+    <p>Before you push your changes, you should check that the branch you are on matches the remote branch you want to push to. It will often be master in the real world, but for our class assignments, which we want GitHub to host for us, it will be gh-pages.  You can see which branch you are working on by using the <code>git branch</code> command.</p>
   </li>
   <li>
     <p>If your local and remote branches match, then you can just say <code class="highlighter-rouge">git push</code> and everything should go up to GitHub.</p>
@@ -228,36 +240,35 @@ When you clone a repository for class, it is important that you do it from your 
   </li>
   <li>
     <p>Check the GitHub repository page in the browser to make sure you got the changes up successfully.<br />
-  <img src="../assets/images/s1/github_pushed_changes.jpg" alt="GitHub page snippet showing the time of the last update." /></p>
+  <img class="img-responsive" src="/fall-2016/morea/intro/github-demo/github_pushed_changes.jpg" alt="GitHub page snippet showing the time of the last update." /></p>
   </li>
 </ol>
 
 <h3 id="test">Test!</h3>
-<p>Before asking to merger your changes back into the class repository you should make sure you didn’t break anything.  In GitHub, if you click on the Settings tab for your students repository, you should see that there is a URL where you page is published.
-<img src="../assets/images/s1/github_test_changes.png" alt="GitHub Settings page snippet showing the location of the publish URL." /></p>
+<p>Before asking to merge your changes back into the class repository you should make sure you didn’t break anything.  In GitHub, if you click on the Settings tab for your html-students repository, you should see highlighted in green a URL where your page is published.
+<img class="img-responsive" src="/fall-2016/morea/intro/github-demo/github_test_changes.png" alt="GitHub Settings page snippet showing the location of the publish URL." /></p>
 
-<p>When you click the URL, you should see the Student Directory page with both my profile and yours.<br />
-<img src="../assets/images/s1/github_test_page.png" alt="Student Directory page snippet." /></p>
+<p>When you click the URL, you should see the Student Directory page click the link for your semester and you should see both my information and yours.<br />
+<img class="img-responsive" src="/fall-2016/morea/intro/github-demo/github_test_page.png" alt="Student Directory page snippet." /></p>
 
 <p>If the page is not coming up, double check the syntax and naming of your .yml file.  If you are not seeing your picture or icon, then your file name is not the same as your GitHub user id.</p>
 
 <h3 id="pull-request">Pull Request</h3>
-<p>The changes are still on your copy of the students repository.  To get them back to the course organization repository you will create a pull request.  This is the last step - the part that turns in your assignment.</p>
+<p>Once you have working changes on your repository &amp; web page, you want to submit a pull request for the source repository (our course organization) to merge those changes.  This is the last - but most important - step, the one that turns in your assignment.</p>
 
 <ol>
   <li>
-    <p>From your repository page, click the Pull Requests tab.<br />
-  <img src="../assets/images/s1/github_pullreq_tab.jpg" alt="GitHub page snippet showing the pull request tab." /></p>
-  </li>
-  <li>
-    <p>Click the green button to create a new pull request.
-  <img src="../assets/images/s1/github_new_pullreq.jpg" alt="GitHub page snippet showing the create pull request button." /></p>
+    <p>From your repository page, click the Pull Request button.<br />
+  <img class="img-responsive" src="/fall-2016/morea/intro/github-demo/github_pullreq_tab.png" alt="GitHub page snippet showing the pull request button." /></p>
   </li>
   <li>
     <p>The next screen will show you all the changes between your copy of the repository and the original.  Review the changes, then click the green button to create the request.</p>
   </li>
   <li>
-    <p>The next page allows you to enter a commit message and (optionally) comments for the reviewer.</p>
+    <p>The next page allows you to enter a commit message and (optionally) comments for the reviewer. Click the green button again to open the request.</p>
+  </li>
+  <li>
+    <p>Make sure to verify that you see the green button that says your pull-request is open, and do not close it.  I will not see or grade requests that are closed.</p>
   </li>
 </ol>
 
@@ -276,7 +287,7 @@ When you clone a repository for class, it is important that you do it from your 
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-08-22 12:07:34 -0500</span></p>
+        Last update on: <span>2016-08-23 01:57:30 -0500</span></p>
     </div>
   </footer>
 </div>

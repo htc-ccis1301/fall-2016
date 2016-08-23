@@ -111,41 +111,86 @@
 
 <p>For example, the <code class="highlighter-rouge">pwd</code> command tells you your current working directory. Basically, this tells you where you are located within your computer’s file system tree.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span><span class="nb">pwd</span>
-/Users/marymosman/Development/html/students</code></pre></figure>
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">  <span class="nv">$ </span><span class="nb">pwd</span>
+  /Users/marymosman/Development/html/students
+  </code></pre></figure>
+
+</div>
+</div>
+</div>
 
 <p>When you try out this command, only type <code class="highlighter-rouge">pwd</code> into your shell window, do not type the $, then hit enter. It will output your current working directory on the next line, which will be different from the example shown.  It will then give you a prompt again.</p>
 
-<p>This is what it actually looks like on my computer.  I’m running on a Mac, so this is the Terminal.
-<img src="/fall-2016/morea/intro/shell-github-cmds/terminal-pwd-cmd.png" alt="Terminal showing pwd command" /></p>
+<p>This is what it actually looks like on my computer.  I’m running on a Mac, so this is the Terminal.</p>
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+   <img class="img-responsive" src="/fall-2016/morea/intro/shell-github-cmds/terminal-pwd-cmd.png" alt="Terminal showing pwd command" />
+</div>
+</div>
+</div>
 
 <p>There are really only two other basic shell commands that you need to know to get through this course - <code class="highlighter-rouge">ls</code> and <code class="highlighter-rouge">cd</code>.</p>
 
 <p>The <code class="highlighter-rouge">ls</code>, or list, command will list all of the files and directories inside the current working directory.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span>ls
-Gemfile        _data          _sass           javascripts
-README.md      _includes      assets          stylesheets
-_config.yml    _layouts       index.html</code></pre></figure>
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+   
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">   <span class="nv">$ </span>ls
+   Gemfile        _data          _sass           javascripts
+   README.md      _includes      assets          stylesheets
+   _config.yml    _layouts       index.html
+   </code></pre></figure>
 
-<p><img src="/fall-2016/morea/intro/shell-github-cmds/terminal-ls-cmd.png" alt="Terminal showing ls command" /></p>
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="/fall-2016/morea/intro/shell-github-cmds/terminal-ls-cmd.png" alt="Terminal showing ls command" />
+</div>
+</div>
+</div>
 
 <p>The <code class="highlighter-rouge">cd</code>, or change directory, command will change your working directory. When you enter the command, you type the directory to change to after the <code class="highlighter-rouge">cd</code>.  So if we want to go into the _data directory, we would enter:</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span><span class="nb">cd </span>_data</code></pre></figure>
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">  <span class="nv">$ </span><span class="nb">cd </span>_data
+  </code></pre></figure>
 
-<p>Notice there is no output this time.</p>
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="/fall-2016/morea/intro/shell-github-cmds/terminal-cd-cmd.png" alt="Terminal showing cd command" />
+</div>
+</div>
+</div>
 
-<p><img src="/fall-2016/morea/intro/shell-github-cmds/terminal-cd-cmd.png" alt="Terminal showing cd command" /></p>
+<p>Notice there is no output this time.
+The cd command will not give output unless there is an error.  Make sure to watch for those.</p>
 
-<p>The cd command will not give output unless there is an error.  Make sure to watch for those.</p>
+<p>To go up a directory you use two dots/periods.</p>
 
-<p>To go up a directory you enter <code class="highlighter-rouge">cd ..</code></p>
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">  <span class="nv">$ </span><span class="nb">cd</span> ..
+  </code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="gp">$ </span><span class="nb">cd</span> ..</code></pre></figure>
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="/fall-2016/morea/intro/shell-github-cmds/terminal-cd2-cmd.png" alt="Terminal showing cd .. command" />
+</div>
+</div>
+</div>
 
-<p>Again there is no output, but you can use the <code class="highlighter-rouge">pwd</code> command to see that the working directory has changed:
-<img src="/fall-2016/morea/intro/shell-github-cmds/terminal-cd2-cmd.png" alt="Terminal showing cd .. command" /></p>
+<p>Again there is no output, but you can use the <code class="highlighter-rouge">pwd</code> command to see that the working directory has changed.</p>
 
 <h2 id="git-commands">Git Commands</h2>
 <p>The GitHub Student Directory assignment walks you through the GitHub process that you’ll use for your assignments.  But to give you a summary of all the commands you’ll use in the shell on one page, I’ll quickly introduce the key git commands here.</p>
@@ -239,7 +284,7 @@ To https://github.com/mbMosman/students.git
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-08-22 12:07:34 -0500</span></p>
+        Last update on: <span>2016-08-23 01:57:30 -0500</span></p>
     </div>
   </footer>
 </div>
