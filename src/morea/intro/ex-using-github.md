@@ -129,3 +129,34 @@ Once you have working changes on your repository & web page, you want to submit 
 4. The next page allows you to enter a commit message and (optionally) comments for the reviewer. Click the green button again to open the request.
 
 5. Make sure to verify that you see the green button that says your pull-request is open, and do not close it.  I will not see or grade requests that are closed.
+
+
+## Submit Work for Grading
+Your pull-request on GitHub is one part of your submission for this assignment.  In addition to creating the pull request, you also want to submit the following items into the Module 1 Assignments box on D2L.
+
+1. GitHub Student Directory live web page screenshot
+    <div style="padding:10px 20px">
+      <div class="row"><div class="col-sm-6">
+        Sample Screenshot:
+        <img class="img-responsive" src="{{ site.baseurl }}/morea/intro/github-demo/pull-req-screenshot-sample.png" alt="A sample screenshot of the pull-request">
+      </div></div>
+    </div>
+2. GitHub Student Directory pull request screenshot
+    <div style="padding:10px 20px">
+      <div class="row"><div class="col-sm-6">
+          Sample Screenshot:
+          <img class="img-responsive" src="{{ site.baseurl }}/morea/intro/github-demo/page-test-screenshot-sample.png" alt="A sample screenshot of the web page">
+      </div></div>
+    </div>
+3. GitHub Workflow Summary MS Word Document:  
+    <div style="padding:10px 20px">
+      <div class="row"><div class="col-sm-8">
+        In a MS Word Document, summarize the steps for completing an assignment on GitHub, beginning with how to get the files from GitHub.  When finished, put the completed document in the assignment Dropbox for Module 1.  
+      </div></div>
+    </div>
+
+Remember that you have access to MS Word through Office 365 as an HTC student.  You can use it on the web or through a download and install on your home computer.
+
+You can take a screenshot on most windows computers by looking for the PrtSc or PrtScn button on your keyboard.  That will screenshot the entire desktop.  If you use Alt + PrtScn that will screenshot the active window.  This puts the screenshot in the clipboard.  You will need to paste this into a MS Word document to save and submit it.
+
+On Mac, you can take a screenshot by using the command+shift+4 key combination.  This will allow you to select the area on the screen to screenshot.  If you hit the space key, it will change to highlight the active window for the screenshot.  Click the mouse to take the screenshot and it should save to your desktop.
