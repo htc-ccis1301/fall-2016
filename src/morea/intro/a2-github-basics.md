@@ -6,7 +6,6 @@ morea_type: assessment
 morea_sort_order: 2
 morea_outcomes_assessed:
   - out-shell-basics
-  - out-github-basics
 ---
 
 Student Directory: Assessed knowledge of basic shell, git and GitHub skills.

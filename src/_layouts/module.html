@@ -56,15 +56,26 @@ layout: default
   <div class="container">
     <h2>Learning Outcomes</h2>
 
+    <div class="row">
     {% for page_id in page.morea_page.morea_outcomes %}
       {% assign outcome = site.morea_page_table[page_id] %}
-      <h3>{{ outcome.title }}</h3>
-      <p>
-        {% for label in outcome.morea_labels %}
-        <span class="badge">{{ label }}</span>
-        {% endfor %}
-      </p>
-      {{ outcome.content | markdownify }}
+
+      <div class="col-sm-6">
+        <a href="{{ outcome.morea_url }}" class="thumbnail">
+          <h3>{{ outcome.title }}</h3>
+          {{ outcome.content | markdownify }}
+          <p>
+            {% for label in outcome.morea_labels %}
+            <span class="badge">{{ label }}</span>
+            {% endfor %}
+          </p>
+        </a>
+      </div>
+      {% assign new-row = forloop.index | modulo:6 %}
+      {% if new-row == 0 %}
+       </div><div class="row">
+      {% endif %}
+
     {% endfor %}
 
   </div>
@@ -92,17 +103,9 @@ layout: default
             </p>
           </a>
         </div>
-      {% if forloop.index == 4 %}
+      {% assign new-row = forloop.index | modulo:4 %}
+      {% if new-row == 0 %}
        </div><div class="row">
-      {% endif %}
-      {% if forloop.index == 8 %}
-      </div><div class="row">
-      {% endif %}
-      {% if forloop.index == 12 %}
-      </div><div class="row">
-      {% endif %}
-      {% if forloop.index == 16 %}
-      </div><div class="row">
       {% endif %}
       {% endfor %}
 
@@ -130,16 +133,8 @@ layout: default
             </p>
           </a>
         </div>
-      {% if forloop.index == 4 %}
-      </div><div class="row">
-      {% endif %}
-      {% if forloop.index == 8 %}
-      </div><div class="row">
-      {% endif %}
-      {% if forloop.index == 12 %}
-       </div><div class="row">
-      {% endif %}
-      {% if forloop.index == 16 %}
+      {% assign new-row = forloop.index | modulo:4 %}
+      {% if new-row == 0 %}
       </div><div class="row">
       {% endif %}
       {% endfor %}

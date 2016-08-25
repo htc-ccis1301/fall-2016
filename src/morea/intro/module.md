@@ -6,7 +6,6 @@ morea_outcomes:
  - out-standards
  - out-web-arch
  - out-shell-basics
- - out-github-basics
  - out-html-min
 morea_readings:
  - getting-started

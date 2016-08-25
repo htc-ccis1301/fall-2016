@@ -3,7 +3,7 @@ title: "Write Minimal HTML"
 published: true
 morea_id: out-html-min
 morea_type: outcome
-morea_sort_order: 5
+morea_sort_order: 4
 ---
 
 The student will be able to use a text editor to:
