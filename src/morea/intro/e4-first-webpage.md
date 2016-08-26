@@ -32,6 +32,15 @@ Instead of saying "Hello World", Introduce yourself and tell us what your favori
 
 Keep this short and to the point.  Only put out there the minimal required tags, but be sure to update the title and the body text.  Make sure that you are using Beautify to keep the file looking *beautiful*.
 
+Let's walk through this together to make sure you are comfortable working with brackets.  
+<div style="padding:10px 20px">
+<div class="row">
+<div class="col-xs-12 col-md-8">
+  {%  include youtube.html  id="yNGaIwDonmQ" %}
+</div>
+</div>
+</div>
+
 ## Testing
 Be sure to test your page first on your own computer and then after pushing your updates to GitHub. It is very important that you test you page live on the web, as that is what I will be looking at when I grade your work.  Make sure you know how to get to the page on the real internet.  
 
