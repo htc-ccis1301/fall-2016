@@ -47,4 +47,4 @@ Be sure to test your page first on your own computer and then after pushing your
 ## Submit
 Once you have verified your work, submit a pull-request.  
 
-Be sure to take a screenshot to submit on D2L.
+Be sure to take a screenshot of the pull request to submit on D2L.
