@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Basic HTML | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/html-basics">HTML Basics</a></li>
+      <li class="active">Basic HTML</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="basic-html">Basic HTML</h1>
+<p>Read Chapter 2 of your textbook <a href="http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/">Basics of Web Design: HTML5 &amp; CSS3</a> which covers an introduction to some common HTML tags.</p>
+
+<p>Remember that you can get the example code from the book electronically from the course website.  It is important to experiment with the material as you read and learn it so that you understand it well.</p>
+
+<h2 id="new-html-tags">New HTML Tags</h2>
+<p>Much of Chapter 2 in the textbook is devoted to introducing new HTML tags.  The tags that I recommend that you focus on are those for:</p>
+
+<ul>
+  <li>headings</li>
+  <li>paragraphs</li>
+  <li>line break</li>
+  <li>the phrase elements for strong, emphasis, &amp; small</li>
+  <li>ordered &amp; unordered lists</li>
+  <li>structural elements for div, header, nav, main and footer</li>
+  <li>anchor tags (hyperlinks)</li>
+</ul>
+
+<p>An important note on the line break tag: <br />
+You should not use this to break paragraph text so that it matches the images shown in the textbook or website examples.  Paragraph text is intended to wrap naturally at the edge of the browser, so depending on the size of your window, that text will wrap in a different spot. This is expected behavior and you should not alter it without good reason - for example, breaking lines of an address.</p>
+
+<h3 id="semantic-html">Semantic HTML</h3>
+<p>I’m a little disappointed by some of the things that are <em>taught</em> by the examples for the phrase elements and the description list.  Remember that it is our goal to write <em><strong>semantic</strong></em> HTML.  We should use elements for their intended purpose, not because their default display is a particular way.  Semantic HTML greatly benefits accessibility.</p>
+
+<p>You should use tags like <code class="highlighter-rouge">&lt;b&gt;</code> or <code class="highlighter-rouge">&lt;strong&gt;</code> and <code class="highlighter-rouge">&lt;i&gt;</code> or <code class="highlighter-rouge">&lt;em&gt;</code> and <code class="highlighter-rouge">&lt;small&gt;</code> only when there is a semantic reason to do so, not just a visual preference for the text to appear that way. They use these throughout the chapter and end of chapter case study they show these elements being used for <em>display</em> purposes and then re-teach you to correctly use CSS for this in Chapter 4.  I encourage you not to develop this habit only to break it.</p>
+
+<p>What is the difference you might ask?  A bad example (in my opinion) of using <code class="highlighter-rouge">&lt;small&gt;</code> and <code class="highlighter-rouge">&lt;i&gt;</code> would be the footer text on a web page such as that shown in Hands on Practice 2.11.  This should be done using CSS, and you’ll learn to do exactly this in Chapter 4.</p>
+
+<p>A good example of using <code class="highlighter-rouge">&lt;em&gt;</code>, which is more semantic than <code class="highlighter-rouge">&lt;i&gt;</code>, would be text like:</p>
+<div class="row" style="margin: 20px">
+  <div class="col-sm-6">
+    <h4>HTML</h4>
+    It is &lt;em&gt;really&lt;/em&gt; important that you learn to write semantic HTML.
+  </div><div class="col-sm-6">
+    <h4>Display</h4>
+    It is <em>really</em> important that you learn to write semantic HTML.
+  </div>
+</div>
+
+<p>A good example of using <code class="highlighter-rouge">&lt;small&gt;</code> might be for a sub-title of a book or article.</p>
+<div class="row" style="margin: 20px">
+  <div class="col-sm-6">
+    <h4>HTML</h4>
+    Kendo &lt;small&gt;The definitive guide&lt;small&gt;
+    <br />&lt;br&gt; by Hiroshi Ozawa and Tamiko Yamaguchi  
+  </div><div class="col-sm-6">
+    <h4>Display</h4>
+    Kendo <small>The definitive guide</small>
+    <br /> by Hiroshi Ozawa and Tamiko Yamaguchi
+  </div>
+</div>
+
+<p>Likewise you should use the description list for just that, terms and descriptions.  The example that is initially presented in Hands on Practice 2.8 is a great example.  On the other hand, the example in Hands on Practice 2.14, #3 (Figure 2.24) where the description list is shown more for business services becomes more questionable.  I can see an argument to be made that it <em>is</em> describing those services. However, it’s also likely that page would be expanded later to include more information on those services, and as that content grows subheadings with paragraphs is probably more appropriate.</p>
+
+<p>This illustrates that there are differences in opinion on what <em>proper</em> semantic use of these tags might be.  I suspect that here, the description list is used more to have an excuse to use it than because it is a good example of its use.</p>
+
+<h2 id="special-entity-characters">Special Entity Characters</h2>
+<p>The special entity characters are discussed on pages 44 &amp; 45 of the textbook.</p>
+
+<p>The copyright, ampersand, non-breaking space, the emdash (long dash), and the greater than and less than symbols are used fairly often.</p>
+
+<h3 id="non-breaking-space">Non-breaking Space</h3>
+<p>The non-breaking space is not explained well in your text.  While it can be used with a line break to indent text, this is really not encouraged.  The actual intent of the tag is to avoid having line wrapping in the browser break words in a way that might be confusing.  For example if you were including measurements on a page, it might be confusing to have the number and the unit of measure split, for example “10 cm”.  You can avoid this by using a non-breaking space between the 10 and the cm like this:</p>
+
+<div class="row" style="margin: 20px">
+  <div class="col-sm-6">
+    <h4>HTML</h4>
+    &lt;p&gt;The sample was found to be 10&amp;nbsp;cm in length.&lt;/p&gt;  
+  </div><div class="col-sm-6">
+    <h4>Display</h4>
+    <p>The sample was found to be 10&nbsp;cm in length.</p>
+  </div>
+</div>
+
+<p>When doing this, it is important <strong>not</strong> to also include a normal space, as that would allow the line to break or wrap on that space.</p>
+
+<p>Instead of using non-breaking spaces for formatting or indenting text, a better option would be to use the <code class="highlighter-rouge">&lt;pre&gt;</code> tag, which is for pre-formatted text, or to use CSS.  We’ll look at CSS later, but here is an example of how you might use the <code class="highlighter-rouge">&lt;pre&gt;</code> tag.</p>
+
+<div class="row" style="margin: 20px">
+  <div class="col-sm-6">
+    <h4>HTML</h4>
+    &lt;pre&gt;
+<br />def isGreen(Shape s):
+<br />&nbsp;&nbsp;if s.getColor() == "green":
+<br />&nbsp;&nbsp;&nbsp;&nbsp;return true
+<br />&nbsp;&nbsp;else
+<br />&nbsp;&nbsp;&nbsp;&nbsp;return false
+<br />&lt;/pre&gt;  
+  </div><div class="col-sm-6">
+    <h4>Display</h4>
+    <pre>
+def isGreen(Shape s):
+  if s.getColor() == "green":
+    return true
+  else
+    return false
+    </pre>
+  </div>
+</div>
+
+<h2 id="validation">Validation</h2>
+<p>One of the most important topics in this chapter is the information on HTML Syntax Validation (pages 46-47).  Every assignment that you turn in going forward will be validated as part of grading that assignment.  Any validation error on your pages will result in a lower grade on the assignment.  For project assignments, you will lose an entire letter grade for a single validation error.</p>
+
+<p>Learning how to validate your page and fix any errors is critical to your success in this course.</p>
+
+<p>You should use the <a href="https://html5.validator.nu/">W3C HTML Validator Nu</a> to validate your pages.  It is more up to date than the old validator used in the textbook.  The display is a bit different, but the options and output are essentially the same.</p>
+
+<p>Additional information on validation can be found on the <a href="https://www.w3.org/wiki/Validating_your_HTML">W3C website</a>.</p>
+
+<h2 id="review-questions">Review Questions</h2>
+
+<ul>
+  <li>How many levels of headings does HTML support?</li>
+  <li>Which heading is larger by default, h1 or h4?</li>
+  <li>What tag is used to split text into multiple lines?</li>
+  <li>How should you code the copyright symbol on a page?</li>
+  <li>How could you ensure that a phrase like “10 PM” would not be broken by the browser’s line wrapping such that 10 appeared on one line and PM on the next?</li>
+  <li>How would you describe semantic HTML?</li>
+  <li>Which of the structural tags can only occur once on a page?</li>
+  <li>What is the difference between a relative hyperlink and an absolute hyperlink?</li>
+  <li>What is a relative hyperlink relative to?</li>
+  <li>How do you make a link to send an email?</li>
+  <li>Where do you go to validate your web pages?</li>
+</ul>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-08-27 02:10:50 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

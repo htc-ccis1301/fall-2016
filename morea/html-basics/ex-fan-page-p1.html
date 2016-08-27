@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> First Web Page Using Brackets | CCIS1301 Fall 2016 </title>
+  <title> Fan Page Part 1 | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -96,62 +96,60 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/intro">Introduction to Web Development</a></li>
-      <li class="active">First Web Page Using Brackets</li>
+      <li><a href="/fall-2016/modules/html-basics">HTML Basics</a></li>
+      <li class="active">Fan Page Part 1</li>
     </ol>
   </div>
 </div>
 
 
 <div class="container">
-  <h1 id="practice-using-brackets--github">Practice using Brackets &amp; GitHub</h1>
-<p>Let’s practice working with Brackets to develop your first web page.</p>
+  <h1 id="fan-page-part-1">Fan Page Part 1</h1>
 
 <h2 id="prerequisites">Prerequisites</h2>
 <p>The following topics were covered earlier:</p>
 
 <ul>
-  <li><a href="/fall-2016/morea/intro/r4-web-basics.html">Internet &amp; Web Basics</a>: To complete this assignment you should be familiar with the template HTML structure presented in the reading.</li>
-  <li><a href="/fall-2016/morea/intro/e1-install-brackets.html">Install, Configure, and Use Brackets</a>: You should use Brackets to edit the files.</li>
-  <li><a href="/fall-2016/morea/intro/e3-using-github.html">Git &amp; GitHub: Update the Student Directory</a>: I will assume that you are familiar with the process to use git and GitHub to complete this assignment.</li>
+  <li><a href="/fall-2016/morea/html-basics/read-html-basics.html">Basic HTML</a>: To complete this assignment you should be familiar with the HTML tags presented in the reading and notes and understand how to validate your HTML pages.</li>
+  <li><a href="/fall-2016/morea/intro/ex-install-brackets.html">Install, Configure, and Use Brackets</a>: You should use Brackets to edit the files.</li>
+  <li><a href="/fall-2016/morea/intro/ex-using-github.html">Git &amp; GitHub: Update the Student Directory</a>: I will assume that you are familiar with the process to use git and GitHub to complete this assignment.</li>
 </ul>
 
-<h2 id="github-project">GitHub Project</h2>
-<p>Begin by getting the starter repository from the course GitHub organization.  For this assignment, we will use the <a href="https://github.com/htc-ccis1301/fan-page">fan-page</a> repository.</p>
+<h2 id="overview">Overview</h2>
+<p>This will be the first of a multi-part assignment in which you will create a fan page for something you enjoy: a movie, game, band, or even your favorite food or restaurant.  You can choose the topic, but you must make sure that your page also meet the requirements found in each part of the assignment.</p>
 
-<p>Note that this repository contains only a README file and a .gitignore file.</p>
+<p><em>Important</em>: As you build this site, be careful in the use of images, text, and other content from other sources. Unless you have written or created the content yourself, I expect that you will ask for and get permission before using anyone else’s material. You should note such permissions near the content or place it in the footer. You should also note copyright of others materials - for example, note the footer on this page <a href="http://guildwarstemple.com/dragontimer/">http://guildwarstemple.com/dragontimer/</a>.</p>
+
+<h2 id="github">GitHub</h2>
+<p>The GitHub repository for this assignment is <a href="https://github.com/htc-ccis1301/fan-page">fan-page</a>.</p>
+
+<p>Once you have forked and cloned this repository, you do not need to repeat that step again.  Just continue creating and editing files through Brackets and use the git add, commit, and push commands to update GitHub.</p>
+
+<p>Remember that you also do not need to make backups of this content for each phase of the project locally, as that is also done for you on GitHub. By looking at your Commits, you can go back and see any previous version.</p>
+
+<p>(Students will often make copies of their work and get confused on which code they are editing resulting in mistakes on their assignments. This happens a lot! If you really must do this - you don’t trust the cloud - make sure to keep them somewhere completely separate, not in the same folder, and preferably not even on the same drive/computer.)</p>
+
+<h2 id="requirements">Requirements</h2>
+<p>Update your fan-page index.html file so that it includes:</p>
 
 <ul>
-  <li>The README is used to display information about your project in the GitHub web interface.</li>
-  <li>The .gitignore is used to tell git to ignore (or not add) particular types of files.</li>
+  <li>The name of your favorite thing you are building the site for</li>
+  <li>A link to a different website or other information about this thing.</li>
+  <li>A summary of what this thing is and what you like about it.</li>
+  <li>A list of something (ordered or unordered).</li>
+  <li>A header with the site name</li>
+  <li>At least two subheadings.</li>
+  <li>A footer with copyright information.  You own the copyright to your own page, so use your name and the current year.</li>
+  <li>An email contact link for you in the footer.  To avoid putting your real email on the page you can use yourFirstName@yourLastName.com or something like that, so long as it is a proper email link, I don’t care if it actually works.</li>
 </ul>
 
-<h2 id="build-a-simple-web-page">Build a Simple Web Page</h2>
-<p>Using Brackets and the template HTML found in the reading to make a minimal HTML page. You should call this page index.html, as that is the default home page for most web servers.</p>
-
-<p>Instead of saying “Hello World”, Introduce yourself and tell us what your favorite thing is.  Over the early part of the semester, you’ll be making a web site for something you like or are a fan of.  This is your beta fan-page, version 0.5.</p>
-
-<p>Keep this short and to the point.  Only put out there the minimal required tags, but be sure to update the title and the body text.  Make sure that you are using Beautify to keep the file looking <em>beautiful</em>.</p>
-
-<p>Let’s walk through this together to make sure you are comfortable working with brackets.</p>
-<div style="padding:10px 20px">
-<div class="row">
-<div class="col-xs-12 col-md-8">
-  <div class="video-container">
-  <iframe src="https://www.youtube.com/embed/yNGaIwDonmQ" frameborder="0" allowfullscreen=""></iframe>
-</div>
-
-</div>
-</div>
-</div>
+<p>Do not neglect the &lt;head&gt; section just because it is not visible on the web page. You should include a title and the charset.</p>
 
 <h2 id="testing">Testing</h2>
-<p>Be sure to test your page first on your own computer and then after pushing your updates to GitHub. It is very important that you test you page live on the web, as that is what I will be looking at when I grade your work.  Make sure you know how to get to the page on the real internet.</p>
+<p>Once you are happy with your work, push it up to GitHub.  Make sure to check the display of your page live on GitHub Pages and re-validate your page by URL.</p>
 
 <h2 id="submit">Submit</h2>
-<p>Once you have verified your work, submit a pull-request.</p>
-
-<p>Be sure to take a screenshot of the pull request to submit on D2L.</p>
+<p>Create a pull-request and submit the screenshot of it in the Assignment box on D2L.</p>
 
 </div>
 
@@ -168,7 +166,7 @@
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-08-26 21:03:53 -0500</span></p>
+        Last update on: <span>2016-08-27 02:10:50 -0500</span></p>
     </div>
   </footer>
 </div>

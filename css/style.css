@@ -18,3 +18,10 @@
     height: 100%;
 }
 
+.anchor{
+  display: block;
+  height: 60px; /*same height as header*/
+  margin-top: -60px; /*same height as header*/
+  visibility: hidden;
+  z-index: -50;
+}
