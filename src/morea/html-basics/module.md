@@ -1,18 +1,20 @@
 ---
 title: "HTML Basics"
 published: true
-morea_coming_soon: true
 morea_id: html-basics
 morea_icon_url: /morea/html-basics/html-basics-logo.png
 morea_summary: "An introduction to basic structural HTML tags."
 morea_type: module
 morea_sort_order: 2
 morea_outcomes:
+  - out-html-validation
+  - out-common-html
 morea_readings:
-#  - html-review
-#  - html-basics-ch2
+  - read-html-review
+  - read-html-basics
 morea_experiences:
-#  - validation-lab
+  - ex-html-validation
+  - ex-fan-page-1
 ---
 
 {{page.morea_summary}}

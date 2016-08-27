@@ -13,9 +13,9 @@ Let's practice working with Brackets to develop your first web page.
 ## Prerequisites
 The following topics were covered earlier:
 
-- [Internet & Web Basics]( {{ site.baseurl }}/morea/intro/r4-web-basics.html ): To complete this assignment you should be familiar with the template HTML structure presented in the reading.  
-- [Install, Configure, and Use Brackets]( {{ site.baseurl }}/morea/intro/e1-install-brackets.html ): You should use Brackets to edit the files.  
-- [Git & GitHub: Update the Student Directory]( {{ site.baseurl }}/morea/intro/e3-using-github.html ): I will assume that you are familiar with the process to use git and GitHub to complete this assignment.
+- [Internet & Web Basics]( {{ site.baseurl }}/morea/intro/read-web-basics.html ): To complete this assignment you should be familiar with the template HTML structure presented in the reading.  
+- [Install, Configure, and Use Brackets]( {{ site.baseurl }}/morea/intro/ex-install-brackets.html ): You should use Brackets to edit the files.  
+- [Git & GitHub: Update the Student Directory]( {{ site.baseurl }}/morea/intro/ex-using-github.html ): I will assume that you are familiar with the process to use git and GitHub to complete this assignment.
 
 ## GitHub Project
 Begin by getting the starter repository from the course GitHub organization.  For this assignment, we will use the [fan-page](https://github.com/htc-ccis1301/fan-page) repository.

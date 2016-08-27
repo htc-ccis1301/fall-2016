@@ -3,14 +3,14 @@ title: "HTML Validation"
 published: true
 morea_id: asm-html-validate
 morea_type: assessment
-morea_sort_order: 3
+morea_sort_order: 1
 morea_outcomes_assessed:
 #  - out-basic-html
 #  - out-html-validation
 #  - out-github-basics
 ---
 
-Validation Lab: Assessed understanding of basic HTML skills, HTML validation, and basic use of git and GitHub.
+Validation Lab: Assessed ability to identify and correct HTML validation errors.
 
 <link rel="stylesheet" href="https://cdn.oesmith.co.uk/morris-0.4.3.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
