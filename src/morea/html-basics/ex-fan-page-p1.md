@@ -34,7 +34,7 @@ Remember that you also do not need to make backups of this content for each phas
 ## Requirements
 Update your fan-page index.html file so that it includes:
 
-- The name of your favorite thing you are building the site for
+- A title that reflects the favorite thing you are building the site for
 - A link to a different website or other information about this thing.
 - A summary of what this thing is and what you like about it.
 - A list of something (ordered or unordered).
@@ -43,7 +43,7 @@ Update your fan-page index.html file so that it includes:
 - A footer with copyright information.  You own the copyright to your own page, so use your name and the current year.
 - An email contact link for you in the footer.  To avoid putting your real email on the page you can use yourFirstName@yourLastName.com or something like that, so long as it is a proper email link, I don't care if it actually works.
 
-Do not neglect the <head> section just because it is not visible on the web page. You should include a title and the charset.
+Do not neglect the <head> section and HTML structural elements just because they are not visible on the web page. Your head section must include a title and the charset.  Your page should include at a minimum the header, main and footer structural elements.
 
 ## Testing
 Once you are happy with your work, push it up to GitHub.  Make sure to check the display of your page live on GitHub Pages and re-validate your page by URL.
