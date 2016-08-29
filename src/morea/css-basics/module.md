@@ -7,6 +7,7 @@ morea_icon_url: /morea/css-basics/css-basics-logo.png
 morea_type: module
 morea_outcomes:
 morea_readings:
+  - read-css-basics
 morea_experiences:
 morea_assessments:
 morea_prerequisites:
