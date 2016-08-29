@@ -1,5 +1,5 @@
 ---
-title: "Case Study: Pacific Trails - Introduction"
+title: "Case Study: Pacific Trails Resort - Introduction"
 published: true
 morea_id: read-cs-pt-intro
 morea_summary: "An introduction to the Pacific Trails Resort Case Study."
@@ -26,7 +26,9 @@ The initial repository for this project can be found on our class organization p
 
 You will only need to fork and clone this project once.  Then for each part of the assignment you will make changes, use Brackets Beautify to format your work, then do the git add, commit, and push to send the files to GitHub.  Then test your site running on the GitHub web site (find the URL under Settings), validate your page, and create the pull-request for grading.
 
-Do not create a new folder as indicated at the start of each chapter's Case Study instructions in the textbook!
+<div class="alert alert-warning" role="alert">
+:warning: Do not create a new folder as indicated at the start of each chapter's Case Study instructions in the textbook!  You should place your HTML files directly into the cloned repository folder.  Do not add a sub-folder for your HTML pages.
+</div>
 
 ## Overall Tips
 I will repeat these in the first part of the assignment, but after that I will assume that you will remember them on your own.  

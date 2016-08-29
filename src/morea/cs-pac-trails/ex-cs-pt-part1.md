@@ -1,9 +1,9 @@
 ---
-title: "Case Study: Pacific Trails - Part 1"
+title: "Case Study: Pacific Trails Resort - Part 1"
 published: true
 morea_id: ex-cs-pt-part1
-morea_summary: "First iteration of work for the Pacific Trails Resort Case Study."
-morea_type: reading
+morea_summary: "First iteration of work for the Pacific Trails Resort Case Study. This work utilizes the material learned in Modules 1-3."
+morea_type: experience
 morea_sort_order: 2
 ---
 
@@ -21,7 +21,7 @@ In our first meeting with our business client Melanie Bowie from the Pacific Tra
 <div style="padding:20px">
 <div class="row">
 <div class="col-xs-12 col-md-8 col-md-push-2">
-  {%  include youtube.html  id="jVDqs_CgueM" %}
+  {%  include youtube.html  id="U43K9TkswDw" %}
 </div>
 </div>
 </div>
@@ -34,10 +34,10 @@ The initial repository for this project can be found on our class organization p
 
 You will only need to fork and clone this project once.  Then for each part of the assignment you will make changes, add, commit, and push them.  You'll want to be sure to test your site running on the GitHub web site (find the URL under Settings), validate your page, then create the pull-request for grading.
 
-Once you clone this to your computer, open the project folder in Brackets and look through it.  It contains all of the images and multi-media files you will need to complete the project. You just need to add the HTML & CSS.
+Once you clone this to your computer, open the project folder in Brackets and look through it.  It contains all of the images and multi-media files you will need to complete the project. You just need to add the HTML & CSS.  
 
-<div class="well" role="alert">
-Each chapter's case study instructions tell you to create a new folder.  <strong>DO NOT DO THIS!</strong>  You need to continue working with this same repository folder from GitHub throughout the entire assignment.
+<div class="alert alert-warning" role="alert">
+:warning: Do not create a new folder as indicated at the start of each chapter's Case Study instructions in the textbook!  You should place your HTML files directly into the cloned repository folder.  Do not add a sub-folder for your HTML pages.
 </div>
 
 ## Chapter 2

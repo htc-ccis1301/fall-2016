@@ -1,5 +1,5 @@
 ---
-title: "Case Study: Pacific Trails"
+title: "Case Study: Pacific Trails Resort"
 published: true
 morea_id: cs-pac-trails
 #morea_icon_url: /morea/adv-css/pac-trails-logo.png
@@ -14,9 +14,10 @@ morea_experiences:
   - ex-cs-pt-part3
   - ex-cs-pt-part4
   - ex-cs-pt-part5
+  - ex-cs-pt-wrapup
 morea_assessments:
 morea_prerequisites:
-morea_sort_order: 4
+morea_sort_order: 13
 ---
 
 {{page.morea_summary}}
