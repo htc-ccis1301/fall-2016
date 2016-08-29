@@ -15,7 +15,7 @@ HTML Validation is introduced in the textbook in Chapter 2.  If you have not com
 Additional information on validation can be found on the [W3C website](https://www.w3.org/wiki/Validating_your_HTML).
 
 ## GitHub Project
-Begin by getting the starter repository from the course GitHub organization.  For this assignment, we will use the [validation-lab](https://github.com/htc-ccis1301/fan-page) repository.
+Begin by getting the starter repository from the course GitHub organization.  For this assignment, we will use the [validation-lab](https://github.com/htc-ccis1301/validation-lab) repository.
 
 ## Fix the Page
 Open the repository folder in Brackets.  Take a look at the index.html page, however even if you see things that are incorrect do not fix them yet. Go to the validator on the web and validate this file.
