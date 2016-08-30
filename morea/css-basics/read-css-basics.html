@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title> Basic CSS | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
@@ -9,7 +10,7 @@
   <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
   <link rel="stylesheet" href="/fall-2016/css/style.css">
   <link rel="stylesheet" href="/fall-2016/css/syntax.css">
-  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -22,8 +23,7 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   
-  <script type="text/javascript"
-          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
   
@@ -96,7 +96,7 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/"></a></li>
+      <li><a href="/fall-2016/modules/css-basics">CSS Basics</a></li>
       <li class="active">Basic CSS</li>
     </ol>
   </div>
@@ -113,7 +113,7 @@
 <p>Chapter 4 is dedicated to introducing Cascading Style Sheets (CSS).  We will learn what CSS is, what it is used for, how it works, and how to apply it on our web pages to make them look more attractive.</p>
 
 <div class="alert alert-info" role="alert">
-:note: This is a very, <em>very</em>, important chapter.  Don't skim or just glance over any of it.  Pay close attention to how the CSS is used and applied.  
+<img class="emoji" title=":notebook:" alt=":notebook:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4d3.png" height="20" width="20" align="absmiddle"> This is a very, <em>very</em>, important chapter.  Don't skim or just glance over any of it.  Pay close attention to how the CSS is used and applied, and how the *cascade* rules work.  
 </div>
 
 <h2 id="what-is-css">What is CSS</h2>
@@ -122,24 +122,26 @@
 <p>To see how powerful, let’s look at some examples from the <a href="http://www.csszengarden.com/">CSS Zen Garden</a> website.  All four images below represent the exact same HTML, just with different CSS applied.</p>
 
 <div class="row" style="margin: 15px;">
-<div class="col-sm-6" style="padding: 5px;">
+<div class="col-sm-6 col-md-5 col-md-push-1" style="padding: 5px;">
     <a href="http://www.csszengarden.com/">
-    <img src="/fall-2016/morea/zen-garden/basic-css-zengarden-main.png" alt="A light green watercolor view of the CSS Zen Garden website." />  
+    <img class="img-responsive" src="/fall-2016/morea/css-basics/zen-garden/basic-css-zengarden-main.png" alt="A light green watercolor view of the CSS Zen Garden website.">  
     </a>
 </div>
-<div class="col-sm-6" style="padding: 5px;">
+<div class="col-sm-6 col-md-5 col-md-push-1" style="padding: 5px;">
 <a href="http://www.csszengarden.com/216/">
-<img src="/fall-2016/morea/zen-garden/basic-css-zengarden-fk.png" alt="A light green watercolor view of the CSS Zen Garden website." />  
+<img class="img-responsive" src="/fall-2016/morea/css-basics/zen-garden/basic-css-zengarden-fk.png" alt="A sunset colored vintage look for the CSS Zen Garden website.">  
 </a>
 </div>
-<div class="col-sm-6" style="padding: 5px;">
+</div>
+<div class="row" style="margin: 15px;">
+<div class="col-sm-6 col-md-5 col-md-push-1" style="padding: 5px;">
 <a href="http://www.csszengarden.com/221/">
-<img src="/fall-2016/morea/zen-garden/basic-css-zengarden-midcent.png" alt="A light green watercolor view of the CSS Zen Garden website." />  
+<img class="img-responsive" src="/fall-2016/morea/css-basics/zen-garden/basic-css-zengarden-midcent.png" alt="A bold retro style for the CSS Zen Garden website.">  
 </a>
 </div>
-<div class="col-sm-6" style="padding: 5px;">
+<div class="col-sm-6 col-md-5 col-md-push-1" style="padding: 5px;">
 <a href="http://www.csszengarden.com/215/">
-<img src="/fall-2016/morea/zen-garden/basic-css-zengarden-robot.png" alt="A light green watercolor view of the CSS Zen Garden website." />  
+<img class="img-responsive" src="/fall-2016/morea/css-basics/zen-garden/basic-css-zengarden-robot.png" alt="A light colored style of the CSS Zen Garden website featuring a robot.">  
 </a>
 </div>
 </div>
@@ -168,18 +170,21 @@
   <tbody>
     <tr>
       <td><code class="highlighter-rouge">#content</code></td>
-      <td>an ID selector</td>
-      <td>selects the item with the <code class="highlighter-rouge">id="content"</code></td>
+      <td>    an ID selector    </td>
+      <td>   selects the item with the <code class="highlighter-rouge">id="content"</code>
+</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">.myClass</code></td>
-      <td>a class selector</td>
-      <td>selects all elements that have <code class="highlighter-rouge">class="myClass"</code></td>
+      <td>    a class selector   </td>
+      <td>   selects all elements that have <code class="highlighter-rouge">class="myClass"</code>
+</td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">#content p</code></td>
-      <td>a descendant selector</td>
-      <td>selects all p elements <em>inside</em> the element with <code class="highlighter-rouge">id="content"</code></td>
+      <td>    a descendant selector   </td>
+      <td>   selects all p elements <em>inside</em> the element with <code class="highlighter-rouge">id="content"</code>
+</td>
     </tr>
   </tbody>
 </table>
@@ -214,7 +219,6 @@
   <li>How do we validate our CSS?  How is this process similar to the process for validating HTML?  How is it different?</li>
 </ul>
 
-
 </div>
 
 
@@ -226,11 +230,11 @@
   <footer>
     <div class="container page-footer">
       
-      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-08-29 03:46:18 -0500</span></p>
+        Last update on: <span>2016-08-29 19:30:18 -0500</span></p>
     </div>
   </footer>
 </div>

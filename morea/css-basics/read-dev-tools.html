@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Browser Developer Tools | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/css-basics">CSS Basics</a></li>
+      <li class="active">Browser Developer Tools</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="browser-developer-tools">Browser Developer Tools</h1>
+<p>The browser developer tools are perhaps the single most valuable tool in web development. They allow you to see your HTML and CSS (and later JavaScript) as the browser itself does. It can help you adjust and modify the page layout and design, debug problems, improve page load time, and so much more. The more you use and learn about these tools, the happier your web developer self will be.</p>
+
+<h2 id="open-the-dev-tools">Open the Dev Tools</h2>
+<p>Access the Developer Tools in Chrome from the Chrome menu in the top right corner of the window. Select Tools  &gt; Developer Tools. (It is helpful to learn the shortcuts.)
+<img class="img-responsive" src="/fall-2016/morea/css-basics/dev-tools/open-dev-tools-menu.png" alt="Screenshot - Use menu to open Chrome Developer Tools." /></p>
+
+<p>The DevTools window will appear (usually) at the bottom of the browser window. You can have it open in a separate window (click on) or move it to the side (click and hold for sub menu) by using the window pop out button in the upper right.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/dev-tools/dev-tools-dock.png" alt="Screenshot - How to dock, pop-out, or move the Chrome Developer Tools display." /></p>
+
+<h2 id="panels">Panels</h2>
+<p>The main window has eight main groups of features accessible as panels along the top.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/dev-tools/dev-tools-panels.png" alt="Screenshot - Panels in the Developer Tools display." /></p>
+
+<p>These each support a particular feature that is useful to web developers. We will focus mainly on the Elements panel, but you can learn more about the DevTools and the other panels from the <a href="https://developers.google.com/web/tools/chrome-devtools/">Google Chrome DevTools Site</a>.</p>
+
+<h2 id="the-elements-tab">The Elements Tab</h2>
+<p>This tab is the most valuable tab when working with HTML and CSS. The left side of the view shows you the DOM tree and allows you to view and modify and remove elements. If you select an element on the left, you can see the CSS applied to that element in the window on the right.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/dev-tools/elements-panel.png" alt="Screenshot - Elements Panel, with DOM on the left and CSS on the right." /></p>
+
+<p>There are multiple tabs on the right side. We will only be using the first two - Styles and Computed.</p>
+
+<p>The Styles tab shows all of the styles applicable to the selected element. Click on an element in the DOM tree, and you will see the CSS applied to that element. Notice that the display includes where the CSS is from - the stylesheet name and the line number in that stylesheet. The checkboxes next to each property allows you to turn various styles off and on. This can be very helpful in determining if a style property is actually affecting the element’s display or doing what you intend.</p>
+
+<h3 id="css-cascade">CSS Cascade</h3>
+<p>The styles are displayed in order of the highest priority to the lowest. You’ll notice that some lower priority styles will have strikethrough text. This means that style is overridden by a rule with a higher priority.<br />
+<img class="img-responsive" src="/fall-2016/morea/css-basics/dev-tools/overriden-style.png" alt="Screenshot - Elements Panel, showing overridden style with strikethrough text." /></p>
+
+<p>Generally speaking styles will <em>cascade</em> by the following rules, where number one has the highest priority:</p>
+
+<ol>
+  <li>Inline style (inside an HTML element)</li>
+  <li>Internal style sheet (in the head section)</li>
+  <li>External style sheet</li>
+  <li>Browser default</li>
+</ol>
+
+<h3 id="css-box-model">CSS Box Model</h3>
+<p>Click on an element in the DOM tree. Notice that when you click on the element in the DOM tree, it highlights in the main browser window.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/dev-tools/element-highlight.png" alt="Screenshot - Elements Panel, showing DOM element selected and highlighted on page." /></p>
+
+<p>While the Styles tab shows you every single style, even if it is overridden, the Computed tab only displays the final applied CSS. While this does not show you where those styles come from, it is a much cleaner view.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/dev-tools/elements-computed-css.png" alt="Screenshot - Elements Panel, showing DOM element selected and highlighted on page." /></p>
+
+<p>It also has a very helpful display of the CSS box model for margins, border &amp; padding. We’ll be talking more about this later on, but for now you can see that it shows the size of various parts of the element style:</p>
+
+<ul>
+  <li>blue (in the center): the size of the element itself</li>
+  <li>green: the size of the element’s padding</li>
+  <li>gold: the size of the element’s border</li>
+  <li>orange: the size of the element’s margin</li>
+</ul>
+
+<p>Note sizes shown are in pixels and the size for the padding, border, and margin may vary on each side (top, right, bottom, &amp; left). The colors used here correspond to the color used to highlight the element on the page when you hover with your mouse over the DOM element in the left side of the Elements panel.</p>
+
+<h3 id="editing-css">Editing CSS</h3>
+<p>You can experiment with getting your styles right by editing them directly in the DevTools. For example, you can edit the background color of the footer by clicking on the little color block which brings up a color chooser.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/dev-tools/open-color-picker.png" alt="Screenshot - Elements Panel, Style Tab - Edit color by using the color picker." /></p>
+
+<p>Editing directly in the browser dev tools can also be particularly helpful when trying to find the best size for margins, padding and positioning when you aren’t sure exactly how many pixels you need. You can edit an existing style by clicking on it. You can also add new properties to an existing rule or use the + (in the upper right) to add a new style.</p>
+
+<p>Note: While editing in the browser can help you get the look you want, these styles will be gone when you refresh the page. Make sure to manually update your HTML or CSS files with the updates or setup a <a href="https://developers.google.com/web/tools/setup/setup-workflow?hl=en">Workspace</a> so the Developer Tools have access to update the files.</p>
+
+<h3 id="modifying-the-dom">Modifying the DOM</h3>
+<p>You can also modify the HTML structure or the DOM from the Elements panel in the developer tools. If you select an element and right click on it in the DOM tree view, you will see options to edit or delete that element. You can also cut and paste and drag and drop to reorder elements.  If you double click on the element, you can also add or edit attributes, edit the HTML, or copy it to the clipboard.</p>
+
+<h2 id="console">Console</h2>
+<p>The console, also known as the JavaScript console, will show you any errors that occurred as your page was loaded. This is a great place to go to see if any CSS or image files were not found as the page was loaded. This could indicate a typo in your path or URL in your HTML or CSS file.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/dev-tools/console-errors.png" alt="Screenshot - Console Panel showing an error for an image that was not found." /></p>
+
+<p>This feature becomes more useful once you have learned some JavaScript, as you can actually enter JavaScript in here to test or debug your page. However, checking this page for errors is good habit to develop now.</p>
+
+<h2 id="network">Network</h2>
+<p>The network panel will show you all of the items that are requested by the browser to display your page. For each item, you can see if the request was successful, the size of the resource and the time it took to get the resource. While we will not spend a lot of time here in this class, this is a great resource for looking at the timing of loading various components of your page.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/dev-tools/network.png" alt="Screenshot - Network Panel showing the resource load times." /></p>
+
+<p>In the example above, notice the one image is particularly large and taking a lot of time to load. Depending on the purpose of the image, it might be a good idea to reduce the file size by either reducing the actual image size or the image quality.</p>
+
+<h2 id="learn-more">Learn More</h2>
+<p>We’ve only covered a small portion of what you can do with the Developer Tools, but this should be enough to get you through this course.  If you are interested in learning more, you can find more information on the <a href="https://developers.google.com/web/tools/chrome-devtools/">Google Chrome DevTools Site</a>.</p>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-08-29 19:30:18 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

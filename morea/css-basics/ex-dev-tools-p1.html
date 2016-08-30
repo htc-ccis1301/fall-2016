@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Developer Tools Lab 1 | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/css-basics">CSS Basics</a></li>
+      <li class="active">Developer Tools Lab 1</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="developer-tools-lab-1">Developer Tools Lab 1</h1>
+<p>A first experience using the Developer Tools to explore a web page.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The following topics were covered earlier:</p>
+
+<ul>
+  <li><a href="/fall-2016/morea/css-basics/read-dev-tools.html">Browser Developer Tools</a>: To complete this assignment you should be familiar with what browser Developer Tools are and how to use the Dev Tools in the Chrome browser.</li>
+</ul>
+
+<h2 id="instructions">Instructions</h2>
+<p>For this lab, you will be using the Chrome Developer Tools to peek at the HTML and CSS applied to a web page.  To begin, you’ll need to open the page in the Chrome browser:
+<a href="http://htc-ccis1301.github.io/dev-tools-lab/">Click here to open the lab’s web page</a>.</p>
+
+<p>Create a MS Word document to show that you have completed the tasks below. Please clearly label each task. If you are unclear on how to complete a task, I encourage you to ask your classmates in our group chat.</p>
+
+<p>As you go through the tasks below, you will need to:</p>
+
+<ol>
+  <li>Answer all questions included in the task. and provide a screenshot showing how you got the answer. Be sure to clearly label each screenshots with the task that it corresponds to.</li>
+  <li>Include a screenshot that shows clearly how you have used the Dev Tools to complete that task. The screenshots <em>must</em> show <em>both</em> the page content in the browser and the same content in the developer tools.</li>
+</ol>
+
+<p>Solutions that do not include both the above will not receive credit for the task.</p>
+
+<h3 id="task-1">Task 1</h3>
+<p>Open the Developer Tools and have them docked in the lower portion of the screen.  Make sure the Elements panel is visible.</p>
+
+<h3 id="task-2">Task 2</h3>
+<p>Locate the head element in the DOM and expand the tree to show all of its child elements.</p>
+
+<p>How many stylesheets are used on this page?</p>
+
+<h3 id="task-3">Task 3</h3>
+<p>Locate the header element in the DOM and expand the tree to show all of its child elements.</p>
+
+<p>Select the header and look at the applied CSS.  What CSS is used to add the image to the header?</p>
+
+<h3 id="task-4">Task 4</h3>
+<p>Locate the element that contains all of the Weekly Specials content in the DOM. Locate the element that contains all of that “yellow” content, not just the header that says “Weekly Specials”.</p>
+
+<p>Select that element and expand the tree to show its children.
+- What is the name of element used?
+- What attributes are on the element?
+- How many child elements does it contain?</p>
+
+<h3 id="task-5">Task 5</h3>
+<p>Locate an h3 element in the DOM and select it. Scroll down so that the heading is visible in the browser as well as the Developer Tools.  Note that when you hover over the h3 element in the Developer Tools, the element on the page is colored in blue and orange.</p>
+
+<p>What does the blue and orange coloring represent?</p>
+
+<h3 id="task-6">Task 6</h3>
+<p>In the Developer Tools, locate the diagram of the <em>CSS box model</em> for the h3 that you selected above.</p>
+
+<ul>
+  <li>What is the size of the h3 content?</li>
+  <li>Is there padding applied to the element? If so how much and on which sides?</li>
+  <li>Is there a border on the element?  If so what size?</li>
+  <li>Is there margin applied to the element? If so how much and on which sides?</li>
+</ul>
+
+<h3 id="task-7">Task 7</h3>
+<p>What colors are used for the background and the text in the “Our Team” section of the page?</p>
+
+<h3 id="task-8">Task 8</h3>
+<p>Using the Developer Tools, modify the “Our Team” header to say “Awesome People” and change the text color for only this heading  to black using <strong>an inline style</strong>.  (To add an inline style you must edit the HTML element.)</p>
+
+<p>Note: Two very handy hex color codes to know by heart are black and white.  If you don’t know them (and you probably don’t yet), look them up.</p>
+
+<h3 id="task-9">Task 9</h3>
+<p>Show the JavaScript console.</p>
+
+<p>Did any errors occur while loading the page?</p>
+
+<h3 id="task-10">Task 10</h3>
+<p>How would you find out how long it took to load a resource that this web page required?</p>
+
+<p>How long did it take to load the Bootstrap stylesheet?</p>
+
+<h2 id="submit-assignment">Submit Assignment</h2>
+<p>Make sure that you have clearly labeled and completed each task in your document and saved it as a MS Word file.</p>
+
+<p>Upload the file to the Assignment box on D2L.</p>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-08-29 19:30:18 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
