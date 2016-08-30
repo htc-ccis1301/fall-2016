@@ -1,14 +1,18 @@
 ---
 title: "CSS Basics"
 published: true
-morea_coming_soon: true
 morea_id: css-basics
 morea_icon_url: /morea/css-basics/css-basics-logo.png
+morea_summary: "This modules is an introduction to Cascading Style Sheets (CSS)."
 morea_type: module
 morea_outcomes:
+  - out-css-basics
 morea_readings:
   - read-css-basics
+  - read-dev-tools
 morea_experiences:
+  - ex-fan-page-p2
+  - ex-dev-tools-p1
 morea_assessments:
 morea_prerequisites:
 #  - prereq-html-basics

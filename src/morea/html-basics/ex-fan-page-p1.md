@@ -20,7 +20,9 @@ The following topics were covered earlier:
 ## Overview
 This will be the first of a multi-part assignment in which you will create a fan page for something you enjoy: a movie, game, band, or even your favorite food or restaurant.  You can choose the topic, but you must make sure that your page also meet the requirements found in each part of the assignment.
 
-*Important*: As you build this site, be careful in the use of images, text, and other content from other sources. Unless you have written or created the content yourself, I expect that you will ask for and get permission before using anyone else's material. You should note such permissions near the content or place it in the footer. You should also note copyright of others materials - for example, note the footer on this page [http://guildwarstemple.com/dragontimer/](http://guildwarstemple.com/dragontimer/).
+<div class="alert alert-info" role="alert">
+:dizzy: As you build this site, be careful in the use of images, text, and other content from other sources. Unless you have created the content yourself, I expect that you to have permission to use anyone else's material. You should note such permissions near the content or place it in the footer. You should also note copyright of others materials - for example, note the footer on this page <a href="http://guildwarstemple.com/dragontimer/">http://guildwarstemple.com/dragontimer/</a>.
+</div>
 
 ## GitHub
 The GitHub repository for this assignment is [fan-page](https://github.com/htc-ccis1301/fan-page).
@@ -49,4 +51,10 @@ Do not neglect the <head> section and HTML structural elements just because they
 Once you are happy with your work, push it up to GitHub.  Make sure to check the display of your page live on GitHub Pages and re-validate your page by URL.
 
 ## Submit
-Create a pull-request and submit the screenshot of it in the Assignment box on D2L.
+Create a pull-request and submit the following screenshots to the Assignment box on D2L:
+
+- Open-pull request
+- Actual web page as published on GitHub (URL in Settings)
+- Validation of HTML file
+
+You __must__ capture both the validator URL and the validator output in the validation screenshot.

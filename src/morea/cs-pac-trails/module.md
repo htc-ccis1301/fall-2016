@@ -2,7 +2,7 @@
 title: "Case Study: Pacific Trails Resort"
 published: true
 morea_id: cs-pac-trails
-#morea_icon_url: /morea/adv-css/pac-trails-logo.png
+morea_icon_url: /morea/cs-pac-trails/cs-pac-trails-logo.png
 morea_type: module
 morea_summary: "This is a case study project, which is set up to simulate a real world project. In it, you will develop a web site for a business customer."
 morea_outcomes:

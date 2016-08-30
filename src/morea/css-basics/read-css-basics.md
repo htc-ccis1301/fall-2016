@@ -16,7 +16,7 @@ Remember that you can get the example code from the book electronically from the
 Chapter 4 is dedicated to introducing Cascading Style Sheets (CSS).  We will learn what CSS is, what it is used for, how it works, and how to apply it on our web pages to make them look more attractive.  
 
 <div class="alert alert-info" role="alert">
-:note: This is a very, <em>very</em>, important chapter.  Don't skim or just glance over any of it.  Pay close attention to how the CSS is used and applied.  
+:notebook: This is a very, <em>very</em>, important chapter.  Don't skim or just glance over any of it.  Pay close attention to how the CSS is used and applied, and how the *cascade* rules work.  
 </div>
 
 ## What is CSS
@@ -25,28 +25,29 @@ CSS allows us to apply different fonts and font styles, colors, and layout to ou
 To see how powerful, let's look at some examples from the [CSS Zen Garden](http://www.csszengarden.com/) website.  All four images below represent the exact same HTML, just with different CSS applied.
 
 <div class="row" style="margin: 15px;">
-<div class="col-sm-6" style="padding: 5px;">
+<div class="col-sm-6 col-md-5 col-md-push-1" style="padding: 5px;">
     <a href="http://www.csszengarden.com/">
-    <img src="{{ "/morea/zen-garden/basic-css-zengarden-main.png" | prepend:site.baseurl }}"
+    <img class="img-responsive" src="{{ "/morea/css-basics/zen-garden/basic-css-zengarden-main.png" | prepend:site.baseurl }}"
         alt="A light green watercolor view of the CSS Zen Garden website.">  
     </a>
 </div>
-<div class="col-sm-6" style="padding: 5px;">
+<div class="col-sm-6 col-md-5 col-md-push-1" style="padding: 5px;">
 <a href="http://www.csszengarden.com/216/">
-<img src="{{ "/morea/zen-garden/basic-css-zengarden-fk.png" | prepend:site.baseurl }}"
-    alt="A light green watercolor view of the CSS Zen Garden website.">  
+<img class="img-responsive" src="{{ "/morea/css-basics/zen-garden/basic-css-zengarden-fk.png" | prepend:site.baseurl }}"
+    alt="A sunset colored vintage look for the CSS Zen Garden website.">  
 </a>
 </div>
-<div class="col-sm-6" style="padding: 5px;">
+</div><div class="row" style="margin: 15px;">
+<div class="col-sm-6 col-md-5 col-md-push-1" style="padding: 5px;">
 <a href="http://www.csszengarden.com/221/">
-<img src="{{ "/morea/zen-garden/basic-css-zengarden-midcent.png" | prepend:site.baseurl }}"
-    alt="A light green watercolor view of the CSS Zen Garden website.">  
+<img class="img-responsive" src="{{ "/morea/css-basics/zen-garden/basic-css-zengarden-midcent.png" | prepend:site.baseurl }}"
+    alt="A bold retro style for the CSS Zen Garden website.">  
 </a>
 </div>
-<div class="col-sm-6" style="padding: 5px;">
+<div class="col-sm-6 col-md-5 col-md-push-1" style="padding: 5px;">
 <a href="http://www.csszengarden.com/215/">
-<img src="{{ "/morea/zen-garden/basic-css-zengarden-robot.png" | prepend:site.baseurl }}"
-    alt="A light green watercolor view of the CSS Zen Garden website.">  
+<img class="img-responsive" src="{{ "/morea/css-basics/zen-garden/basic-css-zengarden-robot.png" | prepend:site.baseurl }}"
+    alt="A light colored style of the CSS Zen Garden website featuring a robot.">  
 </a>
 </div>
 </div>
@@ -74,9 +75,9 @@ div { background-color: lightYellow;  color: red; }
 In the examples above, all of the selectors should be recognizable as HTML tag names.  Selectors can also be class or id selectors.  You can also combine one or more to make a descendant selector.
 
 
-|  `#content`  |  an ID selector  |  selects the item with the `id="content"`
-|  `.myClass`  |  a class selector | selects all elements that have `class="myClass"`
-| `#content p` |  a descendant selector | selects all p elements *inside* the element with `id="content"`
+|  `#content`   | &nbsp;&nbsp;  an ID selector  &nbsp;&nbsp; |  &nbsp;&nbsp; selects the item with the `id="content"`
+|  `.myClass`   | &nbsp;&nbsp;  a class selector &nbsp;&nbsp; | &nbsp;&nbsp; selects all elements that have `class="myClass"`
+| `#content p`  | &nbsp;&nbsp;  a descendant selector &nbsp;&nbsp; | &nbsp;&nbsp; selects all p elements *inside* the element with `id="content"`
 
 
 ## The Span Element
@@ -108,4 +109,3 @@ Validation errors in your CSS file will also result in points being deducted fro
  - What is the HTML `span` element used for?  In what ways is it similar to a `div` element?  How is it different?
  - What effect does the CSS applied to a parent element have on its children?  
  - How do we validate our CSS?  How is this process similar to the process for validating HTML?  How is it different?
-   
