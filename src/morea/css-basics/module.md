@@ -11,7 +11,7 @@ morea_readings:
   - read-css-basics
   - read-dev-tools
 morea_experiences:
-  - ex-css-basics
+  - ex-css-cascade
   - ex-fan-page-p2
   - ex-dev-tools-p1
 morea_assessments:

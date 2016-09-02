@@ -1,7 +1,7 @@
 ---
-title: "Practice CSS Basics"
+title: "CSS Cascade"
 published: true
-morea_id: ex-css-basics
+morea_id: ex-css-cascade
 morea_type: experience
 morea_summary: "Practice applying CSS to a web page while exploring the CSS Cascade."
 morea_sort_order: 2
