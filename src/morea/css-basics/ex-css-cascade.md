@@ -34,7 +34,6 @@ If a child element has a CSS rule applied to it directly, that is applied to the
 1. Add a new style rule to the external CSS file to give paragraph elements a medium purple background color (#AEAED4).
 
 2. Look at one of the paragraph elements using the developer tools.  Notice that the inherited style for the background color from the body is crossed out.
-
 <img class="img-responsive" src="{{ "/morea/css-basics/img/inherited-applied-p-style.png" | prepend:site.baseurl }}" alt="Screenshot of CSS applied to p tags to change background-color." />
 
 3. Notice that while this changed the background-color, it did not affect the text color.  While the paragraphs no longer use the inherited background-color, they still inherit the color property that controls the text color.
@@ -47,7 +46,6 @@ What happens if two rules would affect the same element?  How does the browser k
 2.  Add a CSS rule to the external CSS file to change the background-color of that ID to be white.
 
 3.  We now have two rules that apply to that paragraph.  Use the developer tools to see the CSS applied to that paragraph.  
-
 <img class="img-responsive" src="{{ "/morea/css-basics/img/id-override-p-style.png" | prepend:site.baseurl }}" alt="Screenshot of CSS applied to p tag by id." />
 
 4.  Notice that the browser did apply the `p` element rule, but then for the paragraph with this id, the rule is crossed out.  This means that the rule is overridden by another rule that applies to the same element.  
