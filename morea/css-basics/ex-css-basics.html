@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title> Practice CSS Basics | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
@@ -9,7 +10,7 @@
   <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
   <link rel="stylesheet" href="/fall-2016/css/style.css">
   <link rel="stylesheet" href="/fall-2016/css/syntax.css">
-  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -22,8 +23,7 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   
-  <script type="text/javascript"
-          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
   
@@ -97,7 +97,7 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/"></a></li>
+      <li><a href="/fall-2016/modules/css-basics">CSS Basics</a></li>
       <li class="active">Practice CSS Basics</li>
     </ol>
   </div>
@@ -112,13 +112,132 @@
 <p>The following topics were covered earlier:</p>
 
 <ul>
-  <li><a href="/fall-2016/morea/css-basics/read-css-basics.html">Basic CSS</a>: To complete this assignment you should be familiar with how CSS works and how to use it to alter the background and font colors on a web page.  You should also understand how to validate the CSS on web page.</li>
+  <li>
+<a href="/fall-2016/morea/css-basics/read-css-basics.html">Basic CSS</a>: To complete this assignment you should be familiar with how CSS works and how to use it to alter the background and font colors on a web page.  You should also understand how to validate the CSS on web page.</li>
+  <li>
+<a href="/fall-2016/morea/css-basics/read-dev-tools.html">Browser Developer Tools</a>: To complete this assignment you should also be familiar with how to use the browser developer tools in Chrome.</li>
 </ul>
 
 <h2 id="github">GitHub</h2>
-<p>The GitHub repository for this assignment is <a href="https://github.com/htc-ccis1301/css-basics">css-basics-lab</a>.</p>
+<p>The GitHub repository for this assignment is <a href="https://github.com/htc-ccis1301/css-cascade">css-cascade</a>.</p>
 
 <h2 id="instructions">Instructions</h2>
+<p>Open the project folder in <a href="">Brackets</a>.  Notice that you have an HTML file and a CSS file provided for you.  If you view the web page, you’ll see that it should look like this.</p>
+
+<p><img class="img-responsive" src="/fall-2016/morea/css-basics/img/initial-page.png" alt="Screenshot of initial web page."></p>
+
+<h3 id="inherited-css">Inherited CSS</h3>
+<p>Notice that there is a CSS rule to set the background color of the <code class="highlighter-rouge">body</code> element to be light purple (#E6E6FA), and the foreground or text color to be dark purple (#191970).</p>
+
+<p>This style is inherited by every element inside of the body making the entire background light purple and all of the text dark purple.</p>
+
+<p>If a child element has a CSS rule applied to it directly, that is applied to the element instead of  the inherited style.</p>
+
+<ol>
+  <li>
+    <p>Add a new style rule to the external CSS file to give paragraph elements a medium purple background color (#AEAED4).</p>
+  </li>
+  <li>
+    <p>Look at one of the paragraph elements using the developer tools.  Notice that the inherited style for the background color from the body is crossed out.</p>
+  </li>
+</ol>
+
+<p><img class="img-responsive" src="/fall-2016/morea/css-basics/img/inherited-applied-p-style.png" alt="Screenshot of CSS applied to p tags to change background-color."></p>
+
+<ol>
+  <li>Notice that while this changed the background-color, it did not affect the text color.  While the paragraphs no longer use the inherited background-color, they still inherit the color property that controls the text color.</li>
+</ol>
+
+<h3 id="specificity">Specificity</h3>
+<p>What happens if two rules would affect the same element?  How does the browser know which rule to apply?</p>
+
+<ol>
+  <li>
+    <p>Add an id element to one of the paragraphs in the main content.  You can name the id whatever you would like and apply it to any one of the paragraphs in the main element.</p>
+  </li>
+  <li>
+    <p>Add a CSS rule to the external CSS file to change the background-color of that ID to be white.</p>
+  </li>
+  <li>
+    <p>We now have two rules that apply to that paragraph.  Use the developer tools to see the CSS applied to that paragraph.</p>
+  </li>
+</ol>
+
+<p><img class="img-responsive" src="/fall-2016/morea/css-basics/img/id-override-p-style.png" alt="Screenshot of CSS applied to p tag by id."></p>
+
+<ol>
+  <li>Notice that the browser did apply the <code class="highlighter-rouge">p</code> element rule, but then for the paragraph with this id, the rule is crossed out.  This means that the rule is overridden by another rule that applies to the same element.</li>
+</ol>
+
+<p>Because the style rule for ID is more specific than the style rule for all HTML p elements, the browser uses the ID rule.</p>
+
+<p>Rules that are more specific win.</p>
+
+<p>We do not need to use id’s to be more specific.  We can also use style classes or descendant selectors. A style class is more specific than an HTML tag name, an ID is more specific than a style class.</p>
+
+<p>Using HTML tags in a descendant selector is also more specific than using a single HTML tag, but when style classes or id’s start to be involved, things can become more complex.  We’ll leave it at this for now, but if you want to know more, checkout the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">official rules</a>.</p>
+
+<h3 id="last-one-in-wins">Last one in wins</h3>
+<p>If there are two rules that are equally specific, the last one in wins.</p>
+
+<ol>
+  <li>
+    <p>Add a second CSS rule to your external style sheet that will change the background-color of the  paragraphs to be red.</p>
+  </li>
+  <li>
+    <p>Again look at the applied CSS using the developer tools.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/img/id-override-p-style.png" alt="Screenshot of two CSS rules applied to p tag."></p>
+  </li>
+  <li>
+    <p>Notice the line numbers.  The color will be set by the rule that is the last in the file to set the background-color.</p>
+  </li>
+  <li>
+    <p>Take out this red paragraph rule.  It’s not so pretty with my purples!</p>
+  </li>
+</ol>
+
+<p>This is an important thing to remember, as a common cause of issues in this course is having multiple rules for the same selector in the CSS file.  This is not incorrect, but if you have a long CSS file and do not see the other rule, this can be confusing.  Because of this, I strongly encourage you to look through your CSS before adding a new rule for a new selector.  Make sure there isn’t already one there that you can add a new property into instead of adding a new rule.</p>
+
+<h3 id="cascade---external-embedded--inline-css">Cascade - External, Embedded, &amp; Inline CSS</h3>
+<p>For this course, I’m going to expect that you understand how external, embedded, and inline CSS work together.  This can be a topic for quizzes and exams.  However for all your assignments, except for this one, you should use only external CSS.</p>
+
+<ol>
+  <li>
+    <p>Add an embedded style to the index.html file to change the color of the paragraphs to be blue (#A6C6DF).</p>
+  </li>
+  <li>
+    <p>When you view your page, you should see that your paragraphs are now blue.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/img/embedded-override-external.png" alt="Screenshot of embedded style overriding external."></p>
+  </li>
+  <li>
+    <p>Next add an inline style to one of the paragraphs that does not have the ID applied to it.</p>
+  </li>
+  <li>
+    <p>Notice that one paragraph you applied the inline CSS to is now a lighter blue.
+<img class="img-responsive" src="/fall-2016/morea/css-basics/img/inline-override-both.png" alt="Screenshot of inline style overriding both embedded and external."></p>
+  </li>
+</ol>
+
+<h3 id="descendant-selectors">Descendant Selectors</h3>
+<p>Descendant selectors in CSS are very important.  They get used <strong>a lot</strong> because they help you to be more specific without the need for adding extra stuff into your HTML.  Let’s say that we want to have all of the paragraphs in the main content get their background-color from their parent element.</p>
+
+<p>Let’s add this new rule to our external stylesheet. First we need to know how to write the selector to get only paragraphs that are inside the main element.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">main p <span class="o">{</span>
+
+<span class="o">}</span></code></pre></figure>
+
+<p>Next question is how do we know what the background-color of their parent element is? It could be different for each paragraph, right?  They may not all be direct children of the <code class="highlighter-rouge">main</code> element.  (Notice the one that is a child of a <code class="highlighter-rouge">div</code> which is then a child of <code class="highlighter-rouge">main</code>.)  To have an element use the value of its parent, we can use the word <code class="highlighter-rouge">inherit</code> as the value of the property.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">main p <span class="o">{</span>
+  background-color: inherit;
+<span class="o">}</span></code></pre></figure>
+
+<p>Now what color do you expect the background-color for paragraphs to be?  Will they all have the same background-color, or do you think some will still be different?  Think about this before you try it out.  If things are different than what you expected, see if you can figure out why.  Use the developer tools to help you.</p>
+
+<div class="alert alert-info">
+<img class="emoji" title=":dizzy:" alt=":dizzy:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ab.png" height="20" width="20" align="absmiddle"> Note that you don't need to use `inherit` very often because it is the default behavior.  You would only need to use it to *undo* other applied CSS, much like we are doing here.
+</div>
 
 <h2 id="submit">Submit</h2>
 <p>Create a pull-request and submit the screenshot of it in the Assignment box on D2L.</p>
@@ -136,11 +255,11 @@
   <footer>
     <div class="container page-footer">
       
-      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-08-30 00:19:17 -0500</span></p>
+        Last update on: <span>2016-09-01 20:44:36 -0500</span></p>
     </div>
   </footer>
 </div>
