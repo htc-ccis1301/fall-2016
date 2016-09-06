@@ -1,11 +1,13 @@
 ---
-title: "CSS Box Model"
+title: "CSS Box Model & More"
 published: true
 morea_id: more-css
 morea_icon_url: /morea/more-css/css-boxmodel-logo.png
 morea_type: module
 morea_summary: "An introduction to the CSS box model and additional CSS features to add color to your pages."
 morea_outcomes:
+  - out-box-model
+  - out-css-colors
 morea_readings:
   - read-more-css
   - read-more-git
