@@ -5,6 +5,8 @@ morea_id: ex-dev-tools-p1
 morea_type: experience
 morea_summary: "A first experience using the Developer Tools to explore a web page."
 morea_sort_order: 2
+morea_labels:
+ - dev-tools
 ---
 
 # {{ page.title }}

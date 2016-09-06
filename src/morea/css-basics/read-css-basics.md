@@ -5,12 +5,14 @@ morea_id: read-css-basics
 morea_summary: "An introduction to styling web page content using Cascading Style Sheets (CSS)."
 morea_type: reading
 morea_sort_order: 1
+morea_labels:
+ - textbook
 ---
 
 # {{ page.title }}
 Read Chapter 4 of your textbook [Basics of Web Design: HTML5 & CSS3](http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/) which covers an introduction to CSS.  
 
-Remember that you can get the example code from the book electronically from the course website.  It is important to experiment with the material as you read and learn it so that you understand it well.
+Remember that you can get the example code from the book electronically from the [textbook website](http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/).  It is important to experiment with the material as you read and learn it so that you understand it well.
 
 ## Introduction to CSS
 Chapter 4 is dedicated to introducing Cascading Style Sheets (CSS).  We will learn what CSS is, what it is used for, how it works, and how to apply it on our web pages to make them look more attractive.  

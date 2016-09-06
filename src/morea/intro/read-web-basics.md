@@ -16,6 +16,24 @@ Read Chapter 1 of your textbook [Basics of Web Design: HTML5 & CSS3](http://wps.
 ## Part 1 - Standards and Architecture
 As you read through the first part of the chapter (pages 1-14), pay attention to the various standards and technologies that allow the internet to function.  You will need to be able to identify them and explain how they are used.  It is also important that you understand at a high-level the client/server architecture of the internet and how a web browser displays a web page.
 
+<div style="padding:20px">
+<div class="row">
+<div class="col-xs-12 col-md-8">
+  {%  include youtube.html  id="5o8CwafCxnU" %}
+  Thanks to <a href="https://code.org">Code.org</a> for sharing the video!
+</div>
+</div>
+</div>
+
+<div style="padding:20px">
+<div class="row">
+<div class="col-xs-12 col-md-8">
+  {%  include youtube.html  id="kBXQZMmiA4s" %}
+  Thanks to <a href="https://code.org">Code.org</a> for sharing the video!
+</div>
+</div>
+</div>
+
 ### Review Questions
 
  - What is the W3C and why is it important?
@@ -40,7 +58,7 @@ This is a gist that I have setup for the Basic HTML5 Template:
 {% gist mbMosman/5785c6e9534e956b79d7 basicHTML5.html %}
 
 <div class="well">
-Note that you can view and bookmark the above template on GitHub by clicking the link at the bottom of the <em>Gist</em>.  (I suggest that if you do that you open it in a new tab or window.)  When looking at it while logged into GitHub, <em>star</em> the gist to bookmark it or <em>fork</em> the gist if you want to be able to alter it.  Gists are snippets of code you want to keep handy.  You can create you own from the + button next to your profile in the upper right.
+:dizzy: You can view and bookmark the above template gist on GitHub by clicking the link at the bottom of the <em>gist</em>.  If you are logged into GitHub, <em>star</em> the gist to bookmark it or <em>fork</em> the gist if you want to copy it to your account.  Gists are snippets of code you want to keep handy.  You can create you own from the + button next to your profile in the upper right.
 </div>
 
 ### HTML Structure

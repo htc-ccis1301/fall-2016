@@ -4,7 +4,9 @@ published: true
 morea_id: read-dev-tools
 morea_summary: "An introduction to using the Developer Tools in the Chrome Browser."
 morea_type: reading
-morea_sort_order: 1
+morea_sort_order: 2
+morea_labels:
+ - dev-tools
 ---
 
 # {{ page.title }}

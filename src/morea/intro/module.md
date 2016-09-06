@@ -23,7 +23,7 @@ morea_assessments:
  - asm-html-min
 morea_type: module
 morea_icon_url: /morea/intro/intro-logo.png
-morea_summary: "This module provides an overview of web standards and architecture and an introduction to web development."
+morea_summary: "An overview of web standards and architecture and an introduction to web development."
 morea_labels:
 morea_sort_order: 1
 ---

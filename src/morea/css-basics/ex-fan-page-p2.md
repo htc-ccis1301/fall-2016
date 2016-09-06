@@ -48,6 +48,7 @@ Create a pull-request add a pull-request comment to include your thoughts on why
 Submit the following screenshots to the Assignment box on D2L:
 
 - Open-pull request with comment
+- Actual web page as published on GitHub (URL in Settings)
 - Validation of HTML file
 - Validation of CSS file
 

@@ -41,7 +41,7 @@ If a child element has a CSS rule applied to it directly, that is applied to the
 ### Specificity
 What happens if two rules would affect the same element?  How does the browser know which rule to apply?
 
-1.  Add an id element to one of the paragraphs in the main content.  You can name the id whatever you would like and apply it to any one of the paragraphs in the main element.  
+1.  Add an id attribute to one of the paragraphs in the main content.  You can name the id whatever you would like and apply it to any one of the paragraphs in the main element.  
 
 2.  Add a CSS rule to the external CSS file to change the background-color of that ID to be white.
 
@@ -61,7 +61,7 @@ Using HTML tags in a descendant selector is also more specific than using a sing
 ### Last one in wins
 If there are two rules that are equally specific, the last one in wins.  
 
-1.  Add a second CSS rule to your external style sheet that will change the background-color of the  paragraphs to be red.  
+1.  Add a second CSS rule to your external style sheet that will change the background-color of the paragraphs to be red.  
 
 2.  Again look at the applied CSS using the developer tools.
 <img class="img-responsive" src="{{ "/morea/css-basics/img/id-override-p-style.png" | prepend:site.baseurl }}" alt="Screenshot of two CSS rules applied to p tag." />
@@ -75,12 +75,12 @@ This is an important thing to remember, as a common cause of issues in this cour
 ### Cascade - External, Embedded, & Inline CSS
 For this course, I'm going to expect that you understand how external, embedded, and inline CSS work together.  This can be a topic for quizzes and exams.  However for all your assignments, except for this one, you should use only external CSS.  
 
-1.  Add an embedded style to the index.html file to change the color of the paragraphs to be blue (#A6C6DF).
+1.  Add an embedded style to the index.html file to change the background-color of the paragraphs to be blue (#A6C6DF).
 
 2.  When you view your page, you should see that your paragraphs are now blue.
 <img class="img-responsive" src="{{ "/morea/css-basics/img/embedded-override-external.png" | prepend:site.baseurl }}" alt="Screenshot of embedded style overriding external." />
 
-3.  Next add an inline style to one of the paragraphs that does not have the ID applied to it.
+3.  Next add an inline style to one of the paragraphs that does not have the ID applied to it to change the background-color to light blue (#D3E5F3).
 
 4.  Notice that one paragraph you applied the inline CSS to is now a lighter blue.
 <img class="img-responsive" src="{{ "/morea/css-basics/img/inline-override-both.png" | prepend:site.baseurl }}" alt="Screenshot of inline style overriding both embedded and external." />

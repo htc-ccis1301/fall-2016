@@ -7,8 +7,8 @@ morea_summary: "An introduction to HTML syntax, structure, and common tags."
 morea_type: module
 morea_sort_order: 2
 morea_outcomes:
-  - out-html-validation
   - out-common-html
+  - out-html-validation
 morea_readings:
   - read-html-review
   - read-html-basics

@@ -5,6 +5,8 @@ morea_id: ex-dev-tools-p2
 morea_type: experience
 morea_summary: "In this exercise we will use the Developer Tools to explore the Pacific Trails Resort website."
 morea_sort_order: 2
+morea_labels:
+ - dev-tools
 ---
 
 # {{ page.title }}

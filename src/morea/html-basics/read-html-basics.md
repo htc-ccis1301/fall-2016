@@ -4,13 +4,15 @@ published: true
 morea_id: read-html-basics
 morea_summary: "An introduction to basic HTML tags for outlining content and creating links."
 morea_type: reading
-morea_sort_order: 1
+morea_sort_order: 2
+morea_labels:
+ - textbook
 ---
 
 # {{ page.title }}
 Read Chapter 2 of your textbook [Basics of Web Design: HTML5 & CSS3](http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/) which covers an introduction to some common HTML tags.  
 
-Remember that you can get the example code from the book electronically from the course website.  It is important to experiment with the material as you read and learn it so that you understand it well.
+Remember that you can get the example code from the book electronically from the [textbook website](http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/).  It is important to experiment with the material as you read and learn it so that you understand it well.
 
 ## New HTML Tags
 Much of Chapter 2 in the textbook is devoted to introducing new HTML tags.  The tags that I recommend that you focus on are those for:
