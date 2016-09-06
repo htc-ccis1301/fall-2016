@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> Bootstrap CSS | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+        <li><a href="//htc-ccis1301.github.io/html-students/fall-2016.html">Class Directory</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/bootstrap">Introduction to Bootstrap</a></li>
+      <li class="active">Bootstrap CSS</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="bootstrap-css">Bootstrap CSS</h1>
+
+<p>Most of what Bootstrap provides is a responsive, mobile first CSS framework to use when building your site.  The <a href="http://getbootstrap.com/css/">Bootstrap CSS</a> page introduces the main CSS classes. Read through the Overview section for an introduction.  (We’ll get into the Grid more after we setup our new site.)</p>
+
+<h2 id="containers">Containers</h2>
+<p>For Bootstrap to work properly, you need to first have a <a href="http://getbootstrap.com/css/#overview-container">Container</a>.  They offer two choices, a responsive, fixed width <code class="highlighter-rouge">container</code>  or a fluid - full display width <code class="highlighter-rouge">container-fluid</code>.  Both are <em>responsive</em>, but they respond in different ways.  The fixed width container does not fill the entire display on larger devices.  It has a max-width and is centered.  The fluid container will always fill the entire display.</p>
+
+<p>Regardless of the option you choose, the container is generally setup either on a <code class="highlighter-rouge">div</code> by adding the appropriate style class: <code class="highlighter-rouge">&lt;div class="container"&gt;</code> or <code class="highlighter-rouge">&lt;div class="container-fluid"&gt;</code>.  However, it isn’t necessary to use a <code class="highlighter-rouge">div</code>, you might also add the container style to your <code class="highlighter-rouge">main</code> element or any other block element that might be appropriate.</p>
+
+<div class="alert alert-warning" role="alert">
+  <div class="media">
+    <div class="media-left media-top">
+      <img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20" align="absmiddle">
+    </div>
+    <div class="media-body">
+      <p>You can have more than one container on a page, but you should not nest one container inside of another.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="helpful-classes">Helpful Classes</h2>
+
+<h3 id="typography">Typography</h3>
+<p>Bootstrap includes many CSS classes that are pre-built to apply single CSS properties to an element.  For example, you’re learned how to use the <code class="highlighter-rouge">text-align</code> and <code class="highlighter-rouge">text-transform</code> CSS properties to align and modify text.  Bootstrap include style classes for each optional value of these properties: <a href="http://getbootstrap.com/css/#type-alignment">Bootstrap Alignment Classes</a> &amp; <a href="http://getbootstrap.com/css/#type-transformation">Bootstrap Transformation Classes</a></p>
+
+<h3 id="tables">Tables</h3>
+<p>Bootstrap also provides CSS classes to add a default style to <a href="http://getbootstrap.com/css/#type-transformation">tables</a>.  These classes can be combined to add individual features to the table styling.</p>
+
+<p>For example, just adding the <code class="highlighter-rouge">table</code> style class to the table tag gives you a basic table with a border separating the rows.</p>
+
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;table&gt;</span>
+  </code></pre></figure>
+
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/basic-table.png" alt="A basic, borderless Bootstrap table">
+</div>
+</div>
+</div>
+
+<p>If you add the <code class="highlighter-rouge">table-bordered</code> style, the table gets an outer border and column borders in addition to the border between rows found in the basic table.</p>
+
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-bordered"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;table&gt;</span>
+  </code></pre></figure>
+
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/bordered-table.png" alt="A bordered Bootstrap table">
+</div>
+</div>
+</div>
+
+<p>If you add the <code class="highlighter-rouge">table-striped</code> style, the table also gets alternate row striping.</p>
+
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="nt">&lt;table</span> <span class="na">class=</span><span class="s">"table table-bordered table-striped"</span><span class="nt">&gt;</span>
+      ...
+    <span class="nt">&lt;table&gt;</span>
+  </code></pre></figure>
+
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/bordered-striped-table.png" alt="A bordered and row striped Bootstrap table">
+</div>
+</div>
+</div>
+
+<p>All of the Bootstrap styles work in this additive fashion.  You combine multiple style classes on the same element to build the exact look you want for that element.  This makes their CSS library very flexible.</p>
+
+<h3 id="images">Images</h3>
+<p>The Bootstrap CSS classes for <a href="http://getbootstrap.com/css/#images">images</a> are also very handy.</p>
+
+<p>Applying the <code class="highlighter-rouge">img-responsive</code> class will auto adjust your image sizes to fit in responsive containers, such as the Bootstrap Grid.  There are also classes to round the corners or put the image in a circle.</p>
+
+<div class="alert alert-info" role="alert">
+  <div class="media">
+    <div class="media-left media-top">
+      <img class="emoji" title=":dizzy:" alt=":dizzy:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ab.png" height="20" width="20" align="absmiddle">
+    </div>
+    <div class="media-body">
+      <p>Bootstrap treats responsive images as block elements, so to center an image you would use the <code class="highlighter-rouge">.center-block</code> style, not the inline <code class="highlighter-rouge">.text-center</code> style.</p>
+
+    </div>
+  </div>
+</div>
+
+<h3 id="more">More</h3>
+<p>There are many other built in CSS classes included in the Bootstrap library.  It’s worth taking a look through the entire list just to be familiar with what they already have built for you.</p>
+
+<p>For example, when I first learned Bootstrap, I didn’t have any need of multi-colored <a href="http://getbootstrap.com/components/#alerts">alert</a> boxes, but since I’ve started making websites for my classes, calling out common errors, warnings and info tips in different colors has been quite handy. While I didn’t remember the actual CSS class names, I recalled seeing them in the Bootstrap docs years later and looked them up.  Because I recalled seeing these, I avoided writing my own CSS to do the same thing.</p>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-09-06 01:23:55 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

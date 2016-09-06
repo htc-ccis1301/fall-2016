@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Internet & Web Basics | CCIS1301 Fall 2016 </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> Internet &amp; Web Basics | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -9,7 +10,7 @@
   <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
   <link rel="stylesheet" href="/fall-2016/css/style.css">
   <link rel="stylesheet" href="/fall-2016/css/syntax.css">
-  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -22,8 +23,7 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   
-  <script type="text/javascript"
-          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
   
@@ -98,7 +98,7 @@
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
       <li><a href="/fall-2016/modules/intro">Introduction to Web Development</a></li>
-      <li class="active">Internet & Web Basics</li>
+      <li class="active">Internet &amp; Web Basics</li>
     </ol>
   </div>
 </div>
@@ -110,6 +110,30 @@
 
 <h2 id="part-1---standards-and-architecture">Part 1 - Standards and Architecture</h2>
 <p>As you read through the first part of the chapter (pages 1-14), pay attention to the various standards and technologies that allow the internet to function.  You will need to be able to identify them and explain how they are used.  It is also important that you understand at a high-level the client/server architecture of the internet and how a web browser displays a web page.</p>
+
+<div style="padding:20px">
+<div class="row">
+<div class="col-xs-12 col-md-8">
+  <div class="video-container">
+  <iframe src="https://www.youtube.com/embed/5o8CwafCxnU" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+  Thanks to <a href="https://code.org">Code.org</a> for sharing the video!
+</div>
+</div>
+</div>
+
+<div style="padding:20px">
+<div class="row">
+<div class="col-xs-12 col-md-8">
+  <div class="video-container">
+  <iframe src="https://www.youtube.com/embed/kBXQZMmiA4s" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+  Thanks to <a href="https://code.org">Code.org</a> for sharing the video!
+</div>
+</div>
+</div>
 
 <h3 id="review-questions">Review Questions</h3>
 
@@ -134,11 +158,11 @@
 
 <p>This is a gist that I have setup for the Basic HTML5 Template:</p>
 <noscript><pre>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
+&lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;title&gt;Title Me!!!&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;&quot; /&gt;
-    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;link rel="stylesheet" href="" /&gt;
+    &lt;meta charset="utf-8" /&gt;
 &lt;/head&gt;
 &lt;body&gt;
  
@@ -149,17 +173,17 @@
 <script src="https://gist.github.com/mbMosman/5785c6e9534e956b79d7.js?file=basicHTML5.html"> </script>
 
 <div class="well">
-Note that you can view and bookmark the above template on GitHub by clicking the link at the bottom of the <em>Gist</em>.  (I suggest that if you do that you open it in a new tab or window.)  When looking at it while logged into GitHub, <em>star</em> the gist to bookmark it or <em>fork</em> the gist if you want to be able to alter it.  Gists are snippets of code you want to keep handy.  You can create you own from the + button next to your profile in the upper right.
+<img class="emoji" title=":dizzy:" alt=":dizzy:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ab.png" height="20" width="20" align="absmiddle"> You can view and bookmark the above template gist on GitHub by clicking the link at the bottom of the <em>gist</em>.  If you are logged into GitHub, <em>star</em> the gist to bookmark it or <em>fork</em> the gist if you want to copy it to your account.  Gists are snippets of code you want to keep handy.  You can create you own from the + button next to your profile in the upper right.
 </div>
 
 <h3 id="html-structure">HTML Structure</h3>
 <p>It is important to understand that the structure of HTML is a tree or branching hierarchy - much like a family tree or a file system’s folder structure.  The <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> tag is the root of this structure. Looking at our template it has two children - <code class="highlighter-rouge">&lt;head&gt;</code> and <code class="highlighter-rouge">&lt;body&gt;</code>.  These children are between (or inside) the opening and closing tags. You could also say they are <em>wrapped</em> (or surrounded) by the <code class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> tag.  Because they have the same parent tag, they are siblings.</p>
 
-<p>Using the Chrome Browser Developer tools, we can view the structure of the HTML similar the the way you might see a file tree shown on your computer.<br />
-<img src="/fall-2016/morea/intro/basic-html-tree1.png" alt="Image illustrating the tree structure of the template above. The html tag contains the head and body." /></p>
+<p>Using the Chrome Browser Developer tools, we can view the structure of the HTML similar the the way you might see a file tree shown on your computer.<br>
+<img src="/fall-2016/morea/intro/basic-html-tree1.png" alt="Image illustrating the tree structure of the template above. The html tag contains the head and body."></p>
 
-<p>By clicking the arrow next to a tag name, you can see what is inside of it.<br />
-<img src="/fall-2016/morea/intro/basic-html-tree2.png" alt="Image illustrating the tree structure of the template above. The html tag contains the head and body." /></p>
+<p>By clicking the arrow next to a tag name, you can see what is inside of it.<br>
+<img src="/fall-2016/morea/intro/basic-html-tree2.png" alt="Image illustrating the tree structure of the template above. The html tag contains the head and body."></p>
 
 <h3 id="review-questions-1">Review Questions</h3>
 
@@ -185,11 +209,11 @@ Note that you can view and bookmark the above template on GitHub by clicking the
   <footer>
     <div class="container page-footer">
       
-      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-09-01 23:27:28 -0500</span></p>
+        Last update on: <span>2016-09-06 01:23:55 -0500</span></p>
     </div>
   </footer>
 </div>

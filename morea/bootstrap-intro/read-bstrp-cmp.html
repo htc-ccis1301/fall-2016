@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> Bootstrap Componenets | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+        <li><a href="//htc-ccis1301.github.io/html-students/fall-2016.html">Class Directory</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/bootstrap">Introduction to Bootstrap</a></li>
+      <li class="active">Bootstrap Componenets</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="bootstrap-componenets">Bootstrap Componenets</h1>
+
+<p>Bootstrap includes many helpful <a href="http://getbootstrap.com/components/">components</a> to aid in the creation of a nice user interface for your page.  We’ll discuss a few below.  This should be enough for you to get a feel for how to read the docs and use the examples.  This should help you to gain confidence that you can then read about and use the other components on the Bootstrap site on your own.</p>
+
+<div class="alert alert-info" role="alert">
+  <div class="media">
+    <div class="media-left media-top">
+      <img class="emoji" title=":dizzy:" alt=":dizzy:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ab.png" height="20" width="20" align="absmiddle">
+    </div>
+    <div class="media-body">
+      <p>When looking at the examples in the docs, remember to resize your display to view their responsive behavior.</p>
+
+    </div>
+  </div>
+</div>
+
+<h2 id="navigation--navbar">Navigation &amp; Navbar</h2>
+<p>There are several different options for setting up and organizing a site’s links and navigation.  The most commonly used is a navbar that sits along the top of the web page.</p>
+
+<h3 id="navbar-examples">Navbar Examples</h3>
+<p>The Bootstrap Getting Started page examples illustrate some options for using the bootstrap navbar.</p>
+
+<ul>
+  <li>
+<a href="http://getbootstrap.com/examples/navbar/">Regular Navbar</a> - use links for positioning options: default, static and fixed</li>
+  <li>
+<a href="http://getbootstrap.com/examples/carousel/">Carousel using Inverted Navbar</a> with default positioning - inverted refers to the flipped colors (darker background) vs the default</li>
+  <li>
+<a href="http://getbootstrap.com/examples/jumbotron/">Jumbotron using Inverted Navbar</a> - inverted navbar with fixed positioning and a form</li>
+</ul>
+
+<p>If you view the source for these pages and look at the navbar, you might notice much of the differences in appearance and behavior come from which style classes are applied.  Want the navbar to be fixed at the top, then apply the <code class="highlighter-rouge">navbar-fixed-top</code> class.  Want to swap (invert) colors, then apply the <code class="highlighter-rouge">navbar-inverse</code> class.  As we learned earlier, you can add multiple style classes to the same element to build a custom look and behavior.</p>
+
+<h3 id="navbar-functionality">Navbar Functionality</h3>
+<p>There is a lot packed into Bootstrap’s <a href="http://getbootstrap.com/components/#navbar">Default Navbar Example</a>.  This is meant to show a lot of variety in what you can do with the navbar, but all those options will not make sense for every site.  You should feel free to add and remove items as needed for your site.</p>
+
+<p>Let’s look at a simpler example. Note the HTML comments with notes on individual pieces.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- This makes a default light navbar --&gt;</span>
+<span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-default"</span><span class="nt">&gt;</span>
+
+  <span class="c">&lt;!-- The container-fluid makes the nav adjust to always be full width --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- Brand and toggle are grouped as navbar-header.  Only this is initially shown on mobile --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-header"</span><span class="nt">&gt;</span>
+
+      <span class="c">&lt;!-- Note this button has 3 bars in it, often called hamburger nav. --&gt;</span>
+      <span class="c">&lt;!-- This is shown when the navbar is collapsed. --&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"navbar-toggle collapsed"</span> <span class="na">data-toggle=</span><span class="s">"collapse"</span>
+              <span class="na">data-target=</span><span class="s">"#bs-ex-nav-collapse"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle navigation<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-bar"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+
+      <span class="c">&lt;!-- This is the "brand" or name/icon representing your site.  Should link to your home page. --&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"index.html"</span><span class="nt">&gt;</span>My BS Site<span class="nt">&lt;/a&gt;</span>
+
+    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.navbar-header --&gt;</span>
+
+    <span class="c">&lt;!-- Collect the nav links, forms, and other content for toggling --&gt;</span>
+    <span class="c">&lt;!-- This is shown when the navbar is not collapsed. --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"collapse navbar-collapse"</span> <span class="na">id=</span><span class="s">"bs-ex-nav-collapse"</span><span class="nt">&gt;</span>
+
+      <span class="c">&lt;!-- These are the links shown in the nav --&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav navbar-nav"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Active Link <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>(current)<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Last link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+
+    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.navbar-collapse --&gt;</span>
+
+  <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /.container-fluid --&gt;</span>
+<span class="nt">&lt;/nav&gt;</span></code></pre></figure>
+
+<h4 id="toggle-behavior">Toggle Behavior</h4>
+<p>The Bootstrap navbar will collapse into a button to conserve space on smaller devices. Click the button and the navbar will show/hide at the top of the screen. By default this is configured to occur only for xs (or phone sized) devices, but the size where the collapse occurs is customizable.</p>
+
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-8">
+  <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/default-navbar.png" alt="Screenshot of Bootstrap navbar.">
+</div>
+<div class="col-xs-12 col-md-4">
+  <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/default-navbar-collapsed.png" alt="Screenshot of Bootstrap navbar collapsed.">
+</div>
+</div>
+</div>
+
+<p>One key to how the collapse/expand functionality works is the <code class="highlighter-rouge">data-toggle</code> attribute on the <code class="highlighter-rouge">navbar-toggle</code> button ties to the <code class="highlighter-rouge">id</code> attribute on the <code class="highlighter-rouge">navbar-collapse</code> div.  This is important for the javascript that manages the toggle behavior to work correctly.  That value does not need to be <code class="highlighter-rouge">bs-ex-nav-collapse</code>, but the two values need to be the same.</p>
+
+<div class="alert alert-warning" role="alert">
+  <div class="media">
+    <div class="media-left media-top">
+      <img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20" align="absmiddle">
+    </div>
+    <div class="media-body">
+      <p>The Bootstrap Navbar component requires JavaScript in order for the responsive <em>collapse</em> behavior to function correctly on mobile devices, but it will still function at full-size without JavaScript.</p>
+
+    </div>
+  </div>
+</div>
+
+<h4 id="active-link">Active Link</h4>
+<p>Another thing worth noting in the navbar example is the <code class="highlighter-rouge">active</code> link.  It is highlighted in grey (for the default nav style) and also includes an invisible <em>helper</em> style for <code>sr-only</code> (screen readers only). This aids in accessibility and you will see it throughout many of the Bootstrap examples.  The idea is that the <code class="highlighter-rouge">active</code> style class is moved to show the current page when adding the nav to each page on your site.</p>
+
+<h3 id="other-navigation-options">Other Navigation Options</h3>
+<p>While you can customize the Navbar look to some extent, many <em>fancier</em> Bootstrap sites choose to use other components for the navigation.  I assume that a big reason is to avoid a certain <em>standard</em> Bootstrap look.  Just because everyone wants the benefits of using a great component library doesn’t mean they all want the site to look the same as the next guys.</p>
+
+<p>The following examples from the Getting Started page show other ways to support navigation on your site:</p>
+
+<ul>
+  <li>
+<a href="http://getbootstrap.com/examples/blog/">Blog Template</a> - shows a customized nav that is not using the Navbar component</li>
+  <li>
+<a href="http://getbootstrap.com/examples/justified-nav/">Justified Links</a> - another customized nav that uses <a href="http://getbootstrap.com/components/#nav-justified">justified links</a>
+</li>
+</ul>
+
+<p>Don’t be afraid to think out of the box.  There are no <em>rules</em> that say you must use a particular Bootstrap component for a certain thing.  It’s just a library of options. Check out some of these <a href="http://expo.getbootstrap.com/">real world examples</a> and count how many you see with a Navbar.  None of them look anything like the examples.</p>
+
+<h2 id="image-components">Image Components</h2>
+
+<h3 id="jumbotron">Jumbotron</h3>
+<p>The <a href="http://getbootstrap.com/components/#jumbotron">Jumbotron</a> component is intended for displaying a large marketing message, often with a nice big background image, to catch the attention of visitors right away.  It’s pretty straightforward component, but it’s appearance will change based on whether it is inside of a Bootstrap container or has a Bootstrap container inside of it.  (Remember not to nest containers!)</p>
+
+<h4 id="full-width">Full Width</h4>
+<p>In this <a href="http://getbootstrap.com/examples/jumbotron/">Jumbotron Example</a>, notice that the jumbotron extends the full width of the page. The jumbotron is not inside of a container, but has inside of it a child container to support any other Bootstrap components &amp; styles.</p>
+
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+  
+<figure class="highlight"><pre><code class="language-html" data-lang="html">    <span class="c">&lt;!-- Main jumbotron for a primary marketing message --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jumbotron"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;p&gt;</span>This is a template for a simple marketing or
+           informational website. It includes a large callout
+           called a jumbotron and three supporting pieces of
+           content. Use it as a starting point to create
+           something more unique.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;p&gt;&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">href=</span><span class="s">"#"</span>
+              <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Learn more <span class="ni">&amp;raquo;</span><span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  </code></pre></figure>
+
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/full-jumbotron.png" alt="Screenshot of Bootstrap full-width jumbotron.">
+</div>
+</div>
+</div>
+
+<h4 id="narrow-jumbotron">Narrow Jumbotron</h4>
+<p>In the <a href="http://getbootstrap.com/examples/jumbotron-narrow/">Narrow Jumbotron Example</a>, the jumbotron is placed inside of a container.  This causes it to be displayed padded with rounded corners, instead of extending the full width of the display.</p>
+
+<div style="padding:10px">
+<div class="row">
+<div class="col-xs-12 col-md-6">
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  ...
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jumbotron"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Jumbotron heading<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>Cras justo odio, dapibus ac facilisis
+      in, egestas eget quam. Fusce dapibus, tellus ac
+      cursus commodo, tortor mauris condimentum nibh, ut
+      fermentum massa justo sit amet risus.
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-success"</span> <span class="na">href=</span><span class="s">"#"</span>
+          <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Sign up today<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  ...
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</div>
+<div class="col-xs-12 col-md-6">
+  <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/narrow-jumbotron.png" alt="Screenshot of Bootstrap narrow jumbotron.">
+</div>
+</div>
+</div>
+
+<h3 id="carousel">Carousel</h3>
+<p>The <a href="http://getbootstrap.com/javascript/#carousel">Carousel</a> component is another option for displaying a prominent, eye catching marketing message.  It is similar to the Jumbotron, but it allows you to rotate through a series of different images or messages.</p>
+
+<div class="alert alert-info" role="alert">
+  <div class="media">
+    <div class="media-left media-top">
+      <img class="emoji" title=":dizzy:" alt=":dizzy:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ab.png" height="20" width="20" align="absmiddle">
+    </div>
+    <div class="media-body">
+      <p>Notice that you don’t see the <a href="http://getbootstrap.com/javascript/#carousel">Carousel</a> component in the list of CSS components with the Jumbotron.  That is because it is one of the JavaScript components.  The components that rely on <a href="https://jquery.com/">jQuery</a> and JavaScript to function are on the <a href="http://getbootstrap.com/javascript/">Bootstrap JavaScript</a> page.</p>
+
+    </div>
+  </div>
+</div>
+
+<p>Let’s look at an example:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"myCarousel"</span> <span class="na">class=</span><span class="s">"carousel slide"</span> <span class="na">data-ride=</span><span class="s">"carousel"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!-- Indicators: One must be active or will not display. --&gt;</span>
+<span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"carousel-indicators"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">data-target=</span><span class="s">"#myCarousel"</span> <span class="na">data-slide-to=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">data-target=</span><span class="s">"#myCarousel"</span> <span class="na">data-slide-to=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">data-target=</span><span class="s">"#myCarousel"</span> <span class="na">data-slide-to=</span><span class="s">"2"</span><span class="nt">&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+
+<span class="c">&lt;!-- Slide contents --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-inner"</span> <span class="na">role=</span><span class="s">"listbox"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item active"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span> <span class="na">style=</span><span class="s">"height: 300px; background-size: cover;
+         background-image: url(img/city-glitter.png);"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-caption"</span><span class="nt">&gt;</span>
+        Glitter Style!
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span> <span class="na">style=</span><span class="s">"height: 300px; background-size: cover;
+         background-image: url(img/flowers.png);"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-caption"</span><span class="nt">&gt;</span>
+        Flower Style!
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span> <span class="na">style=</span><span class="s">"height: 300px; background-size: cover;
+         background-image: url(img/shatter.png);"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-caption"</span><span class="nt">&gt;</span>
+        Shatter Style!
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Controls --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"left carousel-control"</span> <span class="na">href=</span><span class="s">"#myCarousel"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-slide=</span><span class="s">"prev"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-chevron-left"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Previous<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"right carousel-control"</span> <span class="na">href=</span><span class="s">"#myCarousel"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-slide=</span><span class="s">"next"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"glyphicon glyphicon-chevron-right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="c">&lt;!-- /.carousel --&gt;</span></code></pre></figure>
+
+<p><img class="img-responsive" src="/morea/bootstrap-intro/images/carousel.png" alt="Screenshot of Bootstrap carousel."></p>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-09-06 01:23:55 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

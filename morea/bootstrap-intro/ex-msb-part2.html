@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Ms B's Veggies - Part 2 | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+        <li><a href="//htc-ccis1301.github.io/html-students/fall-2016.html">Class Directory</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/bootstrap">Introduction to Bootstrap</a></li>
+      <li class="active">Ms B's Veggies - Part 2</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="ms-bs-veggies---part-2">Ms B’s Veggies - Part 2</h1>
+<p>To wrap up the Ms B’s Veggies site, we’ll customize the CSS to make the site look more unique.
+Your site should currently look like this:</p>
+<div style="padding:10px">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+        <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/ex-bootstrap-veggies-footer-no-css.png" alt="Screenshot of Ms B's Veggies footer before CSS is added." />
+    </div>
+  </div>
+</div>
+
+<p>In this part, we’ll add custom CSS so that it will look like this:</p>
+<div style="padding:10px">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+        <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/ex-bootstrap-veggies-styles-final.png" alt="Screenshot of Ms B's completed website made with Bootstrap." />
+    </div>
+  </div>
+</div>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>This exercise requires an understanding of the Bootstrap framework which you should have after completing <em>all</em> the reading for this module.  It is also important that you have completed part 1 of this exercise.</p>
+
+<h2 id="github">GitHub</h2>
+<p>The GitHub repository for this assignment is <a href="https://github.com/htc-ccis1301/veggies-bootstrap">veggies-bootstrap</a>.</p>
+
+<p>You do not need to fork the repository again. Continue working with the files you had from part 1.</p>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="add-a-custom-stylesheet">Add a Custom Stylesheet</h3>
+<p>Create a new styles.css file for the project, and add it to the Home page after the Bootstrap stylesheet.  Order is important as we will want to customize (override) some of the default Bootstrap styles to get our final version of the site.</p>
+
+<p>In the stylesheet file, add the following:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">html</span> <span class="p">{</span>
+   <span class="c">/* Needed to fix footer at bottom of browser */</span>
+   <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+   <span class="nl">min-height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+   <span class="c">/* Move down content because of fixed navbar at top */</span>
+   <span class="nl">padding-top</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+   <span class="c">/* Set margin bottom allow for footer height */</span>
+   <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">footer</span> <span class="p">{</span>
+   <span class="nl">position</span><span class="p">:</span> <span class="nb">fixed</span><span class="p">;</span>
+   <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+   <span class="nl">height</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+   <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+   <span class="nl">background-color</span><span class="p">:</span> <span class="m">#222222</span><span class="p">;</span>
+   <span class="nl">color</span><span class="p">:</span> <span class="m">#9d9d9d</span><span class="p">;</span>
+   <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+   <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>The <code class="highlighter-rouge">background-color</code> and <code class="highlighter-rouge">color</code> in the footer are set to match the Navbar, and the <code class="highlighter-rouge">width</code> and <code class="highlighter-rouge">height</code> properties match the width and height of the Navbar.  The <code class="highlighter-rouge">padding</code> and <code class="highlighter-rouge">text-align</code> are just to make it look good.  The other styles (first 2) are the ones that - along with the html styles at the top - are responsible for fixing the footer to the bottom of the page.</p>
+
+<p>Your page should now look like as follows.  As you scroll both the Navbar and footer should remain on the page.</p>
+<div style="padding:10px">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+        <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/ex-bootstrap-veggies-footer-css.png" alt="Screenshot of Ms B's Veggies footer after CSS is added." />
+    </div>
+  </div>
+</div>
+
+<h3 id="customize-the-color-scheme">Customize the Color Scheme</h3>
+<p>To wrap up our site, let’s give it a more friendly and homey look and feel.  Ms. B loves minty green and purple, so we’ve got a color scheme worked up just for her from the <a href="http://paletton.com/palette.php?uid=32S0u0kcglL4Zvw8Eq6eXhmkwen">Paletton</a> website.  We’ll use this and the fancy tartan background image (generated from the Paletton site) to transform this into a site even Benji will love.</p>
+
+<p>Update the stylesheet to:</p>
+
+<ol>
+  <li>Add the tartan background image to the body, and set a fall back background-color of #A2C0A7.</li>
+  <li>Add css to style the <code class="highlighter-rouge">main</code> element with the background-color of #FBE7D4, bottom padding of 25px, and round the bottom borders only with a radius of 6px.</li>
+  <li>Add spacing below each <code class="highlighter-rouge">row</code> in our main div by adding bottom margin of 15px.</li>
+  <li>Adjust the color on the footer to be #CEAEBF and the background-color to #5E2241.</li>
+  <li>For <code class="highlighter-rouge">.navbar-inverse</code>, set both the background-color and border-color to #5E2241.</li>
+  <li>For <code class="highlighter-rouge">.navbar-inverse .navbar-brand</code>, set the color to #CEAEBF.</li>
+  <li>For <code class="highlighter-rouge">.navbar-inverse .btn</code>, set the background-color to #CEAEBF and the color to #5E2241.</li>
+</ol>
+
+<p>Your site should now look like this:</p>
+<div style="padding:10px">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+        <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/ex-bootstrap-veggies-styles1.png" alt="Screenshot of Ms B's Veggies with updated styles." />
+    </div>
+  </div>
+</div>
+
+<h3 id="customize-the-jumbotron">Customize the Jumbotron</h3>
+<p>Overall things look pretty good, but let’s wrap up by updating that Jumbotron.  Add the following styles for the Jumbotron:</p>
+
+<ul>
+  <li>a top margin of 15px</li>
+  <li>set bottom padding to 25px</li>
+  <li>set the text color to black and center align the text</li>
+  <li>add a drop shadow on the text using the color #FBE7D4, for sizing use 3px horizontal, 3px vertical, and 4px blur</li>
+  <li>add the ‘veggies-background’ background image, have it cover the container and clip on the border</li>
+</ul>
+
+<p>Some of the text is still a little hard to read.</p>
+
+<ul>
+  <li>change the color of the jumbotron <code class="highlighter-rouge">small</code> text to #1F5829</li>
+  <li>change the font size on the jumbotron paragraphs to be 1.3em and make the text bold</li>
+</ul>
+
+<p>With the jumbotron updates, our final site should look like this:</p>
+<div style="padding:10px">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+        <img class="img-responsive" src="/fall-2016/morea/bootstrap-intro/images/ex-bootstrap-veggies-styles-final.png" alt="Screenshot of Ms B's Veggies with updated styles for jumbotron." />
+    </div>
+  </div>
+</div>
+
+<h2 id="submit">Submit</h2>
+<p>Create a pull-request and submit the screenshot of it in the Assignment box on D2L.</p>
+
+<p>You must also submit screenshots that show you have validated both the CSS &amp; HTML file for this assignment and have no errors found.  Please ensure that you capture the validator URL and the validator output in each screenshot.</p>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-09-06 01:23:55 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
