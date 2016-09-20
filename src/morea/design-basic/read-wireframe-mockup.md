@@ -2,7 +2,7 @@
 title: "Communicating a Design"
 published: true
 morea_id: read-wireframe-mockup
-morea_summary: "It's not enough to imagine a web site design or layout. You must be able to communicate and share that design with others. Common methods of sharing a design are wireframes, mockups and prototypes."
+morea_summary: "Communicating and sharing your web design is important. This is often done through wireframes, mockups and prototypes."
 morea_type: reading
 morea_sort_order: 3
 ---
@@ -21,5 +21,6 @@ Prototypes expand on this further by making the mockup interactive and live.  Th
 
 Regardless of the level of detail, it is important that the customer can look at the wireframe or mockup and immediately understand the design. The basic layout of key pieces of content and functionality should be clear even in the most basic wireframe. Clear communication of the design and intent is key to customer satisfaction.
 
+### Additional Reading w/ Illustrations
 Read more about wireframes, prototypes and mockups in this article which also includes illustrations:
 [Wireframing, Prototyping, Mockuping – What’s the Difference?](http://designmodo.com/wireframing-prototyping-mockuping/)

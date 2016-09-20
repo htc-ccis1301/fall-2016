@@ -5,6 +5,8 @@ morea_id: read-more-css
 morea_summary: "An introduction to the CSS box model and additional CSS features to add color to your pages."
 morea_type: reading
 morea_sort_order: 1
+morea_labels:
+ - texbook
 ---
 
 # {{ page.title }}

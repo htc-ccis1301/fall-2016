@@ -10,7 +10,10 @@ morea_sort_order: 2
 # {{ page.title }}
 
 ## Prerequisites
-To successfully complete this assignment, you should be familiar with the two-column page layout and how to use CSS for positioning elements.  This is reviewed in the reading:  [Page Layout]( {{ site.baseurl }}/morea/page-layout/read-page-layout.html ).
+To successfully complete this assignment, you should be familiar with the page layout and design topics covered in the reading:   
+
+- [Page Layout]( {{ site.baseurl }}/morea/page-layout/read-page-layout.html )
+- [Page Layout Design]( {{ site.baseurl }}/morea/page-layout/read-design-layout.html )
 
 
 ## GitHub
@@ -37,6 +40,7 @@ If you are having problems with this, try a web search for help on how to work w
 ### Layout and Spacing
 Adjust the spacing (padding and margins) throughout your site to allow open space between your content.  Aim for the 60-30-10 rule, where 60% of the page layout is open or negative space.
 
+Be careful with the use of images so that they do not make the site look too cluttered.  When using full page background images, you might cover over parts of them to give your main content a solid background and some open or negative space.  An alternate approach would be to limit the image to a portion of the page, similar to the hero image in the case study, though you should not feel restricted to having that image be at the top of the page.  It might also fit nicely along the side, middle, or bottom.
 
 ### Float something
 Use CSS to float something on the page either right or left of some other content.  Remember that the order of the elements is important with float. If you are not getting the look you want, you may need to swap the order.  (Refer back to the examples from the textbook if needed.)
@@ -47,9 +51,7 @@ Once you are happy with your work, push it up to GitHub.  Make sure to check the
 
 
 ## Submit
-Create a pull-request add a pull-request comment to include your thoughts on why it would make maintenance of a web site easier to keep all styles in an external CSS file and out of the HTML files.
-
-Submit the following screenshots to the Assignment box on D2L:
+Create a pull-request and submit the following screenshots to the Assignment box on D2L:
 
 - Open-pull request
 - Actual web page as published on GitHub (URL in Settings)

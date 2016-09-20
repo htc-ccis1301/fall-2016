@@ -5,6 +5,8 @@ morea_id: read-responsive
 morea_summary: "Learn to dynamically alter your page layout based on the device it is viewed upon."
 morea_type: reading
 morea_sort_order: 1
+morea_labels:
+ - texbook
 ---
 
 # {{ page.title }}

@@ -2,7 +2,7 @@
 title: "Color Design"
 published: true
 morea_id: read-colors
-morea_summary: "One of the pieces of web design that can have the most impact, both positive and negative is color.  In this reading, we will look at how to design a color scheme for a website, even if don't consider yourself an artist."
+morea_summary: "One of the pieces of web design that can have the most impact, both positive and negative is color."
 morea_type: reading
 morea_sort_order: 2
 ---
@@ -25,6 +25,7 @@ In some of your assignments, I will ask you to link to a color scheme you've des
 {% include youtube-small.html id="LlHMRyLZ8PQ" %}
 
 For more information on creating a color scheme to support your site, please read the following articles:
+
 - [How to Create a Perfect Color Scheme](http://designmodo.com/create-color-scheme/)
 - [How to Use Color Psychology](http://www.undullify.com/how-to-use-color-psychology-to-decrease-cart-abandonment/)
 

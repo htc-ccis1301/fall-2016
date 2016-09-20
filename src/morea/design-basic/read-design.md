@@ -5,6 +5,8 @@ morea_id: read-design
 morea_summary: "An introduction to the basics of web design."
 morea_type: reading
 morea_sort_order: 1
+morea_labels:
+ - texbook
 ---
 # {{ page.title }}
 Read Chapter 3 of your textbook [Basics of Web Design: HTML5 & CSS3](http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/) which covers page layout with HTML & CSS.  
@@ -33,7 +35,7 @@ Keep text on the web to the minimum needed to communicate the idea, concept or i
 
 Use multimedia - images, sound, and video - judiciously.  Don't add things just because you can.  Ensure they are relevant, important, and add benefit to your site.  Ensure that any meaning is communicated in other ways - a text script for a video, alternate text for images and sound files.  Even for those who are not prevented from seeing or hearing these things due to disabilities, providing alternatives is friendly to those on mobile devices as well as those in a quiet setting.
 
-And __*please*__ don't have any website you make just randomly start blaring music or videos.  This is one area that it is safer to "opt-in" versus having to figure out how to stop the sound when you don't want it. This is particularly true for business or informational sites.  The quickest way to not have me come to buy your product or visit your restaurant is to have it start playing music when I sneak a peek at work!
+And *please* don't have any website you make just randomly start blaring music or videos.  This is one area that it is safer to "opt-in" versus having to figure out how to stop the sound when you don't want it. This is particularly true for business or informational sites.  The quickest way to not have me come to buy your product or visit your restaurant is to have it start playing music when I sneak a peek at work!
 
 We will talk more about images and multimedia in later chapters as well.
 
@@ -49,11 +51,17 @@ There are many examples of this.  Let's look at one, the welcome page for [Tumbl
 
 Notice the typical banner and navigation are missing from the top of the page.
 
-  <img src="{{ "/assets/images/ch3/design-tumblr1.png" | prepend: site.baseurl }}" alt="Screen capture of the Tumblr welcome page." />
+{% include img-small.html
+    url="/morea/design-basic/images/design-tumblr1.png"
+    alt="Screen capture of the Tumblr welcome page."
+%}
 
 Scrolling down is like flipping a page.  Notice the dots down the left side that indicate where you are, and can be clicked to move forward and back.  
 
-  <img src="{{ "/assets/images/ch3/design-tumblr2.png" | prepend: site.baseurl }}" alt="Screen capture of the next Tumblr page, obtained by scrolling down." />
+{% include img-small.html
+    url="/morea/design-basic/images/design-tumblr2.png"
+    alt="Screen capture of the next Tumblr page, obtained by scrolling down."
+%}
 
 
 ### Mobile & Responsive Design

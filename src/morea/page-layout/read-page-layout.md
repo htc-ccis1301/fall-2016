@@ -5,6 +5,8 @@ morea_id: read-page-layout
 morea_summary: "Information on how to use HTML and CSS to manage the layout of your web pages."
 morea_type: reading
 morea_sort_order: 1
+morea_labels:
+ - texbook
 ---
 
 # {{ page.title }}
