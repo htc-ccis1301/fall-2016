@@ -20,19 +20,22 @@ The following topics were covered earlier:
 ## Instructions
 For this lab, you will use the browser developer tools to analyze your case study web pages.  To complete this lab, you must have your [Pacific Trails Case Study Part 2]({{ site.baseurl }}/morea/cs-pac-trails/ex-cs-pt-part2.html) work completed and published on GitHub.  You should use your live web site for this lab, not a file or live preview on your computer.
 
-Create a MS Word document to show that you have completed the tasks below. Please clearly label each task. If you are unclear on how to complete a task, I encourage you to ask your classmates in our group chat.
+Create a MS Word document to show that you have completed the tasks below. Please clearly label each task. If you are unclear on how to complete a task, I encourage you to ask as opposed to not completing the task. Learning to use the Developer Tools is an important skill for fixing issues with your web pages and analyzing their structure.
 
 As you go through the tasks below, you will need to:
 
 1. Answer all questions included in the task. and provide a screenshot showing how you got the answer. Be sure to clearly label each screenshots with the task that it corresponds to.
 2. Include a screenshot that shows clearly how you have used the Dev Tools to complete that task. The screenshots _must_ show *both* the page content in the browser and the same content in the developer tools.
 
-Solutions that do not include both the above will not receive credit for the task.
+{% include alert.html
+    type="danger"
+    content="Solutions that do not include both a screenshot and the answers to each question in the MS Word document will not receive credit for the task."
+%}
 
 ### Task 1
-Open the home page in the browser and open the Developer Tools. Dock the tools at the bottom of the  screen.  
+Open the home page in the browser and open the Developer Tools. Dock the tools at the __right-hand side__ of the screen.  
 
-Using the Elements panel, locate the header element in the DOM and show how you can use the dev tools to temporarily toggle the display of the sunset.jpg image in the header.
+Using the Elements panel, locate the header element in the DOM and the CSS that displays the header image.  Show how you can use the dev tools to toggle the display of the sunset.jpg image in the header.
 
 
 ### Task 2
@@ -44,11 +47,11 @@ While still looking at the hero image element, show the styles that are applied 
 
 
 ### Task 4
-While still looking at the hero image element, show the developer tools can be used to identify the exact size of the image shown in pixels.  (Note this is not the size of the actual image, it is the size of the image as it is displayed on the web page.)
+While still looking at the hero image element, show how the developer tools can be used to identify the exact size of the image shown on the page in pixels.  (Note this is not the size of the actual image, it is the size of the image as it is displayed on the web page.)
 
 
 ### Task 5
-Identify and select the element that contains the address.  Use the developer tools to reduce the font size used for the contact information to 80%.
+Identify and select the element that contains the address on the home page.  Use the developer tools to reduce the font size used for the contact information to 80%.
 
 Notice that you can use the up and down arrows while editing the size to increase and decrease the value. Is there a point where the font size no longer becomes smaller?  If so, what is that value?
 

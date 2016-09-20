@@ -12,6 +12,8 @@ A case study project is a simulation that reflects the work you might encounter 
 
 In this agile project simulation, I will be your go-between with the actual business client.  I will handle getting the details on the site requirements and design worked out with Melanie, our client, while you handle the actual site development work. I will have regular check-ins with Melanie to present your completed work and to solidify the requirements for our next round of work. Each iteration of work will bring us closer to the final finished project.
 
+{% include alert.html type="note" content="Unlike other modules, the work for this module is distributed across the semester. Due dates for each part can be found on the schedule." %}
+
 ## Project Instructions
 For each part of the case study, you should begin with the information on the course web site.  This will setup the work for this iteration of the project and make note of things that you should do differently from the instructions specified in the textbook. It is important to pay attention to these, as only *__my__* way is correct when it comes time to grade the work.  If you follow the book instructions instead of mine, you will lose points on the assignment. I recommend that you make notes on these differences on paper and refer to that as you work through the instructions from the book.
 

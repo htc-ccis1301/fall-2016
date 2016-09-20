@@ -21,14 +21,17 @@ The following topics were covered earlier:
 For this lab, you will be using the Chrome Developer Tools to peek at the HTML and CSS applied to a web page.  To begin, you'll need to open the page in the Chrome browser:
 [Click here to open the lab's web page](http://htc-ccis1301.github.io/dev-tools-lab/).
 
-Create a MS Word document to show that you have completed the tasks below. Please clearly label each task. If you are unclear on how to complete a task, I encourage you to ask your classmates in our group chat.
+Create a MS Word document to show that you have completed the tasks below. Please clearly label each task. If you are unclear on how to complete a task, I encourage you to ask as opposed to not completing the task. Learning to use the Developer Tools is an important skill for fixing issues with your web pages and analyzing their structure.
 
 As you go through the tasks below, you will need to:
 
 1. Answer all questions included in the task. and provide a screenshot showing how you got the answer. Be sure to clearly label each screenshots with the task that it corresponds to.
 2. Include a screenshot that shows clearly how you have used the Dev Tools to complete that task. The screenshots _must_ show *both* the page content in the browser and the same content in the developer tools.
 
-Solutions that do not include both the above will not receive credit for the task.
+{% include alert.html
+    type="danger"
+    content="Solutions that do not include both a screenshot and the answers to each question in the MS Word document will not receive credit for the task."
+%}
 
 
 ### Task 1
@@ -48,11 +51,11 @@ Select the header and look at the applied CSS.  What CSS is used to add the imag
 
 
 ### Task 4
-Locate the element that contains all of the Weekly Specials content in the DOM. Locate the element that contains all of that "yellow" content, not just the header that says "Weekly Specials".
+Locate the element that contains all of the Weekly Specials content in the DOM. Make sure that you are locating the element that contains all of that *yellow* content, not just the header that says "Weekly Specials".  When you select this element, you should see the highlight stretch across the full width of the page, covering all of that *yellow* content.
 
 Select that element and expand the tree to show its children.
 - What is the name of element used?
-- What attributes are on the element?
+- What attributes are on the element?  
 - How many child elements does it contain?
 
 

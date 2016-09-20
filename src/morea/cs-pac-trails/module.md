@@ -4,7 +4,7 @@ published: true
 morea_id: cs-pac-trails
 morea_icon_url: /morea/cs-pac-trails/cs-pac-trails-logo.png
 morea_type: module
-morea_summary: "This is a case study project, which is set up to simulate a real world project. In it, you will develop a web site for a business customer."
+morea_summary: "This is a case study project, which is set up to simulate a real world project. In it, you will develop a web site for a business customer. Unlike other modules, the work for this module is distributed across the semester. Due dates for each part can be found on the schedule."
 morea_outcomes:
 morea_readings:
   - read-cs-pt-intro  
