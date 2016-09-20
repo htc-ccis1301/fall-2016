@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Fan Page Part 6 | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+        <li><a href="//htc-ccis1301.github.io/html-students/fall-2016.html">Class Directory</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/"></a></li>
+      <li class="active">Fan Page Part 6</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="fan-page-part-6">Fan Page Part 6</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To successfully complete this assignment, you should be familiar with the two-column page layout and how to use CSS for positioning elements.  This is reviewed in the reading:  <a href="/fall-2016/morea/page-layout/read-page-layout.html">Page Layout</a>.</p>
+
+<h2 id="github">GitHub</h2>
+<p>The GitHub repository for this assignment is <a href="https://github.com/htc-ccis1301/fan-page">fan-page</a>.</p>
+
+<p>Remember that once you have forked and cloned this repository, you do not need to do that again.  Just continue creating and editing files through Brackets and use the git add, commit, and push commands to update GitHub.</p>
+
+<h2 id="requirements">Requirements</h2>
+<p>For this assignment, you will clean up the design of your fan-page and give it a respectable color palette and design that reflects the content of your site. Consider your topic, and then consider your target audience who will be either:</p>
+
+<ol>
+  <li>Someone else sharing that interest.</li>
+  <li>Someone using your site to decide if you have the skills to make a professional looking site.</li>
+</ol>
+
+<p>Recognize that these audiences may contradict each other and aim for a happy middle ground. Though you can certainly lean strongly towards group 1.  Make sure you do not completely forget about group 2.</p>
+
+<h2 id="site-design-clean-up">Site design clean-up</h2>
+<p>You want to aim for a professional looking site. The goal is for this to become a part of your web portfolio. You want to have a site that you are proud to show off to others.</p>
+
+<p>Some of the things that you were asked to do earlier may be preventing your site from looking its best.  So you are now free to undo any of the HTML/CSS I required you to add earlier just for the sake of illustrating that you can do particular tasks.</p>
+
+<p>However you <strong>must</strong> maintain a solid HTML5 structural layout to your site.  This means you must keep a header, nav, main content area, and footer.</p>
+
+<h3 id="color-palette">Color Palette</h3>
+<p>You will need to create a color palette using the <a href="http://paletton.com/">Paletton</a> website and add a link to that color palette in your footer.  (The video in the reading shows how to get a link to your palette, not just the site itself.)</p>
+
+<p>Aim to adjust your color use to follow the 60-30-10 rule.</p>
+
+<h3 id="spacing-and-layout">Spacing and Layout</h3>
+<p>You’ll also want to clean-up your spacing a bit.  Aim again for that 60-30-10 rule where about 60% of your space on a desktop layout is empty or negative space.  Use generous margins and padding to help you gain enough open space around your content.</p>
+
+<p>Be careful with the use of images so that they do not make the site look too cluttered.  When using full page background images, you might cover over parts of them to give your main content a solid background and some open or negative space.  An alternate approach would be to limit the image to a portion of the page, similar to the hero image in the case study, though you should not feel restricted to having that image be at the top of the page.  It might also fit nicely along the side, middle, or bottom.</p>
+
+<p>In the next module, we will update this design for mobile phones, so there the space can be collapsed.  Aim to give the desktop site a more open and spacious feel.</p>
+
+<h2 id="note-on-grading">Note on Grading</h2>
+<p>This week’s requirements are a lot more open than in previous weeks and the grading will be a bit more subjective.  I will look specifically for the color palette, but the remaining points will be based on how well you have designed your site to look professional and illustrate principles from the text as well as the 60-30-10 rule.</p>
+
+<h2 id="testing">Testing</h2>
+<p>Once you are happy with your work, push it up to GitHub.  Make sure to check the display of your page live on GitHub Pages and re-validate your page by URL.</p>
+
+<h2 id="submit">Submit</h2>
+<p>Create a pull-request add a pull-request comment to include your thoughts on why it would make maintenance of a web site easier to keep all styles in an external CSS file and out of the HTML files.</p>
+
+<p>Submit the following screenshots to the Assignment box on D2L:</p>
+
+<ul>
+  <li>Open-pull request</li>
+  <li>Actual web page as published on GitHub (URL in Settings)</li>
+  <li>Validation of HTML file</li>
+  <li>Validation of CSS file</li>
+</ul>
+
+<p>You <strong>must</strong> capture both the validator URL and the validator output in the validation screenshots.</p>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-09-19 22:40:21 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title> Developer Tools Lab 1 | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
@@ -9,7 +10,7 @@
   <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
   <link rel="stylesheet" href="/fall-2016/css/style.css">
   <link rel="stylesheet" href="/fall-2016/css/syntax.css">
-  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -22,8 +23,7 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   
-  <script type="text/javascript"
-          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
   
@@ -112,14 +112,15 @@
 <p>The following topics were covered earlier:</p>
 
 <ul>
-  <li><a href="/fall-2016/morea/css-basics/read-dev-tools.html">Browser Developer Tools</a>: To complete this assignment you should be familiar with what browser Developer Tools are and how to use the Dev Tools in the Chrome browser.</li>
+  <li>
+<a href="/fall-2016/morea/css-basics/read-dev-tools.html">Browser Developer Tools</a>: To complete this assignment you should be familiar with what browser Developer Tools are and how to use the Dev Tools in the Chrome browser.</li>
 </ul>
 
 <h2 id="instructions">Instructions</h2>
 <p>For this lab, you will be using the Chrome Developer Tools to peek at the HTML and CSS applied to a web page.  To begin, you’ll need to open the page in the Chrome browser:
 <a href="http://htc-ccis1301.github.io/dev-tools-lab/">Click here to open the lab’s web page</a>.</p>
 
-<p>Create a MS Word document to show that you have completed the tasks below. Please clearly label each task. If you are unclear on how to complete a task, I encourage you to ask your classmates in our group chat.</p>
+<p>Create a MS Word document to show that you have completed the tasks below. Please clearly label each task. If you are unclear on how to complete a task, I encourage you to ask as opposed to not completing the task. Learning to use the Developer Tools is an important skill for fixing issues with your web pages and analyzing their structure.</p>
 
 <p>As you go through the tasks below, you will need to:</p>
 
@@ -128,7 +129,17 @@
   <li>Include a screenshot that shows clearly how you have used the Dev Tools to complete that task. The screenshots <em>must</em> show <em>both</em> the page content in the browser and the same content in the developer tools.</li>
 </ol>
 
-<p>Solutions that do not include both the above will not receive credit for the task.</p>
+<div class="alert alert-danger" role="alert">
+  <div class="media">
+    <div class="media-left media-top">
+      <img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle">
+    </div>
+    <div class="media-body">
+      <p>Solutions that do not include both a screenshot and the answers to each question in the MS Word document will not receive credit for the task.</p>
+
+    </div>
+  </div>
+</div>
 
 <h3 id="task-1">Task 1</h3>
 <p>Open the Developer Tools and have them docked in the lower portion of the screen.  Make sure the Elements panel is visible.</p>
@@ -144,11 +155,11 @@
 <p>Select the header and look at the applied CSS.  What CSS is used to add the image to the header?</p>
 
 <h3 id="task-4">Task 4</h3>
-<p>Locate the element that contains all of the Weekly Specials content in the DOM. Locate the element that contains all of that “yellow” content, not just the header that says “Weekly Specials”.</p>
+<p>Locate the element that contains all of the Weekly Specials content in the DOM. Make sure that you are locating the element that contains all of that <em>yellow</em> content, not just the header that says “Weekly Specials”.  When you select this element, you should see the highlight stretch across the full width of the page, covering all of that <em>yellow</em> content.</p>
 
 <p>Select that element and expand the tree to show its children.
 - What is the name of element used?
-- What attributes are on the element?
+- What attributes are on the element?<br>
 - How many child elements does it contain?</p>
 
 <h3 id="task-5">Task 5</h3>
@@ -200,11 +211,11 @@
   <footer>
     <div class="container page-footer">
       
-      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-09-06 01:47:34 -0500</span></p>
+        Last update on: <span>2016-09-19 22:40:21 -0500</span></p>
     </div>
   </footer>
 </div>

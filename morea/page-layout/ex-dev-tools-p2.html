@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title> Developer Tools Lab 2 | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
@@ -9,7 +10,7 @@
   <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
   <link rel="stylesheet" href="/fall-2016/css/style.css">
   <link rel="stylesheet" href="/fall-2016/css/syntax.css">
-  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -22,8 +23,7 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   
-  <script type="text/javascript"
-          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
   
@@ -97,7 +97,7 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/"></a></li>
+      <li><a href="/fall-2016/modules/page-layout">Page Layout</a></li>
       <li class="active">Developer Tools Lab 2</li>
     </ol>
   </div>
@@ -112,13 +112,14 @@
 <p>The following topics were covered earlier:</p>
 
 <ul>
-  <li><a href="/fall-2016/morea/css-basics/read-dev-tools.html">Browser Developer Tools</a>: To complete this assignment you should be familiar with what browser Developer Tools are and how to use the Dev Tools in the Chrome browser.</li>
+  <li>
+<a href="/fall-2016/morea/css-basics/read-dev-tools.html">Browser Developer Tools</a>: To complete this assignment you should be familiar with what browser Developer Tools are and how to use the Dev Tools in the Chrome browser.</li>
 </ul>
 
 <h2 id="instructions">Instructions</h2>
 <p>For this lab, you will use the browser developer tools to analyze your case study web pages.  To complete this lab, you must have your <a href="/fall-2016/morea/cs-pac-trails/ex-cs-pt-part2.html">Pacific Trails Case Study Part 2</a> work completed and published on GitHub.  You should use your live web site for this lab, not a file or live preview on your computer.</p>
 
-<p>Create a MS Word document to show that you have completed the tasks below. Please clearly label each task. If you are unclear on how to complete a task, I encourage you to ask your classmates in our group chat.</p>
+<p>Create a MS Word document to show that you have completed the tasks below. Please clearly label each task. If you are unclear on how to complete a task, I encourage you to ask as opposed to not completing the task. Learning to use the Developer Tools is an important skill for fixing issues with your web pages and analyzing their structure.</p>
 
 <p>As you go through the tasks below, you will need to:</p>
 
@@ -127,12 +128,22 @@
   <li>Include a screenshot that shows clearly how you have used the Dev Tools to complete that task. The screenshots <em>must</em> show <em>both</em> the page content in the browser and the same content in the developer tools.</li>
 </ol>
 
-<p>Solutions that do not include both the above will not receive credit for the task.</p>
+<div class="alert alert-danger" role="alert">
+  <div class="media">
+    <div class="media-left media-top">
+      <img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle">
+    </div>
+    <div class="media-body">
+      <p>Solutions that do not include both a screenshot and the answers to each question in the MS Word document will not receive credit for the task.</p>
+
+    </div>
+  </div>
+</div>
 
 <h3 id="task-1">Task 1</h3>
-<p>Open the home page in the browser and open the Developer Tools. Dock the tools at the bottom of the  screen.</p>
+<p>Open the home page in the browser and open the Developer Tools. Dock the tools at the <strong>right-hand side</strong> of the screen.</p>
 
-<p>Using the Elements panel, locate the header element in the DOM and show how you can use the dev tools to temporarily toggle the display of the sunset.jpg image in the header.</p>
+<p>Using the Elements panel, locate the header element in the DOM and the CSS that displays the header image.  Show how you can use the dev tools to toggle the display of the sunset.jpg image in the header.</p>
 
 <h3 id="task-2">Task 2</h3>
 <p>Locate the HTML element that contains the hero image in the DOM.  Show the styles that are explicitly applied to this element by your pacific.css file.</p>
@@ -141,10 +152,10 @@
 <p>While still looking at the hero image element, show the styles that are applied to that element because they are inherited from the body style in your pacific.css file.</p>
 
 <h3 id="task-4">Task 4</h3>
-<p>While still looking at the hero image element, show the developer tools can be used to identify the exact size of the image shown in pixels.  (Note this is not the size of the actual image, it is the size of the image as it is displayed on the web page.)</p>
+<p>While still looking at the hero image element, show how the developer tools can be used to identify the exact size of the image shown on the page in pixels.  (Note this is not the size of the actual image, it is the size of the image as it is displayed on the web page.)</p>
 
 <h3 id="task-5">Task 5</h3>
-<p>Identify and select the element that contains the address.  Use the developer tools to reduce the font size used for the contact information to 80%.</p>
+<p>Identify and select the element that contains the address on the home page.  Use the developer tools to reduce the font size used for the contact information to 80%.</p>
 
 <p>Notice that you can use the up and down arrows while editing the size to increase and decrease the value. Is there a point where the font size no longer becomes smaller?  If so, what is that value?</p>
 
@@ -179,11 +190,11 @@
   <footer>
     <div class="container page-footer">
       
-      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-09-06 01:47:34 -0500</span></p>
+        Last update on: <span>2016-09-19 22:40:21 -0500</span></p>
     </div>
   </footer>
 </div>

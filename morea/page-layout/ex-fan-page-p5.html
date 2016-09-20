@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> Fan Page Part 5 | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+        <li><a href="//htc-ccis1301.github.io/html-students/fall-2016.html">Class Directory</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/page-layout">Page Layout</a></li>
+      <li class="active">Fan Page Part 5</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="fan-page-part-5">Fan Page Part 5</h1>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To successfully complete this assignment, you should be familiar with the two-column page layout and how to use CSS for positioning elements.  This is reviewed in the reading:  <a href="/fall-2016/morea/page-layout/read-page-layout.html">Page Layout</a>.</p>
+
+<h2 id="github">GitHub</h2>
+<p>The GitHub repository for this assignment is <a href="https://github.com/htc-ccis1301/fan-page">fan-page</a>.</p>
+
+<p>Remember that once you have forked and cloned this repository, you do not need to do that again.  Just continue creating and editing files through Brackets and use the git add, commit, and push commands to update GitHub.</p>
+
+<h2 id="requirements">Requirements</h2>
+<p>For this assignment, you will modify your fan site to have a fixed header and a spacious layout.</p>
+
+<div class="alert alert-warning" role="alert">
+  <div class="media">
+    <div class="media-left media-top">
+      <img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20" align="absmiddle">
+    </div>
+    <div class="media-body">
+      <p>As you build this site, be careful in the use of images, text, and other content from other sources. Unless you have created the content yourself, I expect that you to have permission to use anyone else’s material. You should note such permissions near the content or place it in the footer. You should also note copyright of others materials - for example, note the footer on this page <a href="http://guildwarstemple.com/dragontimer/">Guild Wars 2 Boss Timer</a></p>
+
+    </div>
+  </div>
+</div>
+
+<h3 id="fixed-header">Fixed header</h3>
+<p>Add CSS to make the header take the full page width and fix the header at the top of the page so that when you scroll, the header does not move.</p>
+
+<p>Add a margin to the top of your main content so that it does not get hidden under the header.</p>
+
+<p>If you are having problems with this, try a web search for help on how to work with a fixed header.  Prioritize answers from sites like StackOverflow or Mozilla, but don’t just copy paste, make sure to read and understand what they are suggesting and adjust the answers to work on your site’s layout.</p>
+
+<h3 id="layout-and-spacing">Layout and Spacing</h3>
+<p>Adjust the spacing (padding and margins) throughout your site to allow open space between your content.  Aim for the 60-30-10 rule, where 60% of the page layout is open or negative space.</p>
+
+<h3 id="float-something">Float something</h3>
+<p>Use CSS to float something on the page either right or left of some other content.  Remember that the order of the elements is important with float. If you are not getting the look you want, you may need to swap the order.  (Refer back to the examples from the textbook if needed.)</p>
+
+<h2 id="testing">Testing</h2>
+<p>Once you are happy with your work, push it up to GitHub.  Make sure to check the display of your page live on GitHub Pages and re-validate your page by URL.</p>
+
+<h2 id="submit">Submit</h2>
+<p>Create a pull-request add a pull-request comment to include your thoughts on why it would make maintenance of a web site easier to keep all styles in an external CSS file and out of the HTML files.</p>
+
+<p>Submit the following screenshots to the Assignment box on D2L:</p>
+
+<ul>
+  <li>Open-pull request</li>
+  <li>Actual web page as published on GitHub (URL in Settings)</li>
+  <li>Validation of HTML file</li>
+  <li>Validation of CSS file</li>
+</ul>
+
+<p>You <strong>must</strong> capture both the validator URL and the validator output in the validation screenshots.</p>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-09-19 22:40:21 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
