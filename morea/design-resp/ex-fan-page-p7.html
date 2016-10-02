@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title> Fan Page Part 7 | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
@@ -10,7 +9,7 @@
   <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
   <link rel="stylesheet" href="/fall-2016/css/style.css">
   <link rel="stylesheet" href="/fall-2016/css/syntax.css">
-  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -23,7 +22,8 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
   
@@ -97,7 +97,7 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/"></a></li>
+      <li><a href="/fall-2016/modules/resp-design">Responsive Web Design</a></li>
       <li class="active">Fan Page Part 7</li>
     </ol>
   </div>
@@ -108,19 +108,7 @@
   <h1 id="fan-page-part-7">Fan Page Part 7</h1>
 
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To successfully complete this assignment, you should be familiar with the two-column page layout and how to use CSS for positioning elements.  This is reviewed in the reading:  <a href="/fall-2016/morea/page-layout/read-page-layout.html">Page Layout</a>.</p>
-
-<div class="alert alert-warning" role="alert">
-  <div class="media">
-    <div class="media-left media-top">
-      <img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20" align="absmiddle">
-    </div>
-    <div class="media-body">
-      <p>As you build this site, be careful in the use of images, text, and other content from other sources. Unless you have created the content yourself, I expect that you to have permission to use anyone else’s material. You should note such permissions near the content or place it in the footer. You should also note copyright of others materials - for example, note the footer on this page <a href="http://guildwarstemple.com/dragontimer/">Guild Wars 2 Boss Timer</a></p>
-
-    </div>
-  </div>
-</div>
+<p>To successfully complete this assignment, you should be familiar with basic concepts of responsive design and how to make in page links to content.  This is reviewed in the reading for this module: <a href="/fall-2016/morea/design-resp/read-responsive.html">Responsive Design</a>.</p>
 
 <h2 id="github">GitHub</h2>
 <p>The GitHub repository for this assignment is <a href="https://github.com/htc-ccis1301/fan-page">fan-page</a>.</p>
@@ -138,21 +126,23 @@
 <p>You can choose to position the nav horizontally or vertically on your page, but add CSS to style the nav list so that it is not too crowded and is separated and distinct from the other content.</p>
 
 <h3 id="in-page-links">In Page Links</h3>
-<p>Add additional structure to your main content area through the use of HTML5 article, section or aside elements.  Separate each of your four sub-headings into its own section (or article) element.  Give each section an id attribute and use that to add in-page links to your nav for each of the sections or sub-headings.</p>
+<p>Add additional structure to your main content area through the use of HTML5 article, section or aside elements.</p>
+
+<p>You should currently have your page set up with 4 sub-headings. If you do not have this, or have used heading tags for content that is not a heading, you will need to fix this first.  Separate each of your these sub-headings into its own HTML5 section (or article) element.  Give each section an id attribute and use that to add in-page links to your nav for each of the sections or sub-headings.</p>
 
 <h3 id="responsive-layout">Responsive Layout</h3>
-<p>Use CSS Media queries to adjust your desktop layout for better usability on a mobile device.  You should aim to</p>
+<p>Use CSS Media queries to adjust your desktop layout for better usability on tablet and mobile devices.  You should aim to have more empty space on the desktop and more vertically structured content on the smaller mobile devices.  You should see the layout shift as you reduce the width on your browser window to a tablet width and then again to a narrower mobile phone width.</p>
 
-<h2 id="note-on-grading">Note on Grading</h2>
-<p>This week’s requirements are a lot more open than in previous weeks and the grading will be a bit more subjective.  I will look specifically for the color palette, but the remaining points will be based on how well you have designed your site to look professional and illustrate principles from the text as well as the 60-30-10 rule.</p>
+<p>Your layout must be altered for each device size to get full points for this task.  Remember that in addition to moving or resizing content, you might also show or hide content as well.</p>
+
+<h3 id="responsive-design">Responsive Design</h3>
+<p>Write a short 500-750 word paper (about 1-2 page) that discusses how you have altered your page layout to better support a variety of devices sizes and types.  You should include a paragraph that addresses changes for each desktop, tablet, and mobile devices. Make sure to discuss the reasons for your changes. For example you might make changes for better visibility, larger click area, to conserve space, or to reduce bandwidth use or load time.</p>
 
 <h2 id="testing">Testing</h2>
 <p>Once you are happy with your work, push it up to GitHub.  Make sure to check the display of your page live on GitHub Pages and re-validate your page by URL.</p>
 
 <h2 id="submit">Submit</h2>
-<p>Create a pull-request add a pull-request comment to include your thoughts on why it would make maintenance of a web site easier to keep all styles in an external CSS file and out of the HTML files.</p>
-
-<p>Submit the following screenshots to the Assignment box on D2L:</p>
+<p>Create a pull-request and submit your MS Word document write up along with the following screenshots to the Assignment box on D2L:</p>
 
 <ul>
   <li>Open-pull request</li>
@@ -174,11 +164,11 @@
   <footer>
     <div class="container page-footer">
       
-      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-09-20 02:44:49 -0500</span></p>
+        Last update on: <span>2016-10-02 18:12:42 -0500</span></p>
     </div>
   </footer>
 </div>
