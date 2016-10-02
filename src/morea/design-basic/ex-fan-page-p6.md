@@ -10,8 +10,10 @@ morea_sort_order: 2
 # {{ page.title }}
 
 ## Prerequisites
-To successfully complete this assignment, you should be familiar with the two-column page layout and how to use CSS for positioning elements.  This is reviewed in the reading:  [Page Layout]( {{ site.baseurl }}/morea/page-layout/read-page-layout.html ).
+To successfully complete this assignment, you should be familiar with basic concepts of web design and the various tools available on the web to assist you.  This is reviewed in the reading:  
 
+- [Intro to Web Design]( {{ site.baseurl }}/morea/design-basic/read-design.html )
+- [Color Design]( {{ site.baseurl }}/morea/design-basic/read-colors.html ) 
 
 ## GitHub
 The GitHub repository for this assignment is [fan-page](https://github.com/htc-ccis1301/fan-page).

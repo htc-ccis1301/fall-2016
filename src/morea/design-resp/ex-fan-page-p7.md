@@ -10,10 +10,8 @@ morea_sort_order: 2
 # {{ page.title }}
 
 ## Prerequisites
-To successfully complete this assignment, you should be familiar with the two-column page layout and how to use CSS for positioning elements.  This is reviewed in the reading:  [Page Layout]( {{ site.baseurl }}/morea/page-layout/read-page-layout.html ).
+To successfully complete this assignment, you should be familiar with basic concepts of responsive design and how to make in page links to content.  This is reviewed in the reading for this module: [Responsive Design]( {{ site.baseurl }}/morea/design-resp/read-responsive.html ).
 
-{% include alert.html type="warning" content="As you build this site, be careful in the use of images, text, and other content from other sources. Unless you have created the content yourself, I expect that you to have permission to use anyone else's material. You should note such permissions near the content or place it in the footer. You should also note copyright of others materials - for example, note the footer on this page [Guild Wars 2 Boss Timer](http://guildwarstemple.com/dragontimer/)"
-%}
 
 ## GitHub
 The GitHub repository for this assignment is [fan-page](https://github.com/htc-ccis1301/fan-page).
@@ -32,21 +30,27 @@ Setup CSS to remove the underlines from your navigation links, slightly increase
 You can choose to position the nav horizontally or vertically on your page, but add CSS to style the nav list so that it is not too crowded and is separated and distinct from the other content.
 
 ### In Page Links
-Add additional structure to your main content area through the use of HTML5 article, section or aside elements.  Separate each of your four sub-headings into its own section (or article) element.  Give each section an id attribute and use that to add in-page links to your nav for each of the sections or sub-headings.
+Add additional structure to your main content area through the use of HTML5 article, section or aside elements.  
+
+You should currently have your page set up with 4 sub-headings. If you do not have this, or have used heading tags for content that is not a heading, you will need to fix this first.  Separate each of your these sub-headings into its own HTML5 section (or article) element.  Give each section an id attribute and use that to add in-page links to your nav for each of the sections or sub-headings.
+
 
 ### Responsive Layout
-Use CSS Media queries to adjust your desktop layout for better usability on a mobile device.  You should aim to
+Use CSS Media queries to adjust your desktop layout for better usability on tablet and mobile devices.  You should aim to have more empty space on the desktop and more vertically structured content on the smaller mobile devices.  You should see the layout shift as you reduce the width on your browser window to a tablet width and then again to a narrower mobile phone width.  
 
-## Note on Grading
-This week's requirements are a lot more open than in previous weeks and the grading will be a bit more subjective.  I will look specifically for the color palette, but the remaining points will be based on how well you have designed your site to look professional and illustrate principles from the text as well as the 60-30-10 rule.
+Your layout must be altered for each device size to get full points for this task.  Remember that in addition to moving or resizing content, you might also show or hide content as well.
+
+
+### Responsive Design
+Write a short 500-750 word paper (about 1-2 page) that discusses how you have altered your page layout to better support a variety of devices sizes and types.  You should include a paragraph that addresses changes for each desktop, tablet, and mobile devices. Make sure to discuss the reasons for your changes. For example you might make changes for better visibility, larger click area, to conserve space, or to reduce bandwidth use or load time.
+
 
 ## Testing
 Once you are happy with your work, push it up to GitHub.  Make sure to check the display of your page live on GitHub Pages and re-validate your page by URL.
 
-## Submit
-Create a pull-request add a pull-request comment to include your thoughts on why it would make maintenance of a web site easier to keep all styles in an external CSS file and out of the HTML files.
 
-Submit the following screenshots to the Assignment box on D2L:
+## Submit
+Create a pull-request and submit your MS Word document write up along with the following screenshots to the Assignment box on D2L:
 
 - Open-pull request
 - Actual web page as published on GitHub (URL in Settings)
