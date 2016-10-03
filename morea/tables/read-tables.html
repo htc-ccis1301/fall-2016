@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> Building &amp; Styling Tables | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+        <li><a href="//htc-ccis1301.github.io/html-students/fall-2016.html">Class Directory</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/tables">Building &amp; Styling Tables</a></li>
+      <li class="active">Building &amp; Styling Tables</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <style>
+table {
+  margin: 10px;
+  padding: 5px;
+}
+
+th,td {
+  padding: 5px;
+  border: 1px solid #000066;
+}
+</style>
+
+<h1 id="building--styling-tables">Building &amp; Styling Tables</h1>
+<p>Read Chapter 9 of your textbook <a href="http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/">Basics of Web Design: HTML5 &amp; CSS3</a> which covers page layout with HTML &amp; CSS.</p>
+
+<p>Remember that you can get the example code from the book electronically from the <a href="http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/">textbook website</a>.  It is important to experiment with the material as you read and learn it so that you understand it well.</p>
+
+<h2 id="overview">Overview</h2>
+<p>Chapter 9 introduces tables, which are a common feature on web pages.  Tables can organize information, making it easier to read and understand.  With the addition of some JavaScript (not covered in this course), the data can also sorted and filtered.  This can allow data that was once printed and distributed as reports, or emailed out in spreadsheets to be accessible on the web any time and anywhere.</p>
+
+<h2 id="basic-table-structure">Basic Table Structure</h2>
+<div class="alert alert-warning" role="alert">
+<img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20" align="absmiddle"> The example tables below are styled with the CSS for this site, so they will look different without CSS applied.
+</div>
+
+<p>A basic table <code class="highlighter-rouge">&lt;table&gt;</code> is just made of rows <code class="highlighter-rouge">&lt;tr&gt;</code> and cells <code class="highlighter-rouge">&lt;td&gt;</code> (which make up the columns).</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5785c6e9534e956b79d7.js?file=basicTable.html"> </script>
+
+<p>That produces a table that is structured like this:</p>
+<table>
+    <tr>
+        <td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+<td>Row 1, Column 3</td>
+    </tr>
+    <tr>
+        <td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+<td>Row 2, Column 3</td>
+    </tr>
+    <tr>
+        <td>Row 3, Column 1</td>
+<td>Row 3, Column 2</td>
+<td>Row 3, Column 3</td>
+    </tr>
+</table>
+
+<h3 id="headings-and-caption">Headings and Caption</h3>
+<p>To make the table a little fancier, you can also add headings and a caption or title.</p>
+
+<noscript><pre>400: Invalid request
+</pre></noscript>
+<script src="https://gist.github.com/5785c6e9534e956b79d7.js?file=basicTable2.html"> </script>
+
+<p>That produces a table that is structured like this:</p>
+<table>
+    <caption>Basic Table with Headings</caption>
+    <tr>
+        <th>Heading 1</th>
+<th>Heading 2</th>
+<th>Heading 3</th>
+    </tr>
+    <tr>
+        <td>Row 1, Column 1</td>
+<td>Row 1, Column 2</td>
+<td>Row 1, Column 3</td>
+    </tr>
+    <tr>
+        <td>Row 2, Column 1</td>
+<td>Row 2, Column 2</td>
+<td>Row 2, Column 3</td>
+    </tr>
+    <tr>
+        <td>Row 3, Column 1</td>
+<td>Row 3, Column 2</td>
+<td>Row 3, Column 3</td>
+    </tr>
+</table>
+
+<h3 id="spanning-rows--columns">Spanning Rows &amp; Columns</h3>
+<p>It’s not uncommon to want a row or column to take up the space of more than one <em>cell</em>.  This can improve the table display when there are things like grouped rows or columns. This is not something used for every table, but it is important to know that you <em>can</em> do this.</p>
+
+<h3 id="accessibility">Accessibility</h3>
+<p>Make sure to use the <code class="highlighter-rouge">id</code> and <code class="highlighter-rouge">headers</code> attributes in your tables to support accessibility. Remember that it is your job to know that you need to include these pieces to make your pages accessible. Don’t wait for someone to tell you to do it.</p>
+
+<h3 id="styling-tables">Styling Tables</h3>
+<p>Older HTML tables were styled using attributes on the HTML tag.  Now that CSS is widely supported, it is considered a best practice to avoid the use of the HTML attributes for styling and to use CSS instead.</p>
+
+<p>The tables above are styled using the following CSS:</p>
+<pre>
+table {
+  margin: 10px;
+  padding: 5px;
+}
+
+th,td {
+  padding: 5px;
+  border: 1px solid #000066;
+}
+</pre>
+
+<h3 id="table-structure">Table Structure</h3>
+<p>Tables can get rather complex, especially if they are containing groups of data with summary information.  To assist with the layout of these tables, there are grouping elements to help you structure your tables.  These elements are <code class="highlighter-rouge">thead</code>, <code class="highlighter-rouge">tbody</code> and <code class="highlighter-rouge">tfoot</code>.  While it is not necessary to use all of these in every table, you should use them to separate headers from the table body or contents, and if the table contains summary information, it should be placed in the <code class="highlighter-rouge">tfoot</code>.</p>
+
+<h2 id="review-questions">Review Questions</h2>
+
+<ul>
+  <li>What is the purpose of a table in HTML?</li>
+  <li>Why should you not use attributes such as <code class="highlighter-rouge">cellpadding</code>, <code class="highlighter-rouge">cellspacing</code>, and <code class="highlighter-rouge">summary</code> on new HTML pages?</li>
+  <li>What is the difference between a <code class="highlighter-rouge">th</code> and a <code class="highlighter-rouge">td</code> element?</li>
+  <li>Where is a table caption positioned in the table HTML?  Why it is used?</li>
+  <li>How do you have a table cell span multiple rows?  Multiple columns?</li>
+  <li>How is the <code class="highlighter-rouge">headers</code> attribute used in an HTML table?  Why is it used?</li>
+  <li>How do you eliminate the space between the table’s cell borders using CSS?</li>
+  <li>How do you style table rows so that every other row has a different background color?</li>
+  <li>Tables have 3 structural elements to group rows.  One is <code class="highlighter-rouge">tbody</code>, what are the other two? Give an example of how they might be used.</li>
+</ul>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-10-02 23:35:49 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

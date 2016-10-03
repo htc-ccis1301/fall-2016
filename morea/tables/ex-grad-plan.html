@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title> Fan Page Part 5 | CCIS1301 Fall 2016 </title>
+  <title> Graduation Plan Table | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -97,58 +97,82 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/page-layout">Page Layout</a></li>
-      <li class="active">Fan Page Part 5</li>
+      <li><a href="/fall-2016/modules/tables">Building &amp; Styling Tables</a></li>
+      <li class="active">Graduation Plan Table</li>
     </ol>
   </div>
 </div>
 
 
 <div class="container">
-  <h1 id="fan-page-part-5">Fan Page Part 5</h1>
+  <h1 id="graduation-plan-table">Graduation Plan Table</h1>
+<p>Design a web page with a table to plan out the path to your degree.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
-<p>To successfully complete this assignment, you should be familiar with the page layout and design topics covered in the reading:</p>
+<p>To successfully complete this assignment, you should be familiar with basic concepts of responsive design and how to make in page links to content.  This is reviewed in the reading for this module: <a href="/fall-2016/morea/tables/read-tables.html">Tables</a>.</p>
 
-<ul>
-  <li><a href="/fall-2016/morea/page-layout/read-page-layout.html">Page Layout</a></li>
-  <li><a href="/fall-2016/morea/page-layout/read-design-layout.html">Page Layout Design</a></li>
-</ul>
+<h2 id="overview">Overview</h2>
+<p>For this assignment, you will make a web page that outlines the courses you plan to take for graduation. If you are not in a program for a degree or certificate, you can borrow any of our programs and make things up.  While I’d like this information to be useful, the real intent is to build an HTML table.</p>
 
 <h2 id="github">GitHub</h2>
-<p>The GitHub repository for this assignment is <a href="https://github.com/htc-ccis1301/fan-page">fan-page</a>.</p>
+<p>The GitHub repository for this assignment is <a href="https://github.com/htc-ccis1301/grad-plan-table">grad-plan-table</a>.</p>
 
-<p>Remember that once you have forked and cloned this repository, you do not need to do that again.  Just continue creating and editing files through Brackets and use the git add, commit, and push commands to update GitHub.</p>
+<p>The repository contains the standard Readme.md and .gitignore files and empty index.html &amp; style.css files.  Remember that you need to begin by forking and then cloning this repository.</p>
 
 <h2 id="requirements">Requirements</h2>
-<p>For this assignment, you will modify your fan site to have a fixed header and a spacious layout.</p>
+<p>Create a web page to outline your plans for graduation.  The page should include the following:</p>
 
-<div class="alert alert-warning" role="alert">
+<ul>
+  <li>Nav links that include a link to your GitHub profile page, information about this program on the web, and anything else you would like to highlight</li>
+  <li>A page header titled something like “My Graduation Plan”</li>
+  <li>A section heading calling out the program you are working toward</li>
+  <li>A short paragraph with a description of the program and why you are interested in it</li>
+  <li>A table with your graduation plan as outlined below</li>
+  <li>A footer with your copyright and contact info - it is fine to do a fake mailto like in the case study.</li>
+</ul>
+
+<div class="alert alert-info" role="alert">
   <div class="media">
     <div class="media-left media-top">
-      <img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20" align="absmiddle">
+      <img class="emoji" title=":dizzy:" alt=":dizzy:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ab.png" height="20" width="20" align="absmiddle">
     </div>
     <div class="media-body">
-      <p>As you build this site, be careful in the use of images, text, and other content from other sources. Unless you have created the content yourself, I expect that you to have permission to use anyone else’s material. You should note such permissions near the content or place it in the footer. You should also note copyright of others materials - for example, note the footer on this page <a href="http://guildwarstemple.com/dragontimer/">Guild Wars 2 Boss Timer</a></p>
+      <p>If you are not currently enrolled in a degree program, here or at another school, humor me by either looking up one of our programs such as the <a href="https://www.hennepintech.edu/program/awards/411">.Net Developer</a> or making up similar content.</p>
 
     </div>
   </div>
 </div>
 
-<h3 id="fixed-header">Fixed header</h3>
-<p>Add CSS to make the header take the full page width and fix the header at the top of the page so that when you scroll, the header does not move.</p>
+<p>As we near the end of the semester, it doesn’t hurt to think about what you might enroll in next semester.  However, please note that I’m not grading your <em>plan</em>, I’m grading whether or not you can structure and style this type of information in a table on the web.</p>
 
-<p>Add a margin to the top of your main content so that it does not get hidden under the header.</p>
+<h3 id="html">HTML</h3>
+<p>Build an HTML table to outline the courses required for graduation from your program and when you plan to take them.</p>
 
-<p>If you are having problems with this, try a web search for help on how to work with a fixed header.  Prioritize answers from sites like StackOverflow or Mozilla, but don’t just copy paste, make sure to read and understand what they are suggesting and adjust the answers to work on your site’s layout.</p>
+<p>Organize the table so that there is a row for each course and they are ordered by semester. Each course should have a semester (when you intend to take the course), the course number, name and number of credits.  These should be reflected as column headings.  Instead of repeating the same semester across multiple rows, have the cell span multiple rows so that information appears only once.</p>
 
-<h3 id="layout-and-spacing">Layout and Spacing</h3>
-<p>Adjust the spacing (padding and margins) throughout your site to allow open space between your content.  Aim for the 60-30-10 rule, where 60% of the page layout is open or negative space.</p>
+<p>At the bottom of the table, add a summary row showing the total number of credits. Structure the summary row so that it contains only two cells: one with the word “total” and the other with a sum of all the credits from the rows above. Add a table caption with the title and make sure to use the table structure element for the head and footer.</p>
 
-<p>Be careful with the use of images so that they do not make the site look too cluttered.  When using full page background images, you might cover over parts of them to give your main content a solid background and some open or negative space.  An alternate approach would be to limit the image to a portion of the page, similar to the hero image in the case study, though you should not feel restricted to having that image be at the top of the page.  It might also fit nicely along the side, middle, or bottom.</p>
+<h3 id="css">CSS</h3>
+<p>Style the table so that:</p>
 
-<h3 id="float-something">Float something</h3>
-<p>Use CSS to float something on the page either right or left of some other content.  Remember that the order of the elements is important with float. If you are not getting the look you want, you may need to swap the order.  (Refer back to the examples from the textbook if needed.)</p>
+<ul>
+  <li>the title is in large text similar to a page heading</li>
+  <li>the column headings have a different background color and bold text</li>
+  <li>there is an alternate background color on every other row (use CSS3 Structural Pseudo-classes)</li>
+  <li>the text in the Semester column (use a style class) has a different text color and background color</li>
+  <li>apply a different background color to the summary information</li>
+</ul>
+
+<p>Apply CSS to the rest of the page to establish a good margins, padding and layout. You may apply other styles as you see fit, so long as the above requirements are met.</p>
+
+<h3 id="sample-page">Sample Page</h3>
+<div style="padding:10px">
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+        <img class="img-responsive" src="/fall-2016/morea/tables/images/sample-grad-table.png" alt="Sample Table">
+    </div>
+  </div>
+</div>
 
 <h2 id="testing">Testing</h2>
 <p>Once you are happy with your work, push it up to GitHub.  Make sure to check the display of your page live on GitHub Pages and re-validate your page by URL.</p>

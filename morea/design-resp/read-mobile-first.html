@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Mobile First Design | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+        <li><a href="//htc-ccis1301.github.io/html-students/fall-2016.html">Class Directory</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/resp-design">Responsive Web Design</a></li>
+      <li class="active">Mobile First Design</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="mobile-first-design">Mobile First Design</h1>
+
+<p>Mobile First is a design principle in which you intentionally make design decisions for mobile devices first. Until recently, the focus for web designers was the presentation of the web site on a computer monitor. As the spread of smart phones and mobile devices with internet access grew, people began to consider how websites might be viewed on these smaller devices, but that was historically secondary to the desktop view.</p>
+
+<p>Today, the mobile phone is increasingly the main (or in some parts of the world only) way people access the internet. Some people do not have access to a desktop or laptop computer at all, but do have and use a smart phone to access the web.  This growing trend to use a mobile device as the primary path to access the internet is resulting in a shift to focus on designing <em>first</em> for mobile devices and then secondarily enhancing that design for larger displays.</p>
+
+<p>In this session, we will begin to explore responsive design which allows a website to flex and change its display based on the available display size. We will first learn how to implement this type of responsive design using media queries. Later in the semester we will explore a web framework that provides a library of CSS styles to manage the responsive layout for us.</p>
+
+<p>Responsive websites are only one way to design and target a site for mobile device users. It is also possible to build an independent web site that mobile users are directed to, based on information sent about the client that is included in the web page request. A mobile phone apps might also be developed for mobile users, replacing the need for them to view a website through the device’s web browser.</p>
+
+<p>Responsive sites have the advantage of keeping everything in one place. There is only one copy of the web site that adjusts to various device sizes.  However, designing a responsive site can pose challenges as well, and might result in design compromises that would not have to be made for a mobile only site or a mobile application.</p>
+
+<h3 id="media-query-design">Media Query Design</h3>
+<p>In the textbook, the examples show desktop first development, where the CSS is first written for a desktop display and then altered using media queries for tablet and mobile.  An alternate approach is to design the CSS “mobile first” for the display on smaller devices and then use media queries to alter that display for larger devices.  Both approaches are supported by the CSS media queries, so be careful to look at the screen sizes that the media queries apply to.  Don’t just assume that the CSS that is not inside a media query must be for the desktop display of a site.</p>
+
+<p>Another alternate style for media queries is to organize everything by element, not device size.  So while the textbook shows many different rules inside one media query, the same design could be accomplished by having separate media queries for each selector.  This allows you to group all the CSS for a specific selector together.</p>
+
+<p>An example follows:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">footer</span> <span class="p">{</span> <span class="nl">margin-left</span><span class="p">:</span> <span class="m">190px</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="o">@</span> <span class="nt">media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">64em</span><span class="o">)</span> <span class="p">{</span>
+   <span class="err">footer</span> <span class="err">{</span> <span class="nl">margin-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
+<span class="err">}</span>
+
+<span class="o">@</span> <span class="nt">media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">37</span><span class="nc">.5em</span><span class="o">)</span> <span class="p">{</span>
+   <span class="err">footer</span> <span class="err">{</span> <span class="nl">font-size</span><span class="p">:</span> <span class="m">90%</span> <span class="p">}</span>
+<span class="err">}</span>
+
+<span class="nt">nav</span> <span class="p">{</span>
+  <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="o">@</span> <span class="nt">media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="o">:</span> <span class="nt">64em</span><span class="o">)</span> <span class="p">{</span>
+  <span class="err">nav</span> <span class="err">{</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="err">}</span></code></pre></figure>
+
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-10-02 23:35:49 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
