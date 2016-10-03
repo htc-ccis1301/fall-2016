@@ -10,6 +10,7 @@ morea_outcomes:
   - out-frag-links
 morea_readings:
   - read-responsive
+  - read-mobile-first
   - read-design-roles
 morea_experiences:
   - ex-design-trends

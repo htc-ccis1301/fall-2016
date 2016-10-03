@@ -4,7 +4,7 @@ published: true
 morea_id: read-design-layout
 morea_summary: "The two-column layout is rather basic, but very straight-forward to build using a simple CSS float. However, there are many more options. In this reading, we'll explore some more trendy layouts."
 morea_type: reading
-morea_sort_order: 1
+morea_sort_order: 2
 ---
 
 # {{ page.title }}

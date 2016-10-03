@@ -4,7 +4,7 @@ published: true
 morea_id: ex-dev-tools-p3
 morea_type: experience
 morea_summary: "In this exercise will will use the Developer Tools to explore a responsive web page containing media queries."
-morea_sort_order: 2
+morea_sort_order: 1
 ---
 
 # {{ page.title }}

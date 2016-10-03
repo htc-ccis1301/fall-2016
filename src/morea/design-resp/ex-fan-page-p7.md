@@ -3,11 +3,12 @@ title: "Fan Page Part 7"
 published: true
 morea_id: ex-fan-page-p7
 morea_type: experience
-morea_summary: "Give the fan-page a responsive design & layout."
+morea_summary: "Let's wrap-up our fan-page by giving it a responsive design & layout."
 morea_sort_order: 2
 ---
 
 # {{ page.title }}
+{{ page.morea_summary }}
 
 ## Prerequisites
 To successfully complete this assignment, you should be familiar with basic concepts of responsive design and how to make in page links to content.  This is reviewed in the reading for this module: [Responsive Design]( {{ site.baseurl }}/morea/design-resp/read-responsive.html ).
