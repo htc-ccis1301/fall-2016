@@ -1,26 +1,18 @@
 ---
-title: "Building & Styling Tables"
+title: "Building & Styling Web Forms"
 published: true
-morea_id: read-tables
-morea_summary: "This modules is focused on structuring and styling tables for the web.  Tables are a common feature on web pages, organizing information to make it easier to read and understand."
+morea_id: read-forms
+morea_summary: "This modules is focused on building forms for the web.  Forms are commonly used on many types of websites to support the collection of data."
 morea_type: reading
 morea_sort_order: 1
 ---
 <style>
-table {
-  margin: 10px;
-  padding: 5px;
-}
 
-th,td {
-  padding: 5px;
-  border: 1px solid #000066;
-}
 </style>
 
 
 # {{ page.title }}
-Read Chapter 9 of your textbook [Basics of Web Design: HTML5 & CSS3](http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/) which covers building and styling tables on the web.  
+Read Chapter 10 of your textbook [Basics of Web Design: HTML5 & CSS3](http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/) which introduces web based forms.  
 
 Remember that you can get the example code from the book electronically from the [textbook website](http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/).  It is important to experiment with the material as you read and learn it so that you understand it well.
 
