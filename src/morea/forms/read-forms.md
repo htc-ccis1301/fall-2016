@@ -19,88 +19,55 @@ Remember that you can get the example code from the book electronically from the
 ## Overview
 Chapter 9 introduces tables, which are a common feature on web pages.  Tables can organize information, making it easier to read and understand.  With the addition of some JavaScript (not covered in this course), the data can also sorted and filtered.  This can allow data that was once printed and distributed as reports, or emailed out in spreadsheets to be accessible on the web any time and anywhere.  
 
-## Basic Table Structure
-<div class="alert alert-warning" role="alert">
-:warning: The example tables below are styled with the CSS for this site, so they will look different without CSS applied.
-</div>
+## Basic form structure
+A web form is created using the `<form>` element and contains labels, inputs and buttons.
 
-A basic table `<table>` is just made of rows `<tr>` and cells `<td>` (which make up the columns).
-
-{% gist 5785c6e9534e956b79d7 basicTable.html %}
-
-That produces a table that is structured like this:
-<table>
-    <tr>
-        <td>Row 1, Column 1</td><td>Row 1, Column 2</td><td>Row 1, Column 3</td>
-    </tr>
-    <tr>
-        <td>Row 2, Column 1</td><td>Row 2, Column 2</td><td>Row 2, Column 3</td>
-    </tr>
-    <tr>
-        <td>Row 3, Column 1</td><td>Row 3, Column 2</td><td>Row 3, Column 3</td>
-    </tr>
-</table>
+The form element must include an `action` which indicates the URL for where the form information should be submitted.  The `method` indicates how the data is sent to the web server - `get` or `post`.  The `get` method is the default and causes the data to be appended to the URL that is sent to the web server.  This makes the data sent rather public as it is visible on the request URL.  The alternate method of `post` is more private as the information is transmitted in the body of the message, not on the URL.  This is method is generally preferred.  The form element also allows for an optional `name` and/or `id` which can help provide access to the form for client-side validation of the information using JavaScript.
 
 
-### Headings and Caption
-To make the table a little fancier, you can also add headings and a caption or title.
+### Form Controls
+There are a variety of form input controls discussed in the chapter.  You will want to be familiar with all of them.
 
-{% gist 5785c6e9534e956b79d7 basicTable2.html %}
+Basic Controls:
 
-That produces a table that is structured like this:
-<table>
-    <caption>Basic Table with Headings</caption>
-    <tr>
-        <th>Heading 1</th><th>Heading 2</th><th>Heading 3</th>
-    </tr>
-    <tr>
-        <td>Row 1, Column 1</td><td>Row 1, Column 2</td><td>Row 1, Column 3</td>
-    </tr>
-    <tr>
-        <td>Row 2, Column 1</td><td>Row 2, Column 2</td><td>Row 2, Column 3</td>
-    </tr>
-    <tr>
-        <td>Row 3, Column 1</td><td>Row 3, Column 2</td><td>Row 3, Column 3</td>
-    </tr>
-</table>
+- Text Box
+- Submit & Reset Buttons
+- Check Box and Radio Button
+- Hidden Field and Password Box
+- Text Area
+- Select List
 
+HTML5 Controls:
 
-### Spanning Rows & Columns
-It's not uncommon to want a row or column to take up the space of more than one *cell*.  This can improve the table display when there are things like grouped rows or columns. This is not something used for every table, but it is important to know that you *can* do this.
+- Email & Telephone
+- Datalist
+- Slider and Spinner
+- Calendar
+- Color Well
 
+A form fields can be required using the HTML5 `required` attribute, however it is important to remember that it is only checked by browsers that support HTML5.  
+
+It is also good to remember that any type of client-side form validation can be circumvented fairly easily and so as you work with back-end services to handle this data, validation should be repeated on the server.  Client-side validation should be treated as merely a convenience to speed up validation for the user, and not relied upon for clean and valid input data.
 
 ### Accessibility
-Make sure to use the `id` and `headers` attributes in your tables to support accessibility. Remember that it is your job to know that you need to include these pieces to make your pages accessible. Don't wait for someone to tell you to do it.
+Make sure to use one of the two accepted methods to associate a form control with a label to support accessibility tools.
 
+1. Use the label as a container around both the text description and the form control.
+2. Use the label as a container for only the text description and then use the `for` attribute on the label element to associate it with the `id` attribute of the form control.
 
-### Styling Tables
-Older HTML tables were styled using attributes on the HTML tag.  Now that CSS is widely supported, it is considered a best practice to avoid the use of the HTML attributes for styling and to use CSS instead.  
+The second method is generally preferred as it allows more flexibility in the form design.
 
-The tables above are styled using the following CSS:
-<pre>
-table {
-  margin: 10px;
-  padding: 5px;
-}
-
-th,td {
-  padding: 5px;
-  border: 1px solid #000066;
-}
-</pre>
-
-### Table Structure
-Tables can get rather complex, especially if they are containing groups of data with summary information.  To assist with the layout of these tables, there are grouping elements to help you structure your tables.  These elements are `thead`, `tbody` and `tfoot`.  While it is not necessary to use all of these in every table, you should use them to separate headers from the table body or contents, and if the table contains summary information, it should be placed in the `tfoot`.
-
+## Styling Forms
+There isn't anything particularly special to note about styling web forms. Just use an appropriate selector for the element and add CSS for margin/padding, text, color, or whatever it is you need or desire to make the form look nice.
 
 ## Review Questions
 
- - What is the purpose of a table in HTML?  
- - Why should you not use attributes such as `cellpadding`, `cellspacing`, and `summary` on new HTML pages?
- - What is the difference between a `th` and a `td` element?
- - Where is a table caption positioned in the table HTML?  Why it is used?
- - How do you have a table cell span multiple rows?  Multiple columns?
- - How is the `headers` attribute used in an HTML table?  Why is it used?
- - How do you eliminate the space between the table's cell borders using CSS?
- - How do you style table rows so that every other row has a different background color?
- - Tables have 3 structural elements to group rows.  One is `tbody`, what are the other two? Give an example of how they might be used.
+ - What is the purpose of an HTML form?  
+ - What attribute(s) are required on the form element?
+ - What is the purpose of the `method` attribute?
+ - What is the difference between the `get` and `post` method of form submission?
+ - Which is considered more private?  
+ - How do you indicate a form field is required before the form can be submitted?
+ - Does requiring a field provide a 100% guarantee that the data is actually present?
+ - What are the two methods used for to associate descriptive text to form controls?
+ - Are the HTML5 form controls displayed in a non-HTML5 compliant browser? If so, how?
