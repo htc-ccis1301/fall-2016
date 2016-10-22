@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title> Building &amp; Styling Web Forms | CCIS1301 Fall 2016 </title>
+  <title> Building & Styling Web Forms | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -10,7 +9,7 @@
   <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
   <link rel="stylesheet" href="/fall-2016/css/style.css">
   <link rel="stylesheet" href="/fall-2016/css/syntax.css">
-  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -23,7 +22,8 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
   
@@ -98,7 +98,7 @@
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
       <li><a href="/fall-2016/modules/forms">Web Forms</a></li>
-      <li class="active">Building &amp; Styling Web Forms</li>
+      <li class="active">Building & Styling Web Forms</li>
     </ol>
   </div>
 </div>
@@ -117,105 +117,64 @@
 <h2 id="overview">Overview</h2>
 <p>Chapter 9 introduces tables, which are a common feature on web pages.  Tables can organize information, making it easier to read and understand.  With the addition of some JavaScript (not covered in this course), the data can also sorted and filtered.  This can allow data that was once printed and distributed as reports, or emailed out in spreadsheets to be accessible on the web any time and anywhere.</p>
 
-<h2 id="basic-table-structure">Basic Table Structure</h2>
-<div class="alert alert-warning" role="alert">
-<img class="emoji" title=":warning:" alt=":warning:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/26a0.png" height="20" width="20" align="absmiddle"> The example tables below are styled with the CSS for this site, so they will look different without CSS applied.
-</div>
+<h2 id="basic-form-structure">Basic form structure</h2>
+<p>A web form is created using the <code class="highlighter-rouge">&lt;form&gt;</code> element and contains labels, inputs and buttons.</p>
 
-<p>A basic table <code class="highlighter-rouge">&lt;table&gt;</code> is just made of rows <code class="highlighter-rouge">&lt;tr&gt;</code> and cells <code class="highlighter-rouge">&lt;td&gt;</code> (which make up the columns).</p>
+<p>The form element must include an <code class="highlighter-rouge">action</code> which indicates the URL for where the form information should be submitted.  The <code class="highlighter-rouge">method</code> indicates how the data is sent to the web server - <code class="highlighter-rouge">get</code> or <code class="highlighter-rouge">post</code>.  The <code class="highlighter-rouge">get</code> method is the default and causes the data to be appended to the URL that is sent to the web server.  This makes the data sent rather public as it is visible on the request URL.  The alternate method of <code class="highlighter-rouge">post</code> is more private as the information is transmitted in the body of the message, not on the URL.  This is method is generally preferred.  The form element also allows for an optional <code class="highlighter-rouge">name</code> and/or <code class="highlighter-rouge">id</code> which can help provide access to the form for client-side validation of the information using JavaScript.</p>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
-<script src="https://gist.github.com/5785c6e9534e956b79d7.js?file=basicTable.html"> </script>
+<h3 id="form-controls">Form Controls</h3>
+<p>There are a variety of form input controls discussed in the chapter.  You will want to be familiar with all of them.</p>
 
-<p>That produces a table that is structured like this:</p>
-<table>
-    <tr>
-        <td>Row 1, Column 1</td>
-<td>Row 1, Column 2</td>
-<td>Row 1, Column 3</td>
-    </tr>
-    <tr>
-        <td>Row 2, Column 1</td>
-<td>Row 2, Column 2</td>
-<td>Row 2, Column 3</td>
-    </tr>
-    <tr>
-        <td>Row 3, Column 1</td>
-<td>Row 3, Column 2</td>
-<td>Row 3, Column 3</td>
-    </tr>
-</table>
+<p>Basic Controls:</p>
 
-<h3 id="headings-and-caption">Headings and Caption</h3>
-<p>To make the table a little fancier, you can also add headings and a caption or title.</p>
+<ul>
+  <li>Text Box</li>
+  <li>Submit &amp; Reset Buttons</li>
+  <li>Check Box and Radio Button</li>
+  <li>Hidden Field and Password Box</li>
+  <li>Text Area</li>
+  <li>Select List</li>
+</ul>
 
-<noscript><pre>400: Invalid request
-</pre></noscript>
-<script src="https://gist.github.com/5785c6e9534e956b79d7.js?file=basicTable2.html"> </script>
+<p>HTML5 Controls:</p>
 
-<p>That produces a table that is structured like this:</p>
-<table>
-    <caption>Basic Table with Headings</caption>
-    <tr>
-        <th>Heading 1</th>
-<th>Heading 2</th>
-<th>Heading 3</th>
-    </tr>
-    <tr>
-        <td>Row 1, Column 1</td>
-<td>Row 1, Column 2</td>
-<td>Row 1, Column 3</td>
-    </tr>
-    <tr>
-        <td>Row 2, Column 1</td>
-<td>Row 2, Column 2</td>
-<td>Row 2, Column 3</td>
-    </tr>
-    <tr>
-        <td>Row 3, Column 1</td>
-<td>Row 3, Column 2</td>
-<td>Row 3, Column 3</td>
-    </tr>
-</table>
+<ul>
+  <li>Email &amp; Telephone</li>
+  <li>Datalist</li>
+  <li>Slider and Spinner</li>
+  <li>Calendar</li>
+  <li>Color Well</li>
+</ul>
 
-<h3 id="spanning-rows--columns">Spanning Rows &amp; Columns</h3>
-<p>It’s not uncommon to want a row or column to take up the space of more than one <em>cell</em>.  This can improve the table display when there are things like grouped rows or columns. This is not something used for every table, but it is important to know that you <em>can</em> do this.</p>
+<p>A form fields can be required using the HTML5 <code class="highlighter-rouge">required</code> attribute, however it is important to remember that it is only checked by browsers that support HTML5.</p>
+
+<p>It is also good to remember that any type of client-side form validation can be circumvented fairly easily and so as you work with back-end services to handle this data, validation should be repeated on the server.  Client-side validation should be treated as merely a convenience to speed up validation for the user, and not relied upon for clean and valid input data.</p>
 
 <h3 id="accessibility">Accessibility</h3>
-<p>Make sure to use the <code class="highlighter-rouge">id</code> and <code class="highlighter-rouge">headers</code> attributes in your tables to support accessibility. Remember that it is your job to know that you need to include these pieces to make your pages accessible. Don’t wait for someone to tell you to do it.</p>
+<p>Make sure to use one of the two accepted methods to associate a form control with a label to support accessibility tools.</p>
 
-<h3 id="styling-tables">Styling Tables</h3>
-<p>Older HTML tables were styled using attributes on the HTML tag.  Now that CSS is widely supported, it is considered a best practice to avoid the use of the HTML attributes for styling and to use CSS instead.</p>
+<ol>
+  <li>Use the label as a container around both the text description and the form control.</li>
+  <li>Use the label as a container for only the text description and then use the <code class="highlighter-rouge">for</code> attribute on the label element to associate it with the <code class="highlighter-rouge">id</code> attribute of the form control.</li>
+</ol>
 
-<p>The tables above are styled using the following CSS:</p>
-<pre>
-table {
-  margin: 10px;
-  padding: 5px;
-}
+<p>The second method is generally preferred as it allows more flexibility in the form design.</p>
 
-th,td {
-  padding: 5px;
-  border: 1px solid #000066;
-}
-</pre>
-
-<h3 id="table-structure">Table Structure</h3>
-<p>Tables can get rather complex, especially if they are containing groups of data with summary information.  To assist with the layout of these tables, there are grouping elements to help you structure your tables.  These elements are <code class="highlighter-rouge">thead</code>, <code class="highlighter-rouge">tbody</code> and <code class="highlighter-rouge">tfoot</code>.  While it is not necessary to use all of these in every table, you should use them to separate headers from the table body or contents, and if the table contains summary information, it should be placed in the <code class="highlighter-rouge">tfoot</code>.</p>
+<h2 id="styling-forms">Styling Forms</h2>
+<p>There isn’t anything particularly special to note about styling web forms. Just use an appropriate selector for the element and add CSS for margin/padding, text, color, or whatever it is you need or desire to make the form look nice.</p>
 
 <h2 id="review-questions">Review Questions</h2>
 
 <ul>
-  <li>What is the purpose of a table in HTML?</li>
-  <li>Why should you not use attributes such as <code class="highlighter-rouge">cellpadding</code>, <code class="highlighter-rouge">cellspacing</code>, and <code class="highlighter-rouge">summary</code> on new HTML pages?</li>
-  <li>What is the difference between a <code class="highlighter-rouge">th</code> and a <code class="highlighter-rouge">td</code> element?</li>
-  <li>Where is a table caption positioned in the table HTML?  Why it is used?</li>
-  <li>How do you have a table cell span multiple rows?  Multiple columns?</li>
-  <li>How is the <code class="highlighter-rouge">headers</code> attribute used in an HTML table?  Why is it used?</li>
-  <li>How do you eliminate the space between the table’s cell borders using CSS?</li>
-  <li>How do you style table rows so that every other row has a different background color?</li>
-  <li>Tables have 3 structural elements to group rows.  One is <code class="highlighter-rouge">tbody</code>, what are the other two? Give an example of how they might be used.</li>
+  <li>What is the purpose of an HTML form?</li>
+  <li>What attribute(s) are required on the form element?</li>
+  <li>What is the purpose of the <code class="highlighter-rouge">method</code> attribute?</li>
+  <li>What is the difference between the <code class="highlighter-rouge">get</code> and <code class="highlighter-rouge">post</code> method of form submission?</li>
+  <li>Which is considered more private?</li>
+  <li>How do you indicate a form field is required before the form can be submitted?</li>
+  <li>Does requiring a field provide a 100% guarantee that the data is actually present?</li>
+  <li>What are the two methods used for to associate descriptive text to form controls?</li>
+  <li>Are the HTML5 form controls displayed in a non-HTML5 compliant browser? If so, how?</li>
 </ul>
 
 </div>
@@ -229,11 +188,11 @@ th,td {
   <footer>
     <div class="container page-footer">
       
-      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
+      <p>This course is developed for Hennepin Technical College by <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;">&#109;&#097;&#114;&#121;&#046;&#109;&#111;&#115;&#109;&#097;&#110;&#064;&#104;&#101;&#110;&#110;&#101;&#112;&#105;&#110;&#116;&#101;&#099;&#104;&#046;&#101;&#100;&#117;</a></p>
 
       
       <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
-        Last update on: <span>2016-10-22 16:33:14 -0500</span></p>
+        Last update on: <span>2016-10-22 17:07:40 -0500</span></p>
     </div>
   </footer>
 </div>
