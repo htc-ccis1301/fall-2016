@@ -2,7 +2,7 @@
 title: "Building & Styling Tables"
 published: true
 morea_id: read-tables
-morea_summary: "This modules is focused on structuring and styling tables for the web.  Tables are a common feature on web pages, organizing information to make it easier to read and understand."
+morea_summary: "This module is focused on structuring and styling tables for the web.  Tables are a common feature on web pages, organizing information to make it easier to read and understand."
 morea_type: reading
 morea_sort_order: 1
 ---

@@ -49,7 +49,7 @@ A form fields can be required using the HTML5 `required` attribute, however it i
 
 It is also good to remember that any type of client-side form validation can be circumvented fairly easily and so as you work with back-end services to handle this data, validation should be repeated on the server.  Client-side validation should be treated as merely a convenience to speed up validation for the user, and not relied upon for clean and valid input data.
 
-### Accessibility
+## Accessibility
 Make sure to use one of the two accepted methods to associate a form control with a label to support accessibility tools.
 
 1. Use the label as a container around both the text description and the form control.
