@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Welcome to Jekyll! | CCIS1301 Fall 2016 </title>
+  <title> More Fonts & Icons | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -91,27 +91,41 @@
 </div>
 
 
-
-<h2>Welcome to Jekyll!</h2>
-<p class="meta">14 Jan 2014</p>
-
-<div class="post">
-<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory - edit this post and re-build (or run with the <code class="highlighter-rouge">-w</code> switch) to see your changes!
-To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="http://jekyllrb.com">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/mojombo/jekyll">Jekyll’s GitHub repo</a>.</p>
-
-
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/media">Media & Interactivity</a></li>
+      <li class="active">More Fonts & Icons</li>
+    </ol>
+  </div>
 </div>
 
+
+<div class="container">
+  <h1 id="more-fonts--icons">More Fonts &amp; Icons</h1>
+<p>Information on adding custom fonts and using Font Awesome, a free library of font icons, to your web pages.</p>
+
+<h1 id="font-support">Font Support</h1>
+<p>In the work we’ve done so far, we’ve been limited to the fonts that are already on the users computer or the common web fonts.  You are also able to use custom fonts in your CSS, but you need to also provide the font files for download.</p>
+
+<p>See this article on CSS-tricks.com for additional information:  <a href="https://css-tricks.com/snippets/css/using-font-face/">Using @font-face</a></p>
+
+<h2 id="font-awesome">Font Awesome</h2>
+<p>Font Awesome is a set of common icons that you can use on your web page by including their stylesheet.  They provide general application icons as well as icons for various web and social media brands.</p>
+
+<p>To begin working with Font Awesome, check out how to include their files from the <a href="https://fortawesome.github.io/Font-Awesome/get-started/">Getting Started </a> page. It is strongly recommended that you reference their files from a CDN.  <a href="https://gtmetrix.com/why-use-a-cdn.html">Why use a CDN?  Check here.</a>  Since these files are not “yours” and the CDN already exists, you really have no reason not to. It should result in a faster load of your web site.</p>
+
+<p>Then take a look at the <a href="https://fortawesome.github.io/Font-Awesome/examples/">Examples</a> page to see how to include the icons on your page.  They are added by placing a particular style class on an empty tag, usually and <code class="highlighter-rouge">&lt;i&gt;</code> or <code class="highlighter-rouge">&lt;span&gt;</code> tag.</p>
+
+<p>Because these icons are set up as a font, in addition to using their pre-set styles, you can easily alter their size and color the same way you would any other text using the font-size and color properties.  This is extremely beneficial when developing responsive web pages.</p>
+
+<h2 id="bootstrap-glyphicons">Bootstrap Glyphicons</h2>
+<p>Bootstrap, which is a library we will be looking at more closely in the following weeks, also includes some icons which they call <a href="http://getbootstrap.com/components/#glyphicons">glyphicons</a> that can be used on your website in a similar fashion to those from Font Awesome.  To use these, you will need to include Bootstrap on your page.  See their <a href="http://getbootstrap.com/getting-started/">Getting Started</a> page for more information.</p>
+
+</div>
 
 
 

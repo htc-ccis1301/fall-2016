@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title> Current Design Trends | CCIS1301 Fall 2016 </title>
+  <title> Multimedia on the Web | CCIS1301 Fall 2016 </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 
@@ -10,7 +9,7 @@
   <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
   <link rel="stylesheet" href="/fall-2016/css/style.css">
   <link rel="stylesheet" href="/fall-2016/css/syntax.css">
-  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
 
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -23,7 +22,8 @@
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
   
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
   
@@ -97,45 +97,48 @@
       
       <li><a href="/fall-2016/">Home</a></li>
       <li><a href="/fall-2016/modules">Modules</a></li>
-      <li><a href="/fall-2016/modules/resp-design">Responsive Web Design</a></li>
-      <li class="active">Current Design Trends</li>
+      <li><a href="/fall-2016/modules/media">Media & Interactivity</a></li>
+      <li class="active">Multimedia on the Web</li>
     </ol>
   </div>
 </div>
 
 
 <div class="container">
-  <h1 id="current-design-trends">Current Design Trends</h1>
+  <h1 id="multimedia-on-the-web">Multimedia on the Web</h1>
+<p>Read Chapter 11 of your textbook <a href="http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/">Basics of Web Design: HTML5 &amp; CSS3</a> which covers building and styling tables on the web.</p>
 
-<h2 id="requirements">Requirements</h2>
-<p>Locate a recent (no more than 1 year old) web article that discusses current web site design trends. This must be a blog post or a technical article.</p>
+<p>Remember that you can get the example code from the book electronically from the <a href="http://wps.pearsoned.com/ecs_felke_bwdHTML5_CSS3_3/">textbook website</a>.  It is important to experiment with the material as you read and learn it so that you understand it well.</p>
 
-<div class="alert alert-danger" role="alert">
-  <div class="media">
-    <div class="media-left media-top">
-      <img class="emoji" title=":exclamation:" alt=":exclamation:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle">
-    </div>
-    <div class="media-body">
-      <p>The article must be no more than a year old. If there is no date information visible, look for another.  It must clearly be something published in the last year.</p>
+<h2 id="overview">Overview</h2>
+<p>Chapter 11 introduces media file types for audio and video.  Using media on your web pages can make them both more interesting and informative, but it is important to add them in a manner appropriate to your site.  The content should support the website’s purpose. Also, remember that many visitors can be turned away by audio and video that plays automatically.</p>
 
-    </div>
-  </div>
-</div>
+<h2 id="media-file-types">Media File Types</h2>
+<p>It is important to realize that there is currently no one way to get media on the web in a way supported by all browsers.  It is important to provide alternate file types and encodings to obtain broad support and accessibility.  When using HTML5 video and audio, remember to provide appropriate fallbacks for browsers that lack HTML5 support.</p>
 
-<p>Write a short 500-750 word paper (about 1-2 page) that identifies the article that you used (with a link) and gives a short summary of the trends and your thoughts on them.  You should also review the article itself. Was it good quality, well-written?  Does it seem like a quality source of information?</p>
+<h2 id="css-transform--transition">CSS Transform &amp; Transition</h2>
+<p>This chapter also includes information on using CSS to transform elements on your web pages.  This can be used to rotate and scale images, text or other page elements.  Rotation of elements in particular can be used to a great effect to call attention to elements on your page.</p>
 
-<p>Make sure to include:</p>
+<p>CSS transitions can also be added to gradually alter the display of items. They can be applied to color, background-color, border, font-size, font-weight, margin, padding, opacity and text-shadow.  These can be used in various ways to add interest and interactivity to your web pages.</p>
+
+<h2 id="css-dropdown-menu">CSS Dropdown Menu</h2>
+<p>CSS Dropdown menus are convenient choices for web navigation as they do not rely on having JavaScript enabled in the browser.  While many sites will use JavaScript or other framework components (i.e. Bootstrap) for navigation, this is a great demonstration of how basic CSS skills that you now know can be used to build interactive components for your web site.</p>
+
+<h2 id="review-questions">Review Questions</h2>
 
 <ul>
-  <li>a link to the article</li>
-  <li>a summary and your thoughts on the current trends</li>
-  <li>your thoughts on the article itself</li>
+  <li>List 5 audio file types.</li>
+  <li>List 5 video file types.</li>
+  <li>Identify the file type that can represent both an audio or video file.</li>
+  <li>What are some reasons that audio or video you test and see working fine may not work for other visitors to your site?</li>
+  <li>What is the embed element used for?</li>
+  <li>How do you use the new HTML5 audio and video elements to add audio and video to your page?</li>
+  <li>What are some fallback options for browsers that do not support HTML5?</li>
+  <li>What is the iframe element used for?</li>
+  <li>How can you use CSS to rotate an element on your web page?</li>
+  <li>How can you use CSS to double an element’s size?</li>
+  <li>How can you use the CSS transition property to gradually increase an element’s font-size?</li>
 </ul>
-
-<p>Note that you are graded on both the quality of your writing and the ideas in the paper.</p>
-
-<h2 id="submit-the-assignment">Submit the Assignment</h2>
-<p>Create a MS Word document for your paper and submit to the Assignment box on D2L. Any file type that I cannot read will receive no credit for the assignment.</p>
 
 </div>
 
