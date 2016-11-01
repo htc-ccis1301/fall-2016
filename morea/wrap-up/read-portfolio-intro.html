@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Final Project: Personal Portfolio | CCIS1301 Fall 2016 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <!--  Load bootswatch-based Morea theme file. -->
+  <link rel="stylesheet" href="/fall-2016/css/themes/spacelab/bootstrap.min.css">
+  <link rel="stylesheet" href="/fall-2016/css/style.css">
+  <link rel="stylesheet" href="/fall-2016/css/syntax.css">
+  <link rel="shortcut icon" href="/fall-2016/favicon.ico" type="image/x-icon"/>
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
+
+  <!-- Load Bootstrap JavaScript components -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  
+  <script type="text/javascript"
+          src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-63189236-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+
+  <script>
+    $(window).load(function () {
+      // If on a page associated with a navbar item, make its navbar item 'active'.
+      $('.navbar-nav').find('a[href="' + location.pathname + '"]').parents('li').addClass('active');
+    });
+  </script>
+
+</head>
+<body>
+<!-- Responsive navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <!--  Display three horizontal lines when navbar collapsed. -->
+        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/fall-2016/index.html"> CCIS1301 Fall 2016 </a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        
+        <li><a href="/fall-2016/modules/">Modules</a></li>
+        
+        <li><a href="/fall-2016/outcomes/">Outcomes</a></li>
+        
+        
+        <li><a href="/fall-2016/readings/">Readings</a></li>
+        
+        
+        <li><a href="/fall-2016/experiences/">Experiences</a></li>
+        
+        
+        <li><a href="/fall-2016/assessments/">Assessments</a></li>
+        
+        
+        <li><a href="/fall-2016/schedule/">Schedule</a></li>
+        
+        <li><a href="//htc-ccis1301.github.io/html-students/fall-2016.html">Class Directory</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="breadcrumb-bar">
+  <div class="container">
+    <ol class="breadcrumb">
+      
+      <li><a href="/fall-2016/">Home</a></li>
+      <li><a href="/fall-2016/modules">Modules</a></li>
+      <li><a href="/fall-2016/modules/wrap-up">Final Project & Wrap-up</a></li>
+      <li class="active">Final Project: Personal Portfolio</li>
+    </ol>
+  </div>
+</div>
+
+
+<div class="container">
+  <h1 id="final-project-personal-portfolio">Final Project: Personal Portfolio</h1>
+<p>This final project is intended to show everything that you have learned over the course.  A failure to complete the project will result in a large drop in your final grade for the course. (See the course syllabus for details.)</p>
+
+<p>It is also intended that you should be able to maintain this website and use it as an online resume or portfolio as you begin looking for a job.  It is strongly recommended that you continue to use GitHub as a repository for all of your course content so that you can link to this work on your portfolio and resume.  Having an active GitHub profile that shows what you are learning and what you know can be a huge asset in your future job search.</p>
+
+<h2 id="github-project-repository">GitHub Project Repository</h2>
+<p>The initial repository for this project can be found on our class organization page:</p>
+
+<p><a href="https://github.com/htc-ccis1301/fall2016-portfolio">fall2016-portfolio</a></p>
+
+<h2 id="overview">Overview</h2>
+<p>Think of this portfolio as your online resume. The site will be made using Bootstrap, using the principles of mobile first design.  Plan first how this will look on a phone (never know who you’ll bump into at a coffee shop) and then enhance it for a desktop. Bootstrap will help you to do this as it is “mobile first”.</p>
+
+<p>You are free to customize the look of the site to suit your own taste and style, and in fact is it is meant to showcase your style and personality. No two of these final projects should look alike. However, you must include the information required below. Make yourself a checklist and double-check that you do not miss something along the way.</p>
+
+<h2 id="site-requirements">Site Requirements</h2>
+<p>The site must contain all of the information below <strong>on a <em>single</em> page</strong>.  If you wish to include additional pages with additional supporting information, you can do that. However I must be able to find all of the key information below on the main page.</p>
+
+<h3 id="required-content">Required Content</h3>
+<p>Your site <strong>must</strong> include the following content:</p>
+
+<ul>
+  <li>Your full name</li>
+  <li>A short intro or personal statement (No more than 3 sentences. who are you, what kind of job do you want, etc)</li>
+  <li>Link to your GitHub profile using one of Font Awesome’s icons for GitHub.</li>
+  <li>Same page navigation links to each of the following sections:
+    <ul>
+      <li>Section for Technical skills (at the very least you can use a computer and know HTML5/CSS and Bootstrap)</li>
+      <li>Section for Projects (see below)</li>
+      <li>Section for Education (include school(s), degree(s)/program(s) and a list of relevant courses)</li>
+    </ul>
+  </li>
+  <li>Footer w/ copyright, link to a Paletton color scheme, and optionally an email.</li>
+</ul>
+
+<p>You may optionally also include the following:</p>
+
+<ul>
+  <li>A professional looking picture of yourself (they say it helps leave a good impression)</li>
+  <li>Section for Work/Volunteer Experience</li>
+  <li>Additional Social Media Links (LinkedIn is a good choice, add others only if you consider your content there professional)</li>
+</ul>
+
+<h3 id="project-section">Project Section</h3>
+<p>The project section must include a gallery featuring your class projects.  At a minimum you should include 3 projects from this course - your fan page, the Pacific Trails case study, and Ms B’s Veggies.  You might also choose to include other pages from the weekly assignments or additional course work from other classes.</p>
+
+<p>Each HTML project should have an image screenshot that links to the project’s live web page hosted on GitHub. There should also be a caption that links to the GitHub repository page that shows all the files in the repository.  For any non-HTML projects you choose to include, you may list them separately as only text linking to GitHub, or you may include them in the gallery with your HTML projects by using an image that links directly to the GitHub repository files.</p>
+
+<h3 id="required-bootstrap-components">Required Bootstrap components</h3>
+<p>You <strong>must</strong> use the following Bootstrap components when creating your portfolio site:</p>
+
+<ul>
+  <li><a href="http://getbootstrap.com/components/#navbar">Navbar</a> - with links to each required section</li>
+  <li><a href="http://getbootstrap.com/javascript/#scrollspy">ScrollSpy</a></li>
+  <li><a href="http://getbootstrap.com/css/#grid">Grid System</a> - used for responsive site layout instead of custom media queries</li>
+</ul>
+
+<p>As you are designing the look and feel of your site, you will want to consider how these components will effect the layout and display of your website.</p>
+
+<h2 id="project-submissions">Project Submissions</h2>
+<p>The project is broken up into three parts:</p>
+
+<ul>
+  <li>Wireframe design</li>
+  <li>Prototype HTML outline (optional)</li>
+  <li>Final site submission</li>
+</ul>
+
+<p>The due dates for each part are on the assignment boxes on D2L.</p>
+
+<p>Make sure to get started on the work early.  Many students underestimate the effort required for this project.</p>
+
+</div>
+
+
+
+
+<script src="/fall-2016/js/scrollIfAnchor.js"></script>
+
+<div class="footer-background hidden-print">
+  <footer>
+    <div class="container page-footer">
+      
+      <p>This course is developed for Hennepin Technical College by <a href="mailto:mary.mosman@hennepintech.edu">mary.mosman@hennepintech.edu</a></p>
+
+      
+      <p style="margin: 0">Powered by the <a href="http://morea-framework.github.io/">Morea Framework</a><br>
+        Last update on: <span>2016-11-01 03:18:54 -0500</span></p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
